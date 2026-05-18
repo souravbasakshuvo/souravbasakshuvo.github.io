@@ -1,0 +1,6 @@
+name: CodeQL config
+paths-ignore:
+  - "assets/js/vendor"
+  - "assets/js/*.min.js"
+  - "_site"
+  - "node_modules"

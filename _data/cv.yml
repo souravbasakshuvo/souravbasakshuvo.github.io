@@ -1,0 +1,368 @@
+cv:
+  name: Sourav Basak Shuvo
+  label: Biomedical Engineering Researcher
+  email: sourav.basak.kuet.bme@gmail.com
+  phone: "+8801712887192"
+  location: Jamalpur, Bangladesh
+  website: https://souravbasakshuvo.github.io
+  image: ""
+  summary: >
+    Biomedical Engineering graduate from KUET with an M.Sc. in progress at University of Dhaka.
+    Researcher specializing in deep learning, medical image processing, biomedical signal processing,
+    generative AI, and large language models for healthcare. Research interests span disease detection,
+    domain adaptation, health informatics, and neuroengineering.
+    Three-time Dean's Award recipient. Actively seeking Ph.D. opportunities.
+
+  social_networks:
+    - network: GitHub
+      username: souravbasakshuvo
+    - network: LinkedIn
+      username: sourav-basak-shuvo
+
+  sections:
+    Education:
+      - institution: University of Dhaka
+        location: Dhaka, Bangladesh
+        url: https://www.du.ac.bd/
+        area: Biomedical Engineering (Specialization)
+        studyType: Master of Science in Biomedical Physics and Technology
+        start_date: 2026-05
+        end_date: present
+        highlights:
+          - "CGPA: In Progress"
+
+      - institution: Khulna University of Engineering & Technology (KUET)
+        location: Khulna, Bangladesh
+        url: https://www.kuet.ac.bd/
+        area: Biomedical Engineering
+        studyType: Bachelor of Science in Biomedical Engineering
+        start_date: 2018-11
+        end_date: 2024-02
+        highlights:
+          - "CGPA: 3.77/4.00 — Ranked 4th in overall merit position"
+          - "ECE Evaluation (Dec 30, 2024): U.S. Equivalence — Bachelor Degree, Major: Biomedical Engineering, Grade Average: 3.91/4.00"
+          - "Thesis: Gallbladder Cancer Classification using Parallel Transfer Learning with Multi-model Feature Fusion and LSTM (99.37% accuracy)"
+
+    Research Experience:
+      - company: Bio-Neural Intelligence and Research Advancement Lab, KUET
+        position: Researcher
+        location: Khulna, Bangladesh
+        start_date: 2025-06
+        end_date: present
+        highlights:
+          - Designed NeuroSwin, a hybrid deep learning model (Swin Transformer-GRU), to classify Parkinson's Disease and identify its source regions in the brain from EEG signals.
+
+      - company: Ulster University
+        position: Research Assistant Intern
+        location: Londonderry, Northern Ireland, UK
+        start_date: 2024-10
+        end_date: present
+        highlights:
+          - Developed TransfusionNet, a hybrid architecture with specialized preprocessing pipeline and early-layer feature fusion for cervical cancer detection. Published in Q1 journal Results in Engineering (Elsevier, IF 7.9).
+          - Created a benchmark to evaluate LLM performance for disease classification, comparing against MobileCoAtNet for stomach infection classification.
+          - Investigated foundational AI models for multi-cancer classification using MAML for domain adaptation.
+          - Actively researching LLMs for disease diagnosis, reasoning, and treatment follow-up.
+
+      - company: Department of Biomedical Engineering, KUET
+        position: Undergraduate Research Assistant
+        location: Khulna, Bangladesh
+        start_date: 2023-02
+        end_date: 2024-09
+        highlights:
+          - Designed a hybrid model for gallbladder cancer classification using parallel transfer learning, feature fusion, and LSTM, achieving 99.37% accuracy; published at ICEEICT 2024.
+          - Gained experience in academic writing, literature review, and presenting research findings.
+
+    Publications:
+      - title: "TransfusionNet: Framework for Cervical Cancer Detection using Deep Learning with Multi-level Fusion"
+        authors:
+          - M. N. Hasan
+          - S. B. Shuvo
+          - M. M. H. Ankon
+          - S. M. T. U. Raju
+          - N. Siddique
+        publisher: "Results in Engineering, Elsevier (Q1, IF: 7.9), vol. 28, p. 107174, 2025"
+        releaseDate: 2025
+        url: https://doi.org/10.1016/j.rineng.2025.107174
+
+      - title: "Exploring Common Molecular Interactions across Multiple Cancers"
+        authors:
+          - S. B. Shuvo
+          - et al.
+        publisher: "EICT 2025, IEEE, Dhaka, Bangladesh, pp. 1–6"
+        releaseDate: 2025
+        url: https://doi.org/10.1109/EICT68394.2025.11355627
+
+      - title: "Classification of Gallbladder Cancer Using Average Ensemble Learning"
+        authors:
+          - S. B. Shuvo
+          - M. Z. Chowdhury
+        publisher: "ICEEICT 2024, IEEE, Dhaka, Bangladesh, pp. 1450–1455"
+        releaseDate: 2024
+        url: https://doi.org/10.1109/ICEEICT62016.2024.10534480
+
+      - title: "DL3M: A Vision-to-Language Framework for Expert-Level Medical Reasoning"
+        authors:
+          - M. N. Hasan
+          - et al.
+        publisher: "arXiv:2512.13742 — Under review in Medical Image Analysis, Elsevier"
+        releaseDate: 2025
+        url: https://arxiv.org/abs/2512.13742
+
+      - title: "NeuroSwin: A Swin Transformer-GRU Model for Parkinson's Disease Classification"
+        authors:
+          - S. B. Shuvo
+          - et al.
+        publisher: "In preparation for Biomedical Signal Processing and Control, Elsevier"
+        releaseDate: 2025
+
+      - title: "CholeNet: A Recurrent-Convolutional Hybrid Ensemble Framework"
+        authors:
+          - S. B. Shuvo
+          - et al.
+        publisher: "In preparation for Expert Systems with Applications, Elsevier"
+        releaseDate: 2025
+
+      - title: "VRX-UNet: Automated Volumetric Characterization of Intra-tumoral Structures in Gliomas"
+        authors:
+          - M. M. H. Ankon
+          - et al.
+        publisher: "In preparation for Computers in Biology and Medicine, Elsevier"
+        releaseDate: 2025
+
+      - title: "Advanced Image Analysis for Liver Tumor Detection in CT Images"
+        authors:
+          - M. A. Sayed
+          - et al.
+        publisher: "In preparation for Scientific Reports, Nature"
+        releaseDate: 2025
+
+      - title: "Automated PET to Fused PET-CT Mapping Using PatchGAN for Lung Cancer Diagnosis"
+        authors:
+          - Md. A. Sayed
+          - et al.
+        publisher: "Submitted to IEEE CQPAIN 2026"
+        releaseDate: 2026
+
+    Projects:
+      - name: IoT Based Pilot Health Monitoring System
+        url: ""
+        summary: >
+          IoT-based system using ESP8266 NodeMCU, MAX30100, DS18B20, and BMP180 sensors
+          with the Blynk IoT platform for real-time pilot health monitoring.
+        highlights:
+          - Developed real-time health dashboard via Blynk IoT cloud platform
+
+      - name: MediConnect – A Video Conferencing App for Telemedicine
+        url: ""
+        summary: >
+          Secure telemedicine application built with Java, Firebase, and ZEGOCLOUD.
+        highlights:
+          - Implemented medical image sharing, digital prescriptions, and real-time chat
+
+      - name: VitaSync – A Smart Band for Telemedicine Applications
+        url: ""
+        summary: >
+          Wearable device integrating sensors for heart rate, body temperature, and blood oxygen levels
+          with real-time mobile app integration.
+        highlights:
+          - Real-time data transmission with alert mechanism for abnormal readings
+
+      - name: Telechroma – A Smart Colorimetric Analyzer
+        url: ""
+        summary: >
+          Portable colorimetric analyzer for remote diagnostics of glucose in urine samples
+          using Arduino Nano, TCS3200, and MIT App Inventor.
+        highlights:
+          - Designed for low-cost point-of-care diagnostics
+
+      - name: Sanitary Napkin Vending Machine
+        url: ""
+        summary: >
+          Automated vending machine using RFID, Arduino Mega, and stepper motors for
+          on-campus dispensing.
+        highlights:
+          - RFID-authenticated dispensing with stepper motor control
+
+    Training:
+      - company: Dawn of Bioinformatics Limited
+        position: "4-Day Training on Computer-Aided Drug Design"
+        start_date: 2025-05
+        end_date: 2025-05
+        highlights:
+          - Covered molecular docking, virtual screening, and ADMET profiling
+
+      - company: Bangladesh University of Engineering and Technology (BUET)
+        position: "Full Day Technical Workshop on Biomaterials Based Wet Lab"
+        location: Dhaka, Bangladesh
+        start_date: 2022-08
+        end_date: 2022-08
+        highlights:
+          - Hands-on training in biomaterial characterization and wet lab techniques
+
+    Leadership & ECA:
+      - company: Advanced Bioengineering Club of KUET (ABC-KUET)
+        position: President
+        location: Khulna, Bangladesh
+        start_date: 2022-06
+        end_date: present
+        highlights:
+          - Participated in multiple project showcasing competitions and fostered innovation among members.
+          - Organized workshops and seminars including "NeuroInquire — Exploring EEG and Research Foundations" and "ABC of Research with Hands-on Training on LaTeX."
+
+      - company: Fabrication Lab KUET
+        position: Student Operator
+        location: Khulna, Bangladesh
+        start_date: 2022-03
+        end_date: 2024-04
+        highlights:
+          - Operated 3D printers (Ultimaker 3 Extended, Prusa i3 MK3S, Creality CR-10 Mini), laser cutter (Epilog Laser Mini), and CNC machine (Roland Modela Pro II MDX 540).
+
+      - company: Spectrum – Professional Skill Development Club, KUET
+        position: Head of Human Resources
+        location: Khulna, Bangladesh
+        start_date: 2020-03
+        end_date: 2024-03
+        highlights:
+          - Directed the Inter-University Case Study Competition engaging 240 teams from 45 universities, with sponsors including Bank Asia PLC, Abul Khair Group, Coca-Cola, and 10 Minute School.
+          - Distributed a prize pool of over BDT 100,000 while driving 300,000+ audience interactions.
+
+    Awards:
+      - title: Honors in B.Sc. Engineering
+        date: 2024-02
+        awarder: Khulna University of Engineering & Technology (KUET)
+        summary: Awarded to students achieving CGPA 3.75 or above.
+
+      - title: "Dean's Award (3 Times)"
+        date: "2018–19, 2020–21, 2021–22"
+        awarder: KUET
+        summary: Awarded for achieving CGPA 3.75 or above in an academic year.
+
+      - title: Technical Scholarship (4 Consecutive Times)
+        date: "2019–2023"
+        awarder: KUET
+        summary: Awarded for securing the top position in the class.
+
+      - title: IEEE YESIST12 – Finalist
+        date: 2023
+
+      - title: BME Indoor – Champion in Chess
+        date: 2022
+        awarder: KUET
+
+      - title: "Intra-University Innovative Idea & Project Competition – 2nd Runner-up"
+        date: 2022
+        awarder: FabLab KUET
+
+      - title: National STEM Competition – Finalist
+        date: 2021
+        awarder: Bangladesh STEM Foundation (bdSTEM)
+
+      - title: NHSPC – 11th Position, Mymensingh Regional Contest
+        date: 2017
+
+      - title: General Grade Scholarship in JSC Examination
+        date: 2013
+        awarder: Board of Intermediate & Secondary Education, Dhaka
+
+      - title: Talent Pool Grade Scholarship in PSC Examination
+        date: 2010
+        awarder: Dhaka Education Board
+
+    Certificates:
+      - name: Neuroscience and Neuroimaging Specialization
+        issuer: Johns Hopkins University · Coursera
+        date: Ongoing
+
+      - name: AI for Medicine Specialization
+        issuer: DeepLearning.AI · Coursera
+        date: Ongoing
+
+      - name: Deep Learning Specialization
+        issuer: DeepLearning.AI · Coursera
+        date: Ongoing
+
+      - name: Mathematics for Machine Learning Specialization
+        issuer: Imperial College London · Coursera
+        date: 2025
+        url: https://coursera.org/verify/GTDVNCUGPKFB
+
+      - name: Python 3 Programming Specialization
+        issuer: University of Michigan · Coursera
+        date: 2025
+        url: https://coursera.org/verify/OYAFNI72JGCX
+
+      - name: Python for Everybody Specialization
+        issuer: University of Michigan · Coursera
+        date: 2020
+        url: https://coursera.org/verify/P5M6PR4LNBQE
+
+      - name: Introduction to Programming with MATLAB
+        issuer: Vanderbilt University · Coursera
+        date: 2020
+        url: https://coursera.org/verify/34SNV5SF6ZTG
+
+      - name: "C for Everyone: Programming Fundamentals"
+        issuer: University of California, Santa Cruz · Coursera
+        date: 2020
+        url: https://coursera.org/verify/CG7QAXKTLCEK
+
+      - name: Building Arduino Robots and Devices
+        issuer: Moscow Institute of Physics and Technology · Coursera
+        date: 2020
+        url: https://coursera.org/verify/SP9BJWZ6D83G
+
+    Skills:
+      - name: Programming & ML Frameworks
+        level: Advanced
+        icon: fa-solid fa-code
+        keywords:
+          - MATLAB
+          - Python (PyTorch, TensorFlow, Keras)
+          - R
+          - C/C++
+
+      - name: Simulation & Design
+        level: Intermediate
+        icon: fa-solid fa-diagram-project
+        keywords:
+          - NI Multisim
+          - Arduino
+          - Simulink
+          - SOLIDWORKS
+          - AutoCAD
+          - COMSOL Multiphysics
+
+      - name: Documentation & Office
+        level: Advanced
+        icon: fa-solid fa-file-alt
+        keywords:
+          - LaTeX
+          - MS PowerPoint
+          - MS Word
+          - MS Excel
+          - MS Visio
+          - Adobe Photoshop
+          - Adobe Illustrator
+          - Adobe Premiere Pro
+
+    Languages:
+      - name: Bengali
+        summary: Native speaker
+
+      - name: English
+        summary: "Professional working proficiency (IELTS: 7.5 | GRE: 313)"
+
+    Interests:
+      - name: Research Interests
+        icon: fa-solid fa-brain
+        keywords:
+          - Deep Learning
+          - Machine Learning
+          - Medical Image Processing
+          - Biomedical Signal Processing
+          - Generative AI
+          - Large Language Models (LLMs)
+          - Domain Adaptation
+          - Disease Detection
+          - Health Informatics
+          - Neuroengineering

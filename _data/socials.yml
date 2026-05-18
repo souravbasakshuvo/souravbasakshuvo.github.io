@@ -1,0 +1,13 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+cv_pdf: /assets/pdf/cv.pdf # path to your CV PDF file
+email: sourav.basak.kuet.bme@gmail.com # your email address
+github_username: souravbasakshuvo # your GitHub user name
+linkedin_username: sourav-basak-shuvo # your LinkedIn user name
+orcid_id: 0009-0004-7931-2185 # your ORCID ID
+research_gate_profile: https://www.researchgate.net/profile/Sourav-Shuvo-2 # your ResearchGate profile URL
+scholar_userid: BisFVWsAAAAJ # your Google Scholar ID
+facebook_id: sourav.basak.37051 # your Facebook username/profile ID
+kaggle_id: souravbasakshuvo # your Kaggle username
+rss_icon: true # comment this line to hide the RSS icon

@@ -1,0 +1,15 @@
+"Res. Eng.":
+  url: https://www.sciencedirect.com/journal/results-in-engineering
+  color: "#e67e22"
+
+"ICEEICT":
+  url: https://ieeexplore.ieee.org/xpl/conhome/10528671/proceeding
+  color: "#2980b9"
+
+"EICT":
+  url: https://ieeexplore.ieee.org/xpl/conhome/11332374/proceeding
+  color: "#2980b9"
+
+"arXiv":
+  url: https://arxiv.org
+  color: "#b31b1b"
