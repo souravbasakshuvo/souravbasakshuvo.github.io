@@ -1,0 +1,206 @@
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-education",
+          title: "Education",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/education/";
+          },
+        },{id: "nav-experience",
+          title: "Experience",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/experience/";
+          },
+        },{id: "nav-publications",
+          title: "Publications",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-training",
+          title: "Training",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/training/";
+          },
+        },{id: "nav-certifications",
+          title: "Certifications",
+          description: "A collection of certifications earned through consistent effort and dedication to lifelong learning.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/certifications/";
+          },
+        },{id: "nav-eca",
+          title: "ECA",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/eca/";
+          },
+        },{id: "nav-awards",
+          title: "Awards",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/awards/";
+          },
+        },{id: "nav-cv",
+          title: "CV",
+          description: "Curriculum Vitae of Sourav Basak Shuvo — Biomedical Engineering researcher at KUET, Bangladesh.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "dropdown-teaching",
+              title: "Teaching",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/teaching/";
+              },
+            },{id: "dropdown-repositories",
+              title: "Repositories",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/repositories/";
+              },
+            },{id: "dropdown-hobbies",
+              title: "Hobbies",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/hobbies/";
+              },
+            },{id: "dropdown-blog",
+              title: "Blog",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
+            },{id: "dropdown-contact",
+              title: "Contact",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/contact/";
+              },
+            },{id: "news-joined-the-bio-neural-intelligence-and-research-advancement-binar-lab-at-kuet-as-a-researcher-working-on-ai-based-medical-imaging-and-biomedical-signal-processing",
+          title: 'Joined the Bio-Neural Intelligence and Research Advancement (BINAR) Lab at KUET as a...',
+          description: "",
+          section: "News",},{id: "news-presented-a-poster-on-gene-network-interactions-and-pathways-in-three-cancers-at-the-1st-national-conference-of-research-industry-and-collaboration-in-biomedical-engineering-hosted-by-jashore-university-of-science-amp-amp-technology-bangladesh",
+          title: 'Presented a poster on gene network interactions and pathways in three cancers at...',
+          description: "",
+          section: "News",},{id: "news-paper-published-in-results-in-engineering-elsevier-q1-if-7-9-transfusionnet-framework-for-cervical-cancer-detection-using-deep-learning-with-multi-level-fusion",
+          title: 'Paper published in Results in Engineering (Elsevier, Q1, IF: 7.9): TransfusionNet: Framework for...',
+          description: "",
+          section: "News",},{id: "news-new-preprint-released-on-arxiv-dl3m-a-vision-to-language-framework-for-expert-level-medical-reasoning-through-deep-learning-and-large-language-models-currently-under-review-in-medical-image-analysis-elsevier",
+          title: 'New preprint released on arXiv: DL3M: A Vision-to-Language Framework for Expert-Level Medical Reasoning...',
+          description: "",
+          section: "News",},{id: "news-presented-exploring-common-molecular-interactions-across-multiple-cancers-to-identify-potential-therapeutic-targets-and-drug-candidates-at-eict-2025-7th-international-conference-on-electrical-information-and-communication-technology-khulna-bangladesh-the-conference-received-1-042-submissions-from-15-countries-with-142-papers-accepted",
+          title: 'Presented “Exploring Common Molecular Interactions across Multiple Cancers to Identify Potential Therapeutic Targets...',
+          description: "",
+          section: "News",},{id: "projects-brain-tumor-segmentation-using-matlab",
+          title: 'Brain Tumor Segmentation using MATLAB',
+          description: "Segmentation of brain tumors from grayscale MRI images using morphological operations in MATLAB, as part of a Biomedical Image Processing lab project.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/brain-tumor-segmentation/";
+            },},{id: "projects-iot-based-pilot-health-monitoring-system",
+          title: 'IoT Based Pilot Health Monitoring System',
+          description: "ESP8266 NodeMCU system monitoring pilot vitals and aircraft state via Blynk IoT, using MAX30100, DS18B20, and BMP180 sensors.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/iot-pilot-health-monitoring/";
+            },},{id: "projects-line-follower-robot-with-pid-controller",
+          title: 'Line Follower Robot with PID Controller',
+          description: "An autonomous line-following robot using TCRT-5000 IR sensors and PID control, built on Arduino for robotics competitions and education.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/line-follower-robot/";
+            },},{id: "projects-mediconnect-telemedicine-video-conferencing-app",
+          title: 'MediConnect – Telemedicine Video Conferencing App',
+          description: "A cross-platform telemedicine app enabling secure real-time video consultations, messaging, and medical data sharing between patients and healthcare professionals.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/mediconnect/";
+            },},{id: "projects-retinal-blood-vessel-segmentation",
+          title: 'Retinal Blood Vessel Segmentation',
+          description: "MATLAB-based retinal fundus image segmentation using the Principal Curvature Method, achieving 96.17% accuracy for early detection of diabetic retinopathy and glaucoma.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/retinal-blood-vessel-segmentation/";
+            },},{id: "projects-sanitary-napkin-vending-machine",
+          title: 'Sanitary Napkin Vending Machine',
+          description: "RFID-enabled automated vending machine for menstrual hygiene products, 2nd Runner-Up at KUET Intra-University Innovation Competition 2022.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/sanitary-napkin-vending-machine/";
+            },},{id: "projects-telechroma-smart-colorimetric-analyzer",
+          title: 'Telechroma: Smart Colorimetric Analyzer',
+          description: "Portable Arduino-based colorimetric analyzer that quantifies biological analytes from urine samples via color sensing, with wireless Bluetooth transmission to a mobile app.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/telechroma/";
+            },},{id: "projects-gallbladder-cancer-classification-using-parallel-transfer-learning-with-multi-model-feature-fusion-and-lstm",
+          title: 'Gallbladder Cancer Classification using Parallel Transfer Learning with Multi-model Feature Fusion and LSTM...',
+          description: "Hybrid parallel transfer learning + LSTM framework for gallbladder cancer classification, achieving 99.37% accuracy.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/undergraduate-thesis/";
+            },},{id: "projects-vitasync-a-smart-band-for-telemedicine-applications",
+          title: 'VitaSync: A Smart Band for Telemedicine Applications',
+          description: "Wearable smart band tracking heart rate, temperature, and SpO₂ with real-time mobile app and email alert mechanism for health irregularities.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/vitasync/";
+            },},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/introduction-to-machine-learning/";
+            },},{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
