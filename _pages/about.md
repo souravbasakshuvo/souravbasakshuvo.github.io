@@ -33,7 +33,7 @@ latest_posts:
   limit: 3
 ---
 
-This is *Sourav Basak Shuvo*; however, you can call me *Sourav*.
+This is *Sourav Basak Shuvo;* however, you can call me *Sourav*.
 
 I am a **Biomedical Physics MS Student** at the [Department of Biomedical Physics and Technology](https://bmpt.du.ac.bd/), **[University of Dhaka (DU)](https://www.du.ac.bd/)**, Bangladesh, with a specialization in Biomedical Engineering. I am currently a **Researcher at the [Bio-Neural Intelligence and Research Advancement (BNIRA) Lab](https://bniralab.github.io/), KUET**, supervised by [Amit Dutta Roy](https://scholar.google.com/citations?user=ZpUq_acAAAAJ), working on Parkinson's Disease detection and brain region localization from EEG signals using deep learning. I am also a **Research Assistant at [Ulster University](https://www.ulster.ac.uk/)**, Londonderry, Northern Ireland, UK, supervised by [Dr. Nazmul Siddique](https://scholar.google.com/citations?user=oV13Kl0AAAAJ), working on cancer detection, large language models, and domain adaptation for medical AI. I am actively seeking **Ph.D. opportunities** in neural engineering, biomedical engineering, and related fields.
 
