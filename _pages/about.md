@@ -4,8 +4,9 @@ title: About
 permalink: /
 nav_order: 1
 subtitle: >
-  Biomedical Engineering Graduate · <a href="https://www.kuet.ac.bd/" target="_blank">KUET</a>, Bangladesh ·
-  Researcher, <a href="https://kuet.ac.bd/" target="_blank">BINAR Lab</a>
+  BMPT MS Student, <a href="https://www.du.ac.bd/" target="_blank">DU</a> ·
+  Researcher, <a href="https://bniralab.github.io/" target="_blank">BNIRA Lab</a> ·
+  RA @ <a href="https://www.ulster.ac.uk/" target="_blank">Ulster University</a>
 
 profile:
   align: right
@@ -31,21 +32,21 @@ latest_posts:
   limit: 3
 ---
 
-I am a Biomedical Engineering graduate from [Khulna University of Engineering & Technology (KUET)](https://www.kuet.ac.bd/), Bangladesh, where I received **three Dean's Awards** and a **technical scholarship** for academic excellence. I am currently a Researcher at the Bio-Neural Intelligence and Research Advancement (BINAR) Lab, KUET, and am actively seeking **M.Sc./Ph.D. opportunities** in biomedical engineering and related fields.
+This is *Sourav Basak Shuvo*; however, you can call me *Sourav*.
 
-My research sits at the intersection of **artificial intelligence and biomedical science**, with a focus on making healthcare diagnostics faster, more accurate, and more accessible. I am broadly interested in:
+I am a **Biomedical Physics MS Student** at the [Department of Biomedical Physics and Technology](https://bmpt.du.ac.bd/), **[University of Dhaka (DU)](https://www.du.ac.bd/)**, Bangladesh, with a specialization in Biomedical Engineering. I am currently a **Researcher at the [Bio-Neural Intelligence and Research Advancement (BNIRA) Lab](https://bniralab.github.io/), KUET**, supervised by [Amit Dutta Roy](https://scholar.google.com/citations?user=ZpUq_acAAAAJ), working on Parkinson's Disease detection and brain region localization from EEG signals using deep learning. I am also a **Research Assistant at [Ulster University](https://www.ulster.ac.uk/)**, Londonderry, Northern Ireland, UK, supervised by [Dr. Nazmul Siddique](https://scholar.google.com/citations?user=oV13Kl0AAAAJ), working on cancer detection, large language models, and domain adaptation for medical AI. I am actively seeking **Ph.D. opportunities** in neural engineering, biomedical engineering, and related fields.
 
-- AI-based medical imaging and computer-aided diagnosis
-- Biomedical signal and image processing
-- Deep learning, transfer learning, and domain adaptation
-- Neuroengineering and brain-computer interfaces
-- Cancer diagnostics and disease classification
-- Federated learning and large language models in healthcare
-- Bioinformatics
+Before joining DU, I completed my **B.Sc. in Biomedical Engineering** from [KUET](https://www.kuet.ac.bd/) in February 2024, where I received **three Dean's Awards** and a **technical scholarship** for academic excellence and active participation in extracurricular activities.
 
-My undergraduate thesis proposed a hybrid framework combining **parallel transfer learning**, **multi-model feature fusion**, and **LSTM networks** for gallbladder cancer classification, achieving **99.37% accuracy**. More recently, I have worked on cervical cancer detection using deep learning (published in _Results in Engineering_, Q1), molecular interaction networks across multiple cancers, and vision-to-language frameworks for medical reasoning.
+My research focuses on classical and deep learning approaches for **multi-modal medical image analysis** — spanning segmentation, classification, 3D reconstruction, registration, domain adaptation, and disease detection. I am particularly interested in building systems that are not only accurate, but interpretable and deployable in real-world clinical settings.
 
-I have gained international research exposure through a **Research Assistant internship at Ulster University**, Northern Ireland, UK (October 2024), where I worked on cancer genomics and gene network analysis. I am also active in the academic community as **President of the Advanced Bioengineering Club (ABC-KUET)** and **Head of HR at Spectrum – Professional Skill Development Club, KUET**.
+My undergraduate thesis proposed a hybrid framework combining **parallel transfer learning**, **multi-model feature fusion**, and **LSTM networks** for gallbladder cancer classification, achieving **99.37% accuracy**. Since then, I have contributed to research on cervical cancer detection (published in *Results in Engineering*, Q1), molecular interaction networks across multiple cancer types, and vision-language frameworks for medical reasoning.
+
+Beyond research, my project experience spans brain tumor segmentation using MATLAB, [MediConnect](/projects/mediconnect/) — a secure telemedicine video conferencing application, [VitaSync](/projects/vitasync/) — a smart band for real-time vital metrics monitoring, and an automated sanitary napkin vending machine that secured **2nd Runner-Up** at the Intra-University Innovative Idea & Project Competition 2022. I also served as a **Student Operator at the Fabrication Lab, KUET**, assisting students with 3D printing, laser cutting, and CNC milling.
+
+My technical stack includes **MATLAB, Python** (PyTorch, TensorFlow, Keras), and **C/C++**, alongside simulation and design tools such as NI Multisim, Arduino, Simulink, SOLIDWORKS, AutoCAD, and COMSOL Multiphysics. I am also proficient in LaTeX, MS Office, and creative tools including Adobe Photoshop, Illustrator, and Premiere Pro.
+
+Outside the lab, I served as **President of the Advanced Bioengineering Club (ABC-KUET)** and **Head of Human Resources at Spectrum – Professional Skill Development Club, KUET**, where I organized seminars, workshops, and university events. I also have a proven track record in tutoring science and mathematics students.
 
 <div class="my-4">
   <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
