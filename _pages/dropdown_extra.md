@@ -8,8 +8,6 @@ nav_class: nav-dropdown-hamburger
 children:
   - title: Teaching
     permalink: /teaching/
-  - title: Repositories
-    permalink: /repositories/
   - title: Hobbies
     permalink: /hobbies/
   - title: Blog
