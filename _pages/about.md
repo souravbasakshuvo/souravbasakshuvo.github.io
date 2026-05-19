@@ -13,9 +13,10 @@ profile:
   image: about/prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Bio-Neural Intelligence and Research Advancement Lab</p>
-    <p>Khulna University of Engineering & Technology</p>
-    <p>Khulna, Bangladesh</p>
+    <p>BMPT MS Student, University of Dhaka</p>
+    <p>Researcher, BNIRA Lab, KUET</p>
+    <p>RA, Ulster University, UK</p>
+    <p>Dhaka, Bangladesh</p>
     <p><a href="mailto:sourav.basak.kuet.bme@gmail.com">sourav.basak.kuet.bme@gmail.com</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
