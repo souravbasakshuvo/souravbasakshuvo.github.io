@@ -85,33 +85,24 @@ Outside the lab, I served as **President of the Advanced Bioengineering Club (AB
   </div>
 </div>
 
-Outside research, I enjoy building biomedical prototypes — past projects include a brain tumor segmentation system, a telemedicine application (MediConnect), and VitaSync, a smart band for vital metrics monitoring.
-
 ## Research Interests
 
-- Medical Image Analysis
-  - Segmentation, Classification, Detection
-  - Surgical Scene Understanding
-- Deep Learning Architectures
-  - Transformer & Attention Mechanisms
-  - Hybrid CNN-Transformer Models
-- Generative Models
-  - GANs, Diffusion Models
-  - Synthetic Data Generation
-- Multimodal Learning
-  - PET-CT Fusion
-  - Cross-modal Feature Alignment
-- Explainable AI (XAI)
-  - Grad-CAM, Saliency Maps
-- Few-Shot & Meta-Learning
-  - MAML, Prototypical Networks
-- Natural Language Processing (NLP)
-  - Biomedical Text Mining
-  - Large Language Models in Healthcare
-- Neuroengineering & Brain-Computer Interfaces
+- **Neuroengineering & Brain-Computer Interfaces**
   - EEG-based Disease Classification & Brain Region Localization
   - Parkinson's Disease, Alzheimer's Disease, Epilepsy, Traumatic Brain Injury
-- Bioinformatics
-  - Differentially Expressed Gene (DEG) Analysis
-  - Protein-Protein Interaction & Regulatory Networks
+- **Medical Image Analysis**
+  - Segmentation, Classification, Detection
+- **Deep Learning Architectures**
+  - Hybrid CNN-Transformer & Attention Mechanisms
+  - Generative Models (GANs, Diffusion Models)
+- **Multimodal & Few-Shot Learning**
+  - PET-CT Fusion, Cross-modal Feature Alignment
+  - MAML, Domain Adaptation
+- **Explainable AI (XAI)**
+  - Grad-CAM, Saliency Maps
+- **Large Language Models in Healthcare**
+  - Biomedical Reasoning & Disease Diagnosis
+- **Bioimpedance & Biosensing**
+- **Bioinformatics**
+  - DEG Analysis, Protein-Protein Interaction Networks
   - Drug Enrichment & Therapeutic Target Identification
