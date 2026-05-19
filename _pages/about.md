@@ -4,9 +4,9 @@ title: About
 permalink: /
 nav_order: 1
 subtitle: >
-  BMPT MS Student, <a href="https://www.du.ac.bd/" target="_blank">DU</a> ·
-  Researcher, <a href="https://bniralab.github.io/" target="_blank">BNIRA Lab</a> ·
-  RA @ <a href="https://www.ulster.ac.uk/" target="_blank">Ulster University</a>
+  BMPT MS Student, <a href="https://www.du.ac.bd/" target="_blank">DU</a> |
+  Researcher, <a href="https://bniralab.github.io/" target="_blank">BNIRA Lab</a>, <a href="https://www.kuet.ac.bd/" target="_blank">KUET</a> |
+  RA, <a href="https://www.ulster.ac.uk/" target="_blank">Ulster University</a>
 
 profile:
   align: right
@@ -39,11 +39,11 @@ I am a **Biomedical Physics MS Student** at the [Department of Biomedical Physic
 
 Before joining DU, I completed my **B.Sc. in Biomedical Engineering** from [KUET](https://www.kuet.ac.bd/) in February 2024, where I received **three Dean's Awards** and a **technical scholarship** for academic excellence and active participation in extracurricular activities.
 
-My research focuses on classical and deep learning approaches for **multi-modal medical image analysis** — spanning segmentation, classification, 3D reconstruction, registration, domain adaptation, and disease detection. I am particularly interested in building systems that are not only accurate, but interpretable and deployable in real-world clinical settings.
+My research focuses on classical and deep learning approaches for **multi-modal medical image analysis**, spanning segmentation, classification, 3D reconstruction, registration, domain adaptation, and disease detection. I am particularly interested in building systems that are not only accurate but interpretable and deployable in real-world clinical settings.
 
 My undergraduate thesis proposed a hybrid framework combining **parallel transfer learning**, **multi-model feature fusion**, and **LSTM networks** for gallbladder cancer classification, achieving **99.37% accuracy**. Since then, I have contributed to research on cervical cancer detection (published in *Results in Engineering*, Q1), molecular interaction networks across multiple cancer types, and vision-language frameworks for medical reasoning.
 
-Beyond research, my project experience spans brain tumor segmentation using MATLAB, [MediConnect](/projects/mediconnect/) — a secure telemedicine video conferencing application, [VitaSync](/projects/vitasync/) — a smart band for real-time vital metrics monitoring, and an automated sanitary napkin vending machine that secured **2nd Runner-Up** at the Intra-University Innovative Idea & Project Competition 2022. I also served as a **Student Operator at the Fabrication Lab, KUET**, assisting students with 3D printing, laser cutting, and CNC milling.
+In addition to research and academics, my project experience includes brain tumor segmentation using MATLAB, [MediConnect](/projects/mediconnect/) for secure telemedicine video conferencing, [VitaSync](/projects/vitasync/), a smart band for real-time vital metrics monitoring, and an automated sanitary napkin vending machine that secured **2nd Runner-Up** at the Intra-University Innovative Idea and Project Competition 2022. I also served as a **Student Operator at the Fabrication Lab, KUET**, assisting students with 3D printing, laser cutting, and CNC milling.
 
 My technical stack includes **MATLAB, Python** (PyTorch, TensorFlow, Keras), and **C/C++**, alongside simulation and design tools such as NI Multisim, Arduino, Simulink, SOLIDWORKS, AutoCAD, and COMSOL Multiphysics. I am also proficient in LaTeX, MS Office, and creative tools including Adobe Photoshop, Illustrator, and Premiere Pro.
 
