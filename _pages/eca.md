@@ -4,6 +4,8 @@ title: ECA
 permalink: /eca/
 nav: true
 nav_order: 8
+images:
+  lightbox2: true
 ---
 
 ## Leadership & Management
@@ -19,7 +21,9 @@ nav_order: 8
     <li>Directed the Inter-University Case Study Competition, engaging 240 teams from 45 universities, securing sponsors like Bank Asia PLC, Abul Khair Group, Coca-Cola, and 10 Minute School, and distributing a prize pool of over BDT 100,000 while driving 300,000+ audience interactions.</li>
   </ul>
   <div style="margin-top:12px;">
-    <img src="/assets/img/eca/spectrum_casespecs_1.jpg" alt="Spectrum CaseSpecs Competition" style="width:100%; border-radius:8px;">
+    <a href="/assets/img/eca/spectrum_casespecs_1.jpg" data-lightbox="spectrum-casespecs" data-title="Spectrum CaseSpecs Competition">
+      <img src="/assets/img/eca/spectrum_casespecs_1.jpg" alt="Spectrum CaseSpecs Competition" style="width:100%; border-radius:8px;">
+    </a>
   </div>
 </div>
 
@@ -56,10 +60,18 @@ nav_order: 8
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
   <strong>University Day Project Showcasing</strong>
-  <p style="margin:6px 0 0 0; color:gray; font-style:italic; font-size:0.9em;">Details to be updated</p>
+  <p style="margin:6px 0 4px 0;"><strong>Date:</strong> September 1, 2023</p>
+  <p style="margin:0 0 4px 0;"><strong>Organizer:</strong> Khulna University of Engineering & Technology (KUET)</p>
+  <p style="margin:0 0 4px 0;"><strong>Description:</strong> Participated in the University Day Project Competition representing the Department of Biomedical Engineering, alongside team members Md. Borhan Kobir Pias, S.M. Amanul Haque, and Siddika Tamanna Islam. Received a Certificate of Appreciation for participation.</p>
   <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:12px;">
-    <img src="/assets/img/eca/eca_univ_day_1.jpeg" alt="University Day Project Showcasing" style="width:100%; border-radius:8px;">
-    <img src="/assets/img/eca/eca_univ_day_2.jpeg" alt="University Day Project Showcasing" style="width:100%; border-radius:8px;">
-    <img src="/assets/img/eca/eca_univ_day_3.jpeg" alt="University Day Project Showcasing" style="width:100%; border-radius:8px;">
+    <a href="/assets/img/eca/eca_univ_day_1.jpeg" data-lightbox="univ-day-2023" data-title="University Day Project Showcasing — Photo 1">
+      <img src="/assets/img/eca/eca_univ_day_1.jpeg" alt="University Day Project Showcasing" style="width:100%; border-radius:8px;">
+    </a>
+    <a href="/assets/img/eca/eca_univ_day_2.jpeg" data-lightbox="univ-day-2023" data-title="University Day Project Showcasing — Photo 2">
+      <img src="/assets/img/eca/eca_univ_day_2.jpeg" alt="University Day Project Showcasing" style="width:100%; border-radius:8px;">
+    </a>
+    <a href="/assets/img/eca/eca_univ_day_3.jpeg" data-lightbox="univ-day-2023" data-title="University Day Project Showcasing — Photo 3">
+      <img src="/assets/img/eca/eca_univ_day_3.jpeg" alt="University Day Project Showcasing" style="width:100%; border-radius:8px;">
+    </a>
   </div>
 </div>

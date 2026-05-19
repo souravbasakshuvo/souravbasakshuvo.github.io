@@ -67,8 +67,6 @@ nav_order: 3
 
 ## Presentations
 
-### Oral Presentations
-
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
   <p style="font-size:1.1em; font-weight:bold; margin-bottom:4px;">Classification of Gallbladder Cancer Using Average Ensemble Learning</p>
   <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Oral Presentation · ICEEICT 2024</p>
@@ -82,8 +80,6 @@ nav_order: 3
   <p style="margin-bottom:4px;"><em>International Conference on Electrical Information and Communication Technology</em></p>
   <!-- Presentation Slide link: add later -->
 </div>
-
-### Poster Presentations
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
   <p style="font-size:1.1em; font-weight:bold; margin-bottom:4px;">Exploring Gene Network Interactions and Pathways in Three Cancers: Identifying Potential Therapeutic Targets and Drug Candidates</p>
