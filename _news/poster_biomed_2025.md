@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presented a poster on gene network interactions and pathways in three cancers at the <strong>1st National Conference of Research, Industry and Collaboration in Biomedical Engineering</strong>, hosted by Jashore University of Science &amp; Technology, Bangladesh.
+Presented a poster on **"Exploring Gene Network Interactions and Pathways in Three Cancers: Identifying Potential Therapeutic Targets and Drug Candidates"** at the **1st National Conference of Research, Industry and Collaboration in Biomedical Engineering**, organized by the Department of Biomedical Engineering, Jashore University of Science & Technology, Jashore, Bangladesh.
