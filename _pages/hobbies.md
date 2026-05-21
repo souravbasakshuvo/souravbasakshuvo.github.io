@@ -44,11 +44,11 @@ nav: false
 </div>
 
 <div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;font-size:0.85em;">
-  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#3a7bd5;margin-right:5px;vertical-align:middle;"></span>Visited</span>
-  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#c8d6e0;margin-right:5px;vertical-align:middle;"></span>Not yet visited</span>
+  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited</span>
+  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#e9f0e6;margin-right:5px;vertical-align:middle;"></span>Not yet visited — click to identify</span>
 </div>
 
-<div id="bd-map" style="background:#dce9f5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
+<div id="bd-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
 
 <div id="district-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="dp-name" style="font-size:1.1em;font-weight:bold;"></div>
@@ -117,9 +117,11 @@ nav: false
   function showPanel(name) {
     document.getElementById('dp-name').textContent = name;
     document.getElementById('dp-div').textContent = divisionMap[name] || '';
-    document.getElementById('dp-spots').innerHTML = spots[name].map(function (s) {
-      return '<span style="background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:20px;padding:3px 10px;font-size:0.82em;margin:3px;display:inline-block;">' + s + '</span>';
-    }).join('');
+    document.getElementById('dp-spots').innerHTML = spots[name]
+      ? spots[name].map(function (s) {
+          return '<span style="background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:20px;padding:3px 10px;font-size:0.82em;margin:3px;display:inline-block;">' + s + '</span>';
+        }).join('')
+      : '<span style="font-size:0.85em;font-style:italic;color:var(--global-text-color);">Not yet visited — no places logged.</span>';
     document.getElementById('district-panel').style.display = 'block';
   }
 
@@ -145,21 +147,24 @@ nav: false
         .append('path')
         .attr('d', pathGen)
         .attr('fill', function (d) {
-          return spots[getName(d.properties)] ? '#3a7bd5' : '#c8d6e0';
+          return spots[getName(d.properties)] ? '#2a9d8f' : '#e9f0e6';
         })
         .attr('stroke', '#ffffff')
         .attr('stroke-width', 0.8)
-        .style('cursor', function (d) {
-          return spots[getName(d.properties)] ? 'pointer' : 'default';
+        .style('cursor', 'pointer')
+        .on('mouseover', function () {
+          d3.select(this).style('opacity', 0.8);
+        })
+        .on('mouseout', function () {
+          d3.select(this).style('opacity', 1);
         })
         .on('click', function (event, d) {
           var name = getName(d.properties);
-          if (!spots[name]) return;
           if (selectedPath) {
             d3.select(selectedPath).attr('stroke', '#ffffff').attr('stroke-width', 0.8);
           }
           selectedPath = this;
-          d3.select(this).attr('stroke', '#1a1a1a').attr('stroke-width', 1.8);
+          d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 2);
           showPanel(name);
         });
 
