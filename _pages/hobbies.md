@@ -56,7 +56,7 @@ nav: false
   <div id="bd-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Not yet visited
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
   </div>
 </div>
 
@@ -81,7 +81,7 @@ nav: false
   <div id="india-map" style="height:600px;min-height:600px;background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Not yet visited
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
   </div>
 </div>
 
@@ -105,7 +105,7 @@ nav: false
   <div id="world-map" style="height:460px;min-height:460px;background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Not yet visited
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
   </div>
 </div>
 
@@ -185,7 +185,7 @@ nav: false
       ? bdSpots[name].map(function (s) {
           return '<span style="background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:20px;padding:3px 10px;font-size:0.88em;margin:3px;display:inline-block;">' + s + '</span>';
         }).join('')
-      : '<span style="font-size:0.92em;font-style:italic;color:var(--global-text-color);">Not yet visited — no places logged.</span>';
+      : '<span style="font-size:0.92em;font-style:italic;color:var(--global-text-color);">Yet to be visited — no places logged.</span>';
     document.getElementById('district-panel').style.display = 'block';
   }
 
@@ -241,7 +241,7 @@ nav: false
       ? indiaSpots[name].spots.map(function (s) {
           return '<span style="background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:20px;padding:3px 10px;font-size:0.88em;margin:3px;display:inline-block;">' + s + '</span>';
         }).join('')
-      : '<span style="font-size:0.92em;font-style:italic;color:var(--global-text-color);">Not yet visited — no places logged.</span>';
+      : '<span style="font-size:0.92em;font-style:italic;color:var(--global-text-color);">Yet to be visited — no places logged.</span>';
     document.getElementById('india-panel').style.display = 'block';
   }
 
@@ -305,7 +305,7 @@ nav: false
       }).join('');
     } else {
       label = '';
-      html = '<span style="font-size:0.92em;font-style:italic;color:var(--global-text-color);">Not yet visited.</span>';
+      html = '<span style="font-size:0.92em;font-style:italic;color:var(--global-text-color);">Yet to be visited.</span>';
     }
     document.getElementById('wp-label').textContent = label;
     document.getElementById('wp-spots').innerHTML = html;
