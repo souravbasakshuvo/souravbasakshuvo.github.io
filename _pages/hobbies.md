@@ -78,7 +78,7 @@ nav: false
 </div>
 
 <div style="position:relative;margin-bottom:10px;">
-  <div id="india-map" style="height:600px;min-height:600px;background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;"></div>
+  <div id="india-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
@@ -102,7 +102,7 @@ nav: false
 </div>
 
 <div style="position:relative;margin-bottom:10px;">
-  <div id="world-map" style="height:460px;min-height:460px;background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;"></div>
+  <div id="world-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
@@ -248,8 +248,9 @@ nav: false
   function initIndiaMap() {
     indiaMapInited = true;
     var container = document.getElementById('india-map');
-    var W = container.offsetWidth || container.clientWidth || 680;
-    var H = 600;
+    var W = container.offsetWidth || 680;
+    var H = Math.round(W * 1.35);
+    container.style.height = H + 'px';
     var svg = d3.select('#india-map').append('svg')
       .attr('width', '100%')
       .attr('height', H)
@@ -259,7 +260,7 @@ nav: false
     var pathGen = d3.geoPath().projection(projection);
     var sel = null;
     d3.json('/assets/geojson/india-states.json').then(function (geojson) {
-      projection.fitExtent([[20,20],[W-20,580]], geojson);
+      projection.fitExtent([[20,20],[W-20,H-20]], geojson);
       var paths = svg.selectAll('path')
         .data(geojson.features).enter().append('path')
         .attr('d', pathGen)
@@ -315,23 +316,23 @@ nav: false
   function initWorldMap() {
     worldMapInited = true;
     var container = document.getElementById('world-map');
-    var W = container.offsetWidth || container.clientWidth || 680;
-    var H = 460;
+    var W = container.offsetWidth || 680;
+    var H = Math.round(W * 0.56);
+    container.style.height = H + 'px';
     var svg = d3.select('#world-map').append('svg')
       .attr('width', '100%')
       .attr('height', H)
       .attr('viewBox', '0 0 ' + W + ' ' + H)
       .style('display', 'block');
-    var projection = d3.geoNaturalEarth1()
-      .scale(W / 6.5)
-      .translate([W / 2, H / 1.9]);
-    var pathGen = d3.geoPath().projection(projection);
+    var pathGen = d3.geoPath();
     var sel = null;
     d3.json('/assets/geojson/world-countries.json').then(function (geojson) {
       geojson.features = geojson.features.filter(function (f) {
         var n = f.properties.name || f.properties.NAME || f.properties.NAME_LONG || '';
         return n !== 'Antarctica';
       });
+      var projection = d3.geoNaturalEarth1().fitExtent([[10,10],[W-10,H-10]], geojson);
+      pathGen.projection(projection);
       var paths = svg.selectAll('path')
         .data(geojson.features).enter().append('path')
         .attr('d', pathGen)
