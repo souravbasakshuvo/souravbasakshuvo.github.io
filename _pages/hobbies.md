@@ -201,15 +201,15 @@ nav: false
         .data(geojson.features).enter().append('path')
         .attr('d', path)
         .attr('fill', function (d) { return bdSpots[getBdName(d.properties)] ? '#2a9d8f' : '#e9f0e6'; })
-        .attr('stroke', '#5a8a85').attr('stroke-width', 1)
+        .attr('stroke', '#ffffff').attr('stroke-width', 0.8)
         .style('cursor', 'pointer')
         .on('mouseover', function () { d3.select(this).style('opacity', 0.8); })
         .on('mouseout',  function () { d3.select(this).style('opacity', 1); })
         .on('click', function (event, d) {
           var name = getBdName(d.properties);
-          if (bdSelected) d3.select(bdSelected).attr('stroke', '#5a8a85').attr('stroke-width', 1);
+          if (bdSelected) d3.select(bdSelected).attr('stroke', '#ffffff').attr('stroke-width', 0.8);
           bdSelected = this;
-          d3.select(this).attr('stroke', '#1a3c38').attr('stroke-width', 2.5);
+          d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 2);
           showDistrictPanel(name);
         });
       paths.append('title').text(function (d) { return getBdName(d.properties); });
