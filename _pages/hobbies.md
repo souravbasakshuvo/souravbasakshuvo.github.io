@@ -204,18 +204,8 @@ nav: false
     .attr('viewBox', '0 0 ' + bdW + ' ' + bdH);
   var bdSelected = null;
 
-  Promise.all([
-    d3.json('/assets/geojson/bd-districts.json').catch(function() { return null; }),
-    d3.json('/assets/geojson/bangladesh.geo.json').catch(function() { return null; })
-  ]).then(function(results) {
-    var a = results[0], b = results[1];
-    if (!a && !b) {
-      bdSvg.append('text').attr('x', bdW / 2).attr('y', bdH / 2)
-        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
-        .attr('fill', '#666').text('Map unavailable');
-      return;
-    }
-    var geojson = (!a) ? b : (!b) ? a : (b.features && b.features.length > a.features.length) ? b : a;
+  d3.json('/assets/geojson/bd-districts.json')
+    .then(function(geojson) {
     var proj = d3.geoMercator().fitSize([bdW, bdH], geojson);
     var path = d3.geoPath().projection(proj);
     var paths = bdSvg.selectAll('path')
@@ -262,7 +252,12 @@ nav: false
       .style('cursor','pointer')
       .style('color','var(--global-text-color)')
       .on('click', function() { bdSvg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); });
-  });
+    })
+    .catch(function() {
+      bdSvg.append('text').attr('x', bdW / 2).attr('y', bdH / 2)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('fill', '#666').text('Map unavailable');
+    });
 
   // ── India ──────────────────────────────────────────────────────────────────
 
@@ -299,18 +294,8 @@ nav: false
     var projection = d3.geoMercator();
     var pathGen = d3.geoPath().projection(projection);
     var sel = null;
-    Promise.all([
-      d3.json('/assets/geojson/india-states.json').catch(function() { return null; }),
-      d3.json('/assets/geojson/india.geo.json').catch(function() { return null; })
-    ]).then(function(results) {
-      var a = results[0], b = results[1];
-      if (!a && !b) {
-        svg.append('text').attr('x', W / 2).attr('y', H / 2)
-          .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
-          .attr('fill', '#888').attr('font-size', 13).text('Map unavailable');
-        return;
-      }
-      var geojson = (!a) ? b : (!b) ? a : (b.features && b.features.length > a.features.length) ? b : a;
+    d3.json('/assets/geojson/india-states.json')
+      .then(function(geojson) {
       projection.fitExtent([[20,20],[W-20,H-20]], geojson);
       var paths = svg.selectAll('path')
         .data(geojson.features).enter().append('path')
@@ -359,7 +344,12 @@ nav: false
         .style('cursor','pointer')
         .style('color','var(--global-text-color)')
         .on('click', function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); });
-    });
+      })
+      .catch(function() {
+        svg.append('text').attr('x', W / 2).attr('y', H / 2)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+          .attr('fill', '#888').attr('font-size', 13).text('Map unavailable');
+      });
   }
 
   // ── World ──────────────────────────────────────────────────────────────────
@@ -404,20 +394,23 @@ nav: false
       .style('display', 'block');
     var pathGen = d3.geoPath();
     var sel = null;
-    var continentFiles = [
-      '/assets/geojson/asia.geo.json',
-      '/assets/geojson/europe.geo.json',
-      '/assets/geojson/south_america.geo.json',
-      '/assets/geojson/north_america.geo.json',
-      '/assets/geojson/africa.geo.json',
-      '/assets/geojson/oceania.geo.json'
-    ];
-    Promise.all(continentFiles.map(function(f) { return d3.json(f).catch(function() { return null; }); }))
-      .then(function(results) {
-        var merged = { type: 'FeatureCollection', features: [] };
-        results.forEach(function(r) { if (r && r.features) merged.features = merged.features.concat(r.features); });
-        if (merged.features.length > 0) return merged;
-        return d3.json('/assets/geojson/world-countries.json');
+    d3.json('/assets/geojson/world_map.geo.json')
+      .catch(function() {
+        var continentFiles = [
+          '/assets/geojson/asia.geo.json',
+          '/assets/geojson/europe.geo.json',
+          '/assets/geojson/south_america.geo.json',
+          '/assets/geojson/north_america.geo.json',
+          '/assets/geojson/africa.geo.json',
+          '/assets/geojson/oceania.geo.json'
+        ];
+        return Promise.all(continentFiles.map(function(f) { return d3.json(f).catch(function() { return null; }); }))
+          .then(function(results) {
+            var merged = { type: 'FeatureCollection', features: [] };
+            results.forEach(function(r) { if (r && r.features) merged.features = merged.features.concat(r.features); });
+            if (merged.features.length > 0) return merged;
+            return d3.json('/assets/geojson/world-countries.json');
+          });
       })
       .then(function(geojson) {
         geojson.features = geojson.features.filter(function(f) {
