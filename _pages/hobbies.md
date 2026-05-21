@@ -679,8 +679,9 @@ nav: false
         if (filterAnt) {
           geojson.features = geojson.features.filter(function(f) { return getName(f.properties) !== 'Antarctica'; });
         }
+        console.log(tabId + ' loaded', geojson.features.length, 'features');
         var projection = projType === 'mercator'
-          ? d3.geoMercator().fitExtent([[20, 20], [W - 20, H - 20]], geojson)
+          ? d3.geoMercator().fitSize([W, H], geojson)
           : d3.geoNaturalEarth1().fitExtent([[10, 10], [W - 10, H - 10]], geojson);
         pathGen.projection(projection);
         var paths = svg.selectAll('path')
@@ -719,7 +720,8 @@ nav: false
         document.getElementById(tabId + '-zoom-out').onclick   = function() { svg.transition().duration(300).call(zoom.scaleBy, 0.67); };
         document.getElementById(tabId + '-zoom-reset').onclick = function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
       })
-      .catch(function() {
+      .catch(function(err) {
+        console.error(tabId + ' map failed:', err);
         svg.append('text').attr('x', W / 2).attr('y', H / 2)
           .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
           .attr('fill', '#888').attr('font-size', 13).text('Map unavailable');
