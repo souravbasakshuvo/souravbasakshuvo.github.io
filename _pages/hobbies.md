@@ -68,6 +68,12 @@ nav: false
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+      <button id="bd-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+      <button id="bd-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+      <button id="bd-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+    </div>
+    <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
   </div>
 </div>
 <div id="district-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -92,6 +98,12 @@ nav: false
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+      <button id="india-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+      <button id="india-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+      <button id="india-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+    </div>
+    <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
   </div>
 </div>
 <div id="india-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -115,6 +127,12 @@ nav: false
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+      <button id="world-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+      <button id="world-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+      <button id="world-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+    </div>
+    <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
   </div>
 </div>
 <div id="world-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -132,6 +150,12 @@ nav: false
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+        <button id="bd2-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+        <button id="bd2-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+        <button id="bd2-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+      </div>
+      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
     </div>
   </div>
   <div id="bd2-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -146,6 +170,12 @@ nav: false
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+        <button id="india2-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+        <button id="india2-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+        <button id="india2-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+      </div>
+      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
     </div>
   </div>
   <div id="india2-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -160,6 +190,12 @@ nav: false
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+        <button id="world2-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+        <button id="world2-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+        <button id="world2-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+      </div>
+      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
     </div>
   </div>
   <div id="world2-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -174,6 +210,12 @@ nav: false
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+        <button id="africa-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+        <button id="africa-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+        <button id="africa-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+      </div>
+      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
     </div>
   </div>
   <div id="africa-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -188,6 +230,12 @@ nav: false
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+        <button id="asia-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+        <button id="asia-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+        <button id="asia-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+      </div>
+      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
     </div>
   </div>
   <div id="asia-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -202,6 +250,12 @@ nav: false
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+        <button id="namerica-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+        <button id="namerica-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+        <button id="namerica-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+      </div>
+      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
     </div>
   </div>
   <div id="namerica-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -216,6 +270,12 @@ nav: false
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+        <button id="samerica-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+        <button id="samerica-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+        <button id="samerica-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+      </div>
+      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
     </div>
   </div>
   <div id="samerica-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -230,6 +290,12 @@ nav: false
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+        <button id="europe-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+        <button id="europe-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+        <button id="europe-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+      </div>
+      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
     </div>
   </div>
   <div id="europe-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -244,6 +310,12 @@ nav: false
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
+        <button id="oceania-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
+        <button id="oceania-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
+        <button id="oceania-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
+      </div>
+      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
     </div>
   </div>
   <div id="oceania-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -273,7 +345,7 @@ nav: false
     "Bandarban":   ["Nilgiri Hill","Boga Lake","Chimbuk Hill","Golden Temple (Swarna Muri)","Nafakhum Waterfall","Shoilo Propat","Sangu River"],
     "Chittagong":  ["Patenga Beach","Foy's Lake","Chandranath Hill","Sitakunda Eco Park","Ethnological Museum","Bangabandhu Safari Park","War Cemetery"],
     "Cox's Bazar": ["Cox's Bazar Beach (World's Longest)","Inani Beach","Himchari National Park","Maheshkhali Island","Saint Martin's Island","Laboni Beach"],
-    "Khagrachari": ["Alutila Cave","Richhang Waterfall","Marishya River Valley","Tribal Culture Museum","Parjatan Hill Resort"],
+    "Khagrachari": ["Alutila Cave","Richhang Waterfall","Marishya River Valley","Dighinala","Tribal Culture Museum","Parjatan Hill Resort"],
     "Rangamati":   ["Kaptai Lake","Shuvolong Waterfall","Rajban Vihara","Hanging Bridge","Tribal Cultural Institute Museum","Kaptai Dam"],
     "Dhaka":       ["Lalbagh Fort","Ahsan Manzil (Pink Palace)","Star Mosque","National Museum","Liberation War Museum","Sonargaon (Panam City)","Dhakeshwari Temple"],
     "Kishoreganj": ["Sholakia Eidgah (Largest in Bangladesh)","Egaro Sindhu","Ashtagram Haor","Nikli Haor","Jangalbari Fort"],
@@ -326,8 +398,9 @@ nav: false
   }
 
   var bdContainer = document.getElementById('bd-map');
-  var bdW = bdContainer.clientWidth || 620;
-  var bdH = Math.round(bdW * 1.1);
+  var bdW = Math.round((bdContainer.offsetWidth || 620) * 0.85);
+  var bdH = Math.round(bdW * 1.2);
+  bdContainer.style.height = bdH + 'px';
   var bdSvg = d3.select('#bd-map').append('svg')
     .attr('width', '100%')
     .attr('viewBox', '0 0 ' + bdW + ' ' + bdH);
@@ -363,24 +436,17 @@ nav: false
     paths.append('title').text(function (d) { return getBdName(d.properties); });
     var zoom = d3.zoom()
       .scaleExtent([1, 8])
+      .filter(function(event) {
+        if (event.type === 'wheel') return event.ctrlKey;
+        return true;
+      })
       .on('zoom', function(event) {
         bdSvg.selectAll('path').attr('transform', event.transform);
       });
     bdSvg.call(zoom);
-    d3.select('#bd-map-container').insert('button', ':first-child')
-      .text('Reset zoom')
-      .style('position','absolute')
-      .style('bottom','10px')
-      .style('left','10px')
-      .style('z-index','10')
-      .style('background','var(--global-card-bg-color)')
-      .style('border','1px solid var(--global-divider-color)')
-      .style('border-radius','6px')
-      .style('padding','4px 10px')
-      .style('font-size','0.8em')
-      .style('cursor','pointer')
-      .style('color','var(--global-text-color)')
-      .on('click', function() { bdSvg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); });
+    document.getElementById('bd-zoom-in').onclick    = function() { bdSvg.transition().duration(300).call(zoom.scaleBy, 1.5); };
+    document.getElementById('bd-zoom-out').onclick   = function() { bdSvg.transition().duration(300).call(zoom.scaleBy, 0.67); };
+    document.getElementById('bd-zoom-reset').onclick = function() { bdSvg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
     })
     .catch(function() {
       bdSvg.append('text').attr('x', bdW / 2).attr('y', bdH / 2)
@@ -413,7 +479,7 @@ nav: false
     indiaMapInited = true;
     var container = document.getElementById('india-map');
     var W = container.offsetWidth || 680;
-    var H = Math.round(W * 1.35);
+    var H = Math.round(W * 0.85);
     container.style.height = H + 'px';
     var svg = d3.select('#india-map').append('svg')
       .attr('width', '100%')
@@ -455,24 +521,17 @@ nav: false
       paths.append('title').text(function (d) { return d.properties.st_nm || d.properties.NAME_1 || d.properties.name || d.properties.STATE || ''; });
       var zoom = d3.zoom()
         .scaleExtent([1, 8])
+        .filter(function(event) {
+          if (event.type === 'wheel') return event.ctrlKey;
+          return true;
+        })
         .on('zoom', function(event) {
           svg.selectAll('path').attr('transform', event.transform);
         });
       svg.call(zoom);
-      d3.select('#india-map-container').insert('button', ':first-child')
-        .text('Reset zoom')
-        .style('position','absolute')
-        .style('bottom','10px')
-        .style('left','10px')
-        .style('z-index','10')
-        .style('background','var(--global-card-bg-color)')
-        .style('border','1px solid var(--global-divider-color)')
-        .style('border-radius','6px')
-        .style('padding','4px 10px')
-        .style('font-size','0.8em')
-        .style('cursor','pointer')
-        .style('color','var(--global-text-color)')
-        .on('click', function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); });
+      document.getElementById('india-zoom-in').onclick    = function() { svg.transition().duration(300).call(zoom.scaleBy, 1.5); };
+      document.getElementById('india-zoom-out').onclick   = function() { svg.transition().duration(300).call(zoom.scaleBy, 0.67); };
+      document.getElementById('india-zoom-reset').onclick = function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
       })
       .catch(function() {
         svg.append('text').attr('x', W / 2).attr('y', H / 2)
@@ -575,24 +634,17 @@ nav: false
         paths.append('title').text(function (d) { return d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || ''; });
         var zoom = d3.zoom()
           .scaleExtent([1, 8])
+          .filter(function(event) {
+            if (event.type === 'wheel') return event.ctrlKey;
+            return true;
+          })
           .on('zoom', function(event) {
             svg.selectAll('path').attr('transform', event.transform);
           });
         svg.call(zoom);
-        d3.select('#world-map-container').insert('button', ':first-child')
-          .text('Reset zoom')
-          .style('position','absolute')
-          .style('bottom','10px')
-          .style('left','10px')
-          .style('z-index','10')
-          .style('background','var(--global-card-bg-color)')
-          .style('border','1px solid var(--global-divider-color)')
-          .style('border-radius','6px')
-          .style('padding','4px 10px')
-          .style('font-size','0.8em')
-          .style('cursor','pointer')
-          .style('color','var(--global-text-color)')
-          .on('click', function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); });
+        document.getElementById('world-zoom-in').onclick    = function() { svg.transition().duration(300).call(zoom.scaleBy, 1.5); };
+        document.getElementById('world-zoom-out').onclick   = function() { svg.transition().duration(300).call(zoom.scaleBy, 0.67); };
+        document.getElementById('world-zoom-reset').onclick = function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
       })
       .catch(function () {
         svg.append('text').attr('x', W / 2).attr('y', H / 2)
@@ -656,16 +708,15 @@ nav: false
           });
         paths.append('title').text(function(d) { return getName(d.properties); });
         var zoom = d3.zoom().scaleExtent([1, 8])
+          .filter(function(event) {
+            if (event.type === 'wheel') return event.ctrlKey;
+            return true;
+          })
           .on('zoom', function(event) { svg.selectAll('path').attr('transform', event.transform); });
         svg.call(zoom);
-        d3.select('#' + containerId).insert('button', ':first-child')
-          .text('Reset zoom')
-          .style('position', 'absolute').style('bottom', '10px').style('left', '10px')
-          .style('z-index', '10').style('background', 'var(--global-card-bg-color)')
-          .style('border', '1px solid var(--global-divider-color)').style('border-radius', '6px')
-          .style('padding', '4px 10px').style('font-size', '0.8em').style('cursor', 'pointer')
-          .style('color', 'var(--global-text-color)')
-          .on('click', function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); });
+        document.getElementById(tabId + '-zoom-in').onclick    = function() { svg.transition().duration(300).call(zoom.scaleBy, 1.5); };
+        document.getElementById(tabId + '-zoom-out').onclick   = function() { svg.transition().duration(300).call(zoom.scaleBy, 0.67); };
+        document.getElementById(tabId + '-zoom-reset').onclick = function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
       })
       .catch(function() {
         svg.append('text').attr('x', W / 2).attr('y', H / 2)
