@@ -52,12 +52,13 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">7 / 8 divisions covered</span>
 </div>
 
-<div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;font-size:0.85em;">
-  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited</span>
-  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#e9f0e6;margin-right:5px;vertical-align:middle;"></span>Not yet visited — click to identify</span>
+<div style="position:relative;margin-bottom:10px;">
+  <div id="bd-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
+  <div style="position:absolute;top:10px;right:10px;background:rgba(255,255,255,0.85);border-radius:8px;padding:6px 10px;font-size:0.78em;line-height:1.8;z-index:10;">
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Not yet visited
+  </div>
 </div>
-
-<div id="bd-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
 
 <div id="district-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="dp-name" style="font-size:1.1em;font-weight:bold;"></div>
@@ -71,16 +72,18 @@ nav: false
 <div id="panel-india" style="display:none;">
 
 <div style="margin-bottom:10px;">
-  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">4 visited states</span>
-  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">1 trip</span>
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">4 / 28 states visited</span>
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">4 cities visited</span>
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">3 trips</span>
 </div>
 
-<div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;font-size:0.85em;">
-  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited</span>
-  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#e9f0e6;margin-right:5px;vertical-align:middle;"></span>Not yet visited</span>
+<div style="position:relative;margin-bottom:10px;">
+  <div id="india-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;height:560px;"></div>
+  <div style="position:absolute;top:10px;right:10px;background:rgba(255,255,255,0.85);border-radius:8px;padding:6px 10px;font-size:0.78em;line-height:1.8;z-index:10;">
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Not yet visited
+  </div>
 </div>
-
-<div id="india-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
 
 <div id="india-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="ip-name" style="font-size:1.1em;font-weight:bold;margin-bottom:8px;"></div>
@@ -97,13 +100,14 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">14 on the wishlist</span>
 </div>
 
-<div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;font-size:0.85em;">
-  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited</span>
-  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#e9c46a;margin-right:5px;vertical-align:middle;"></span>Wishlist</span>
-  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#e9f0e6;margin-right:5px;vertical-align:middle;"></span>Not yet</span>
+<div style="position:relative;margin-bottom:10px;">
+  <div id="world-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
+  <div style="position:absolute;top:10px;right:10px;background:rgba(255,255,255,0.85);border-radius:8px;padding:6px 10px;font-size:0.78em;line-height:1.8;z-index:10;">
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9c46a;margin-right:5px;vertical-align:middle;"></span>Wishlist<br>
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Not yet
+  </div>
 </div>
-
-<div id="world-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
 
 <div id="world-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="wp-name" style="font-size:1.1em;font-weight:bold;"></div>
