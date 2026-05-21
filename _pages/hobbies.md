@@ -38,6 +38,15 @@ nav: false
 
 <h2>Travels</h2>
 
+<div id="travel-tabs" style="display:flex;gap:0;margin-bottom:16px;border-bottom:2px solid var(--global-divider-color);">
+  <button onclick="switchTab('bangladesh')" id="tab-bangladesh" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:0.95em;font-weight:bold;border-bottom:3px solid #2a9d8f;margin-bottom:-2px;color:#2a9d8f;">Bangladesh</button>
+  <button onclick="switchTab('india')" id="tab-india" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:0.95em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">India</button>
+  <button onclick="switchTab('world')" id="tab-world" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:0.95em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">World</button>
+</div>
+
+<!-- ── Bangladesh panel ────────────────────────────────────────────────────── -->
+<div id="panel-bangladesh">
+
 <div style="margin-bottom: 10px;">
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">26 / 64 districts visited</span>
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">7 / 8 divisions covered</span>
@@ -58,10 +67,61 @@ nav: false
 
 </div>
 
+<!-- ── India panel ─────────────────────────────────────────────────────────── -->
+<div id="panel-india" style="display:none;">
+
+<div style="margin-bottom:10px;">
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">4 visited states</span>
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">1 trip</span>
+</div>
+
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;font-size:0.85em;">
+  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited</span>
+  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#e9f0e6;margin-right:5px;vertical-align:middle;"></span>Not yet visited</span>
+</div>
+
+<div id="india-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
+
+<div id="india-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
+  <div id="ip-name" style="font-size:1.1em;font-weight:bold;margin-bottom:8px;"></div>
+  <div id="ip-spots"></div>
+</div>
+
+</div>
+
+<!-- ── World panel ─────────────────────────────────────────────────────────── -->
+<div id="panel-world" style="display:none;">
+
+<div style="margin-bottom:10px;">
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">2 countries visited</span>
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">14 on the wishlist</span>
+</div>
+
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;font-size:0.85em;">
+  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited</span>
+  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#e9c46a;margin-right:5px;vertical-align:middle;"></span>Wishlist</span>
+  <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#e9f0e6;margin-right:5px;vertical-align:middle;"></span>Not yet</span>
+</div>
+
+<div id="world-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
+
+<div id="world-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
+  <div id="wp-name" style="font-size:1.1em;font-weight:bold;"></div>
+  <div id="wp-label" style="font-size:0.85em;font-style:italic;margin-bottom:8px;"></div>
+  <div id="wp-spots"></div>
+</div>
+
+</div>
+
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script>
 (function () {
-  var aliases = {
+
+  // ── Bangladesh ─────────────────────────────────────────────────────────────
+
+  var bdAliases = {
     "Jashore":    "Jessore",
     "Chattogram": "Chittagong",
     "Coxsbazar":  "Cox's Bazar",
@@ -69,7 +129,7 @@ nav: false
     "Bogura":     "Bogra"
   };
 
-  var spots = {
+  var bdSpots = {
     "Bandarban":   ["Nilgiri Hill","Boga Lake","Chimbuk Hill","Golden Temple (Swarna Muri)","Nafakhum Waterfall","Shoilo Propat","Sangu River"],
     "Chittagong":  ["Patenga Beach","Foy's Lake","Chandranath Hill","Sitakunda Eco Park","Ethnological Museum","Bangabandhu Safari Park","War Cemetery"],
     "Cox's Bazar": ["Cox's Bazar Beach (World's Longest)","Inani Beach","Himchari National Park","Maheshkhali Island","Saint Martin's Island","Laboni Beach"],
@@ -109,75 +169,221 @@ nav: false
     "Barguna":"Barisal Division","Barisal":"Barisal Division","Bhola":"Barisal Division","Jhalokati":"Barisal Division","Patuakhali":"Barisal Division","Pirojpur":"Barisal Division"
   };
 
-  function getName(props) {
+  function getBdName(props) {
     var raw = props.ADM2_EN || props.NAME_2 || props.name || props.DISTRICT || '';
-    return aliases[raw] || raw;
+    return bdAliases[raw] || raw;
   }
 
-  function showPanel(name) {
+  function showDistrictPanel(name) {
     document.getElementById('dp-name').textContent = name;
     document.getElementById('dp-div').textContent = divisionMap[name] || '';
-    document.getElementById('dp-spots').innerHTML = spots[name]
-      ? spots[name].map(function (s) {
+    document.getElementById('dp-spots').innerHTML = bdSpots[name]
+      ? bdSpots[name].map(function (s) {
           return '<span style="background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:20px;padding:3px 10px;font-size:0.82em;margin:3px;display:inline-block;">' + s + '</span>';
         }).join('')
       : '<span style="font-size:0.85em;font-style:italic;color:var(--global-text-color);">Not yet visited — no places logged.</span>';
     document.getElementById('district-panel').style.display = 'block';
   }
 
-  var container = document.getElementById('bd-map');
-  var W = container.clientWidth || 620;
-  var H = Math.round(W * 1.1);
-
-  var svg = d3.select('#bd-map')
-    .append('svg')
+  var bdContainer = document.getElementById('bd-map');
+  var bdW = bdContainer.clientWidth || 620;
+  var bdH = Math.round(bdW * 1.1);
+  var bdSvg = d3.select('#bd-map').append('svg')
     .attr('width', '100%')
-    .attr('viewBox', '0 0 ' + W + ' ' + H);
-
-  var selectedPath = null;
+    .attr('viewBox', '0 0 ' + bdW + ' ' + bdH);
+  var bdSelected = null;
 
   d3.json('/assets/geojson/bd-districts.json')
     .then(function (geojson) {
-      var projection = d3.geoMercator().fitSize([W, H], geojson);
-      var pathGen = d3.geoPath().projection(projection);
-
-      var paths = svg.selectAll('path')
-        .data(geojson.features)
-        .enter()
-        .append('path')
-        .attr('d', pathGen)
-        .attr('fill', function (d) {
-          return spots[getName(d.properties)] ? '#2a9d8f' : '#e9f0e6';
-        })
-        .attr('stroke', '#ffffff')
-        .attr('stroke-width', 0.8)
+      var proj = d3.geoMercator().fitSize([bdW, bdH], geojson);
+      var path = d3.geoPath().projection(proj);
+      var paths = bdSvg.selectAll('path')
+        .data(geojson.features).enter().append('path')
+        .attr('d', path)
+        .attr('fill', function (d) { return bdSpots[getBdName(d.properties)] ? '#2a9d8f' : '#e9f0e6'; })
+        .attr('stroke', '#ffffff').attr('stroke-width', 0.8)
         .style('cursor', 'pointer')
-        .on('mouseover', function () {
-          d3.select(this).style('opacity', 0.8);
-        })
-        .on('mouseout', function () {
-          d3.select(this).style('opacity', 1);
-        })
+        .on('mouseover', function () { d3.select(this).style('opacity', 0.8); })
+        .on('mouseout',  function () { d3.select(this).style('opacity', 1); })
         .on('click', function (event, d) {
-          var name = getName(d.properties);
-          if (selectedPath) {
-            d3.select(selectedPath).attr('stroke', '#ffffff').attr('stroke-width', 0.8);
-          }
-          selectedPath = this;
+          var name = getBdName(d.properties);
+          if (bdSelected) d3.select(bdSelected).attr('stroke', '#ffffff').attr('stroke-width', 0.8);
+          bdSelected = this;
           d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 2);
-          showPanel(name);
+          showDistrictPanel(name);
         });
-
-      paths.append('title').text(function (d) { return getName(d.properties); });
+      paths.append('title').text(function (d) { return getBdName(d.properties); });
     })
     .catch(function () {
-      svg.append('text')
-        .attr('x', W / 2)
-        .attr('y', H / 2)
-        .attr('text-anchor', 'middle')
-        .attr('dominant-baseline', 'middle')
-        .attr('fill', '#666')
-        .text('Map unavailable');
+      bdSvg.append('text').attr('x', bdW / 2).attr('y', bdH / 2)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('fill', '#666').text('Map unavailable');
     });
+
+  // ── India ──────────────────────────────────────────────────────────────────
+
+  var indiaSpots = {
+    "Delhi":         {spots:["Red Fort (Lal Qila)","India Gate","Qutub Minar","Humayun's Tomb","Lotus Temple","Jama Masjid","Chandni Chowk","Akshardham"]},
+    "Rajasthan":     {spots:["Amber Fort (Jaipur)","Hawa Mahal","City Palace","Jantar Mantar","Nahargarh Fort","Jaigarh Fort","Albert Hall Museum","Jal Mahal"]},
+    "Uttar Pradesh": {spots:["Taj Mahal — Agra (UNESCO)","Agra Fort (UNESCO)","Fatehpur Sikri (UNESCO)","Itmad-ud-Daulah (Baby Taj)","Mehtab Bagh"]},
+    "West Bengal":   {spots:["Victoria Memorial","Howrah Bridge","Dakshineswar Temple","Kalighat Temple","Park Street","Indian Museum","Marble Palace","Princep Ghat","Belur Math"]}
+  };
+
+  var indiaMapInited = false;
+
+  function showIndiaPanel(name) {
+    document.getElementById('ip-name').textContent = name;
+    document.getElementById('ip-spots').innerHTML = indiaSpots[name]
+      ? indiaSpots[name].spots.map(function (s) {
+          return '<span style="background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:20px;padding:3px 10px;font-size:0.82em;margin:3px;display:inline-block;">' + s + '</span>';
+        }).join('')
+      : '<span style="font-size:0.85em;font-style:italic;color:var(--global-text-color);">Not yet visited — no places logged.</span>';
+    document.getElementById('india-panel').style.display = 'block';
+  }
+
+  function initIndiaMap() {
+    indiaMapInited = true;
+    var container = document.getElementById('india-map');
+    var W = container.clientWidth || 620;
+    var H = 520;
+    var svg = d3.select('#india-map').append('svg')
+      .attr('width', '100%').attr('height', H)
+      .attr('viewBox', '0 0 ' + W + ' ' + H).style('display', 'block');
+    var proj = d3.geoMercator();
+    var pathGen = d3.geoPath().projection(proj);
+    var sel = null;
+    d3.json('/assets/geojson/india-states.json').then(function (geojson) {
+      proj.fitSize([W, H], geojson);
+      var paths = svg.selectAll('path')
+        .data(geojson.features).enter().append('path')
+        .attr('d', pathGen)
+        .attr('fill', function (d) { return indiaSpots[d.properties.NAME_1] ? '#2a9d8f' : '#e9f0e6'; })
+        .attr('stroke', '#ffffff').attr('stroke-width', 0.8)
+        .style('cursor', 'pointer')
+        .on('mouseover', function () { d3.select(this).style('opacity', 0.8); })
+        .on('mouseout',  function () { d3.select(this).style('opacity', 1); })
+        .on('click', function (event, d) {
+          var name = d.properties.NAME_1;
+          if (sel) d3.select(sel).attr('stroke', '#ffffff').attr('stroke-width', 0.8);
+          sel = this;
+          d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 2);
+          showIndiaPanel(name);
+        });
+      paths.append('title').text(function (d) { return d.properties.NAME_1; });
+    }).catch(function () {
+      svg.append('text').attr('x', W / 2).attr('y', H / 2)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('fill', '#888').attr('font-size', 13).text('Map unavailable');
+    });
+  }
+
+  // ── World ──────────────────────────────────────────────────────────────────
+
+  var worldVisited  = {"Bangladesh":true,"India":true};
+  var worldWishlist = {"Nepal":true,"Thailand":true,"Malaysia":true,"Turkey":true,"United Arab Emirates":true,"Japan":true,"Italy":true,"France":true,"Indonesia":true,"Maldives":true,"Sri Lanka":true,"Morocco":true,"Egypt":true,"Switzerland":true};
+
+  var worldSpots = {
+    "Bangladesh": {note:"Home country — see Bangladesh tab", spots:[]},
+    "India":      {note:"Golden Triangle + Kolkata", spots:["Red Fort","Taj Mahal","Amber Fort (Jaipur)","Victoria Memorial (Kolkata)","India Gate","Qutub Minar","Agra Fort","Howrah Bridge"]}
+  };
+
+  var worldWishlistSpots = {
+    "Nepal":                ["Kathmandu","Everest Base Camp","Pokhara"],
+    "Thailand":             ["Bangkok","Chiang Mai","Phuket"],
+    "Malaysia":             ["Kuala Lumpur","Langkawi","Penang"],
+    "Turkey":               ["Istanbul","Cappadocia","Pamukkale"],
+    "United Arab Emirates": ["Dubai","Abu Dhabi"],
+    "Japan":                ["Tokyo","Kyoto","Osaka","Nara"],
+    "Italy":                ["Rome","Venice","Florence","Amalfi Coast"],
+    "France":               ["Paris","Nice","Versailles"],
+    "Indonesia":            ["Bali","Yogyakarta","Komodo Island"],
+    "Maldives":             ["Male Atoll","Baa Atoll"],
+    "Sri Lanka":            ["Colombo","Sigiriya","Kandy","Galle"],
+    "Morocco":              ["Marrakech","Sahara Desert","Fes"],
+    "Egypt":                ["Cairo — Pyramids of Giza","Luxor","Alexandria"],
+    "Switzerland":          ["Interlaken","Zurich","Geneva","Zermatt"]
+  };
+
+  var worldMapInited = false;
+
+  function showWorldPanel(name) {
+    document.getElementById('wp-name').textContent = name;
+    var label = '', html = '';
+    if (worldVisited[name]) {
+      var d = worldSpots[name];
+      label = d.note;
+      html = d.spots.map(function (s) {
+        return '<span style="background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:20px;padding:3px 10px;font-size:0.82em;margin:3px;display:inline-block;">' + s + '</span>';
+      }).join('');
+    } else if (worldWishlist[name]) {
+      label = 'On the wishlist';
+      var wl = worldWishlistSpots[name] || [];
+      html = wl.map(function (s) {
+        return '<span style="border:1px solid #e9c46a;border-radius:20px;padding:3px 10px;font-size:0.82em;margin:3px;display:inline-block;color:#b07918;">' + s + '</span>';
+      }).join('');
+    } else {
+      label = '';
+      html = '<span style="font-size:0.85em;font-style:italic;color:var(--global-text-color);">Not yet on the radar.</span>';
+    }
+    document.getElementById('wp-label').textContent = label;
+    document.getElementById('wp-spots').innerHTML = html;
+    document.getElementById('world-panel').style.display = 'block';
+  }
+
+  function initWorldMap() {
+    worldMapInited = true;
+    var container = document.getElementById('world-map');
+    var W = container.clientWidth || 700;
+    var H = 420;
+    var svg = d3.select('#world-map').append('svg')
+      .attr('width', '100%').attr('height', H)
+      .attr('viewBox', '0 0 ' + W + ' ' + H).style('display', 'block');
+    var proj = d3.geoNaturalEarth1();
+    var pathGen = d3.geoPath().projection(proj);
+    var sel = null;
+    d3.json('/assets/geojson/world-countries.json').then(function (geojson) {
+      proj.fitSize([W, H], geojson);
+      var paths = svg.selectAll('path')
+        .data(geojson.features).enter().append('path')
+        .attr('d', pathGen)
+        .attr('fill', function (d) {
+          var n = d.properties.name;
+          if (worldVisited[n])  return '#2a9d8f';
+          if (worldWishlist[n]) return '#e9c46a';
+          return '#e9f0e6';
+        })
+        .attr('stroke', '#ffffff').attr('stroke-width', 0.3)
+        .style('cursor', 'pointer')
+        .on('mouseover', function () { d3.select(this).style('opacity', 0.8); })
+        .on('mouseout',  function () { d3.select(this).style('opacity', 1); })
+        .on('click', function (event, d) {
+          var name = d.properties.name;
+          if (sel) d3.select(sel).attr('stroke', '#ffffff').attr('stroke-width', 0.3);
+          sel = this;
+          d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 1.5);
+          showWorldPanel(name);
+        });
+      paths.append('title').text(function (d) { return d.properties.name; });
+    }).catch(function () {
+      svg.append('text').attr('x', W / 2).attr('y', H / 2)
+        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+        .attr('fill', '#888').attr('font-size', 13).text('Map unavailable');
+    });
+  }
+
+  // ── Tab switcher ───────────────────────────────────────────────────────────
+
+  window.switchTab = function (name) {
+    ['bangladesh', 'india', 'world'].forEach(function (t) {
+      document.getElementById('panel-' + t).style.display = t === name ? 'block' : 'none';
+      var btn = document.getElementById('tab-' + t);
+      btn.style.borderBottomColor = t === name ? '#2a9d8f' : 'transparent';
+      btn.style.color = t === name ? '#2a9d8f' : 'var(--global-text-color)';
+      btn.style.fontWeight = t === name ? 'bold' : 'normal';
+    });
+    if (name === 'india' && !indiaMapInited) setTimeout(initIndiaMap, 0);
+    if (name === 'world' && !worldMapInited) setTimeout(initWorldMap, 0);
+  };
+
 }());
 </script>
