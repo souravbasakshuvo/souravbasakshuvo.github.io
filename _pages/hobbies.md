@@ -61,8 +61,6 @@ nav: false
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
   </div>
 </div>
-<p style="font-size:0.8em;color:var(--global-text-color);margin-top:4px;">Scroll to zoom · Click and drag to pan · Double-click to zoom in</p>
-
 <div id="district-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="dp-name" style="font-size:1.2em;font-weight:bold;"></div>
   <div id="dp-div" style="font-size:0.95em;font-style:italic;margin-bottom:8px;"></div>
@@ -87,8 +85,6 @@ nav: false
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
   </div>
 </div>
-<p style="font-size:0.8em;color:var(--global-text-color);margin-top:4px;">Scroll to zoom · Click and drag to pan · Double-click to zoom in</p>
-
 <div id="india-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="ip-name" style="font-size:1.2em;font-weight:bold;margin-bottom:8px;"></div>
   <div id="ip-spots"></div>
@@ -112,8 +108,6 @@ nav: false
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
   </div>
 </div>
-<p style="font-size:0.8em;color:var(--global-text-color);margin-top:4px;">Scroll to zoom · Click and drag to pan · Double-click to zoom in</p>
-
 <div id="world-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="wp-name" style="font-size:1.2em;font-weight:bold;"></div>
   <div id="wp-label" style="font-size:0.95em;font-style:italic;margin-bottom:8px;"></div>
@@ -394,27 +388,25 @@ nav: false
       .style('display', 'block');
     var pathGen = d3.geoPath();
     var sel = null;
-    d3.json('/assets/geojson/world_map.geo.json')
-      .catch(function() {
-        var continentFiles = [
-          '/assets/geojson/asia.geo.json',
-          '/assets/geojson/europe.geo.json',
-          '/assets/geojson/south_america.geo.json',
-          '/assets/geojson/north_america.geo.json',
-          '/assets/geojson/africa.geo.json',
-          '/assets/geojson/oceania.geo.json'
-        ];
-        return Promise.all(continentFiles.map(function(f) { return d3.json(f).catch(function() { return null; }); }))
-          .then(function(results) {
-            var merged = { type: 'FeatureCollection', features: [] };
-            results.forEach(function(r) { if (r && r.features) merged.features = merged.features.concat(r.features); });
-            if (merged.features.length > 0) return merged;
-            return d3.json('/assets/geojson/world-countries.json');
-          });
+    var continentFiles = [
+      '/assets/geojson/asia.geo.json',
+      '/assets/geojson/europe.geo.json',
+      '/assets/geojson/south_america.geo.json',
+      '/assets/geojson/north_america.geo.json',
+      '/assets/geojson/africa.geo.json',
+      '/assets/geojson/oceania.geo.json'
+    ];
+    Promise.all(continentFiles.map(function(f) { return d3.json(f).catch(function() { return null; }); }))
+      .then(function(results) {
+        var merged = { type: 'FeatureCollection', features: [] };
+        results.forEach(function(r) { if (r && r.features) merged.features = merged.features.concat(r.features); });
+        if (merged.features.length > 0) return merged;
+        return d3.json('/assets/geojson/world_map.geo.json')
+          .catch(function() { return d3.json('/assets/geojson/world-countries.json'); });
       })
       .then(function(geojson) {
         geojson.features = geojson.features.filter(function(f) {
-          var n = f.properties.name || f.properties.NAME || f.properties.NAME_LONG || f.properties.ADMIN || '';
+          var n = f.properties.ADMIN || f.properties.admin || f.properties.name || f.properties.NAME || f.properties.NAME_LONG || f.properties.sovereignt || '';
           return n !== 'Antarctica';
         });
         var projection = d3.geoNaturalEarth1().fitExtent([[10,10],[W-10,H-10]], geojson);
@@ -423,7 +415,7 @@ nav: false
           .data(geojson.features).enter().append('path')
           .attr('d', pathGen)
           .attr('fill', function (d) {
-            var n = d.properties.name || d.properties.NAME || d.properties.ADMIN || d.properties.NAME_LONG || '';
+            var n = d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || '';
             return worldVisited[n] ? '#2a9d8f' : '#e9f0e6';
           })
           .attr('stroke', '#ffffff').attr('stroke-width', 0.3)
@@ -431,7 +423,7 @@ nav: false
           .on('mouseover', function () { d3.select(this).style('opacity', 0.8); })
           .on('mouseout',  function () { d3.select(this).style('opacity', 1); })
           .on('mousemove', function(event, d) {
-            var n = d.properties.name || d.properties.NAME || d.properties.ADMIN || d.properties.NAME_LONG || '';
+            var n = d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || '';
             tooltip.innerHTML = n;
             tooltip.style.left = (event.clientX + 12) + 'px';
             tooltip.style.top  = (event.clientY + 12) + 'px';
@@ -439,13 +431,13 @@ nav: false
           })
           .on('mouseleave', function() { tooltip.style.display = 'none'; })
           .on('click', function (event, d) {
-            var name = d.properties.name || d.properties.NAME || d.properties.ADMIN || d.properties.NAME_LONG || '';
+            var name = d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || '';
             if (sel) d3.select(sel).attr('stroke', '#ffffff').attr('stroke-width', 0.3);
             sel = this;
             d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 1.5);
             showWorldPanel(name);
           });
-        paths.append('title').text(function (d) { return d.properties.name || d.properties.NAME || d.properties.ADMIN || d.properties.NAME_LONG || ''; });
+        paths.append('title').text(function (d) { return d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || ''; });
         var zoom = d3.zoom()
           .scaleExtent([1, 8])
           .on('zoom', function(event) {
