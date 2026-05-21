@@ -128,20 +128,18 @@
   function initIndiaMap() {
     indiaMapInited = true;
     var container = document.getElementById('india-map');
-    var W = container.clientWidth || 620;
+    var W = container.offsetWidth || container.clientWidth || 680;
     var H = 600;
     var svg = d3.select('#india-map').append('svg')
       .attr('width', '100%')
       .attr('height', H)
       .attr('viewBox', '0 0 ' + W + ' ' + H)
       .style('display', 'block');
-    var projection = d3.geoMercator()
-      .center([82.5, 22])
-      .scale(W * 1.05)
-      .translate([W / 2, H / 2]);
+    var projection = d3.geoMercator();
     var pathGen = d3.geoPath().projection(projection);
     var sel = null;
     d3.json('/assets/geojson/india-states.json').then(function (geojson) {
+      projection.fitExtent([[20,20],[W-20,580]], geojson);
       var paths = svg.selectAll('path')
         .data(geojson.features).enter().append('path')
         .attr('d', pathGen)
@@ -197,7 +195,7 @@
   function initWorldMap() {
     worldMapInited = true;
     var container = document.getElementById('world-map');
-    var W = container.clientWidth || 620;
+    var W = container.offsetWidth || container.clientWidth || 680;
     var H = 460;
     var svg = d3.select('#world-map').append('svg')
       .attr('width', '100%')
@@ -205,9 +203,8 @@
       .attr('viewBox', '0 0 ' + W + ' ' + H)
       .style('display', 'block');
     var projection = d3.geoNaturalEarth1()
-      .center([15, 15])
-      .scale(W / 5.2)
-      .translate([W / 2, H / 2]);
+      .scale(W / 6.5)
+      .translate([W / 2, H / 1.9]);
     var pathGen = d3.geoPath().projection(projection);
     var sel = null;
     d3.json('/assets/geojson/world-countries.json').then(function (geojson) {
