@@ -110,7 +110,7 @@ nav: false
   };
 
   function getName(props) {
-    var raw = props.NAME_2 || props.name || props.DISTRICT || '';
+    var raw = props.ADM2_EN || props.NAME_2 || props.name || props.DISTRICT || '';
     return aliases[raw] || raw;
   }
 
@@ -134,8 +134,7 @@ nav: false
 
   var selectedPath = null;
 
-  fetch('https://raw.githubusercontent.com/fahimreza-dev/bangladesh-geojson/master/bd-districts.json')
-    .then(function (r) { return r.json(); })
+  d3.json('/assets/geojson/bd-districts.json')
     .then(function (geojson) {
       var projection = d3.geoMercator().fitSize([W, H], geojson);
       var pathGen = d3.geoPath().projection(projection);
