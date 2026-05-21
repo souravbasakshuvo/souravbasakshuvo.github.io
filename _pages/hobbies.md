@@ -40,10 +40,19 @@ nav: false
 
 <div id="map-tooltip" style="position:fixed;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 12px;font-size:0.88em;color:var(--global-text-color);pointer-events:none;display:none;z-index:9999;"></div>
 
-<div id="travel-tabs" style="display:flex;gap:0;margin-bottom:16px;border-bottom:2px solid var(--global-divider-color);">
+<div id="travel-tabs" style="display:flex;gap:0;margin-bottom:16px;border-bottom:2px solid var(--global-divider-color);overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;">
   <button onclick="switchTab('bangladesh')" id="tab-bangladesh" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;font-weight:bold;border-bottom:3px solid #2a9d8f;margin-bottom:-2px;color:#2a9d8f;">Bangladesh</button>
   <button onclick="switchTab('india')" id="tab-india" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">India</button>
   <button onclick="switchTab('world')" id="tab-world" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">World</button>
+  <button onclick="switchTab('bd2')" id="tab-bd2" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">BD v2</button>
+  <button onclick="switchTab('india2')" id="tab-india2" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">India v2</button>
+  <button onclick="switchTab('world2')" id="tab-world2" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">World v2</button>
+  <button onclick="switchTab('africa')" id="tab-africa" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Africa</button>
+  <button onclick="switchTab('asia')" id="tab-asia" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Asia</button>
+  <button onclick="switchTab('namerica')" id="tab-namerica" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">North America</button>
+  <button onclick="switchTab('samerica')" id="tab-samerica" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">South America</button>
+  <button onclick="switchTab('europe')" id="tab-europe" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Europe</button>
+  <button onclick="switchTab('oceania')" id="tab-oceania" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Oceania</button>
 </div>
 
 <!-- ── Bangladesh panel ────────────────────────────────────────────────────── -->
@@ -114,6 +123,132 @@ nav: false
   <div id="wp-spots"></div>
 </div>
 
+</div>
+
+<!-- ── BD v2 panel ─────────────────────────────────────────────────────────── -->
+<div id="panel-bd2" style="display:none;">
+  <div id="bd2-map-container" style="position:relative;margin-bottom:10px;">
+    <div id="bd2-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    </div>
+  </div>
+  <div id="bd2-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
+    <div id="bd2-info-name" style="font-size:1.2em;font-weight:bold;"></div>
+  </div>
+</div>
+
+<!-- ── India v2 panel ──────────────────────────────────────────────────────── -->
+<div id="panel-india2" style="display:none;">
+  <div id="india2-map-container" style="position:relative;margin-bottom:10px;">
+    <div id="india2-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    </div>
+  </div>
+  <div id="india2-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
+    <div id="india2-info-name" style="font-size:1.2em;font-weight:bold;"></div>
+  </div>
+</div>
+
+<!-- ── World v2 panel ──────────────────────────────────────────────────────── -->
+<div id="panel-world2" style="display:none;">
+  <div id="world2-map-container" style="position:relative;margin-bottom:10px;">
+    <div id="world2-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    </div>
+  </div>
+  <div id="world2-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
+    <div id="world2-info-name" style="font-size:1.2em;font-weight:bold;"></div>
+  </div>
+</div>
+
+<!-- ── Africa panel ─────────────────────────────────────────────────────────── -->
+<div id="panel-africa" style="display:none;">
+  <div id="africa-map-container" style="position:relative;margin-bottom:10px;">
+    <div id="africa-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    </div>
+  </div>
+  <div id="africa-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
+    <div id="africa-info-name" style="font-size:1.2em;font-weight:bold;"></div>
+  </div>
+</div>
+
+<!-- ── Asia panel ───────────────────────────────────────────────────────────── -->
+<div id="panel-asia" style="display:none;">
+  <div id="asia-map-container" style="position:relative;margin-bottom:10px;">
+    <div id="asia-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    </div>
+  </div>
+  <div id="asia-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
+    <div id="asia-info-name" style="font-size:1.2em;font-weight:bold;"></div>
+  </div>
+</div>
+
+<!-- ── North America panel ──────────────────────────────────────────────────── -->
+<div id="panel-namerica" style="display:none;">
+  <div id="namerica-map-container" style="position:relative;margin-bottom:10px;">
+    <div id="namerica-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    </div>
+  </div>
+  <div id="namerica-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
+    <div id="namerica-info-name" style="font-size:1.2em;font-weight:bold;"></div>
+  </div>
+</div>
+
+<!-- ── South America panel ──────────────────────────────────────────────────── -->
+<div id="panel-samerica" style="display:none;">
+  <div id="samerica-map-container" style="position:relative;margin-bottom:10px;">
+    <div id="samerica-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    </div>
+  </div>
+  <div id="samerica-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
+    <div id="samerica-info-name" style="font-size:1.2em;font-weight:bold;"></div>
+  </div>
+</div>
+
+<!-- ── Europe panel ─────────────────────────────────────────────────────────── -->
+<div id="panel-europe" style="display:none;">
+  <div id="europe-map-container" style="position:relative;margin-bottom:10px;">
+    <div id="europe-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    </div>
+  </div>
+  <div id="europe-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
+    <div id="europe-info-name" style="font-size:1.2em;font-weight:bold;"></div>
+  </div>
+</div>
+
+<!-- ── Oceania panel ────────────────────────────────────────────────────────── -->
+<div id="panel-oceania" style="display:none;">
+  <div id="oceania-map-container" style="position:relative;margin-bottom:10px;">
+    <div id="oceania-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    </div>
+  </div>
+  <div id="oceania-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
+    <div id="oceania-info-name" style="font-size:1.2em;font-weight:bold;"></div>
+  </div>
 </div>
 
 </div>
@@ -466,18 +601,122 @@ nav: false
       });
   }
 
+  // ── Shared helpers ─────────────────────────────────────────────────────────
+
+  function getName(props) {
+    return props.ADMIN || props.admin || props.name || props.NAME || props.NAME_LONG || props.sovereignt || props.ADM2_EN || props.st_nm || '';
+  }
+
+  function renderSimpleMap(tabId, geojsonUrl, heightRatio, projType, strokeW, filterAnt) {
+    var mapId       = tabId + '-map';
+    var containerId = tabId + '-map-container';
+    var infoPanelId = tabId + '-info-panel';
+    var infoNameId  = tabId + '-info-name';
+    var container = document.getElementById(mapId);
+    var W = container.offsetWidth || 680;
+    var H = Math.round(W * heightRatio);
+    container.style.height = H + 'px';
+    var svg = d3.select('#' + mapId).append('svg')
+      .attr('width', '100%').attr('height', H)
+      .attr('viewBox', '0 0 ' + W + ' ' + H).style('display', 'block');
+    var pathGen = d3.geoPath();
+    var sel = null;
+    d3.json(geojsonUrl)
+      .then(function(geojson) {
+        if (filterAnt) {
+          geojson.features = geojson.features.filter(function(f) { return getName(f.properties) !== 'Antarctica'; });
+        }
+        var projection = projType === 'mercator'
+          ? d3.geoMercator().fitExtent([[20, 20], [W - 20, H - 20]], geojson)
+          : d3.geoNaturalEarth1().fitExtent([[10, 10], [W - 10, H - 10]], geojson);
+        pathGen.projection(projection);
+        var paths = svg.selectAll('path')
+          .data(geojson.features).enter().append('path')
+          .attr('d', pathGen)
+          .attr('fill', function(d) { return worldVisited[getName(d.properties)] ? '#2a9d8f' : '#e9f0e6'; })
+          .attr('stroke', '#ffffff').attr('stroke-width', strokeW)
+          .style('cursor', 'pointer')
+          .on('mouseover', function() { d3.select(this).style('opacity', 0.8); })
+          .on('mouseout',  function() { d3.select(this).style('opacity', 1); })
+          .on('mousemove', function(event, d) {
+            var n = getName(d.properties);
+            tooltip.innerHTML = n;
+            tooltip.style.left = (event.clientX + 12) + 'px';
+            tooltip.style.top  = (event.clientY + 12) + 'px';
+            tooltip.style.display = 'block';
+          })
+          .on('mouseleave', function() { tooltip.style.display = 'none'; })
+          .on('click', function(event, d) {
+            var n = getName(d.properties);
+            if (sel) d3.select(sel).attr('stroke', '#ffffff').attr('stroke-width', strokeW);
+            sel = this;
+            d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', strokeW * 3);
+            document.getElementById(infoNameId).textContent = n;
+            document.getElementById(infoPanelId).style.display = 'block';
+          });
+        paths.append('title').text(function(d) { return getName(d.properties); });
+        var zoom = d3.zoom().scaleExtent([1, 8])
+          .on('zoom', function(event) { svg.selectAll('path').attr('transform', event.transform); });
+        svg.call(zoom);
+        d3.select('#' + containerId).insert('button', ':first-child')
+          .text('Reset zoom')
+          .style('position', 'absolute').style('bottom', '10px').style('left', '10px')
+          .style('z-index', '10').style('background', 'var(--global-card-bg-color)')
+          .style('border', '1px solid var(--global-divider-color)').style('border-radius', '6px')
+          .style('padding', '4px 10px').style('font-size', '0.8em').style('cursor', 'pointer')
+          .style('color', 'var(--global-text-color)')
+          .on('click', function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); });
+      })
+      .catch(function() {
+        svg.append('text').attr('x', W / 2).attr('y', H / 2)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+          .attr('fill', '#888').attr('font-size', 13).text('Map unavailable');
+      });
+  }
+
+  // ── Comparison tab init functions ──────────────────────────────────────────
+
+  var bd2MapInited      = false;
+  var india2MapInited   = false;
+  var world2MapInited   = false;
+  var africaMapInited   = false;
+  var asiaMapInited     = false;
+  var namericaMapInited = false;
+  var samericaMapInited = false;
+  var europeMapInited   = false;
+  var oceaniaMapInited  = false;
+
+  function initBd2Map()      { bd2MapInited = true;      renderSimpleMap('bd2',      '/assets/geojson/bangladesh.geo.json',   1.35, 'mercator',     0.8, false); }
+  function initIndia2Map()   { india2MapInited = true;   renderSimpleMap('india2',   '/assets/geojson/india.geo.json',         1.35, 'mercator',     0.8, false); }
+  function initWorld2Map()   { world2MapInited = true;   renderSimpleMap('world2',   '/assets/geojson/world_map.geo.json',     0.56, 'naturalearth', 0.3, true);  }
+  function initAfricaMap()   { africaMapInited = true;   renderSimpleMap('africa',   '/assets/geojson/africa.geo.json',        0.56, 'naturalearth', 0.5, false); }
+  function initAsiaMap()     { asiaMapInited = true;     renderSimpleMap('asia',     '/assets/geojson/asia.geo.json',          0.56, 'naturalearth', 0.5, false); }
+  function initNAmericaMap() { namericaMapInited = true; renderSimpleMap('namerica', '/assets/geojson/north_america.geo.json', 0.56, 'naturalearth', 0.5, false); }
+  function initSAmericaMap() { samericaMapInited = true; renderSimpleMap('samerica', '/assets/geojson/south_america.geo.json', 0.56, 'naturalearth', 0.5, false); }
+  function initEuropeMap()   { europeMapInited = true;   renderSimpleMap('europe',   '/assets/geojson/europe.geo.json',        0.56, 'naturalearth', 0.5, false); }
+  function initOceaniaMap()  { oceaniaMapInited = true;  renderSimpleMap('oceania',  '/assets/geojson/oceania.geo.json',       0.56, 'naturalearth', 0.5, false); }
+
   // ── Tab switcher ───────────────────────────────────────────────────────────
 
-  window.switchTab = function (name) {
-    ['bangladesh', 'india', 'world'].forEach(function (t) {
+  window.switchTab = function(name) {
+    ['bangladesh', 'india', 'world', 'bd2', 'india2', 'world2', 'africa', 'asia', 'namerica', 'samerica', 'europe', 'oceania'].forEach(function(t) {
       document.getElementById('panel-' + t).style.display = t === name ? 'block' : 'none';
       var btn = document.getElementById('tab-' + t);
       btn.style.borderBottomColor = t === name ? '#2a9d8f' : 'transparent';
-      btn.style.color = t === name ? '#2a9d8f' : 'var(--global-text-color)';
-      btn.style.fontWeight = t === name ? 'bold' : 'normal';
+      btn.style.color              = t === name ? '#2a9d8f' : 'var(--global-text-color)';
+      btn.style.fontWeight         = t === name ? 'bold'    : 'normal';
     });
-    if (name === 'india' && !indiaMapInited) setTimeout(initIndiaMap, 0);
-    if (name === 'world' && !worldMapInited) setTimeout(initWorldMap, 0);
+    if (name === 'india'    && !indiaMapInited)    setTimeout(initIndiaMap,    0);
+    if (name === 'world'    && !worldMapInited)    setTimeout(initWorldMap,    0);
+    if (name === 'bd2'      && !bd2MapInited)      setTimeout(initBd2Map,      0);
+    if (name === 'india2'   && !india2MapInited)   setTimeout(initIndia2Map,   0);
+    if (name === 'world2'   && !world2MapInited)   setTimeout(initWorld2Map,   0);
+    if (name === 'africa'   && !africaMapInited)   setTimeout(initAfricaMap,   0);
+    if (name === 'asia'     && !asiaMapInited)     setTimeout(initAsiaMap,     0);
+    if (name === 'namerica' && !namericaMapInited) setTimeout(initNAmericaMap, 0);
+    if (name === 'samerica' && !samericaMapInited) setTimeout(initSAmericaMap, 0);
+    if (name === 'europe'   && !europeMapInited)   setTimeout(initEuropeMap,   0);
+    if (name === 'oceania'  && !oceaniaMapInited)  setTimeout(initOceaniaMap,  0);
   };
 
 }());
