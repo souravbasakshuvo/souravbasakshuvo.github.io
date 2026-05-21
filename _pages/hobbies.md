@@ -38,6 +38,8 @@ nav: false
 
 <h2>Travels</h2>
 
+<div id="map-tooltip" style="position:fixed;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 12px;font-size:0.88em;color:var(--global-text-color);pointer-events:none;display:none;z-index:9999;"></div>
+
 <div id="travel-tabs" style="display:flex;gap:0;margin-bottom:16px;border-bottom:2px solid var(--global-divider-color);">
   <button onclick="switchTab('bangladesh')" id="tab-bangladesh" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;font-weight:bold;border-bottom:3px solid #2a9d8f;margin-bottom:-2px;color:#2a9d8f;">Bangladesh</button>
   <button onclick="switchTab('india')" id="tab-india" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">India</button>
@@ -52,13 +54,14 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">7 / 8 divisions covered</span>
 </div>
 
-<div style="position:relative;margin-bottom:10px;">
+<div id="bd-map-container" style="position:relative;margin-bottom:10px;">
   <div id="bd-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
   </div>
 </div>
+<p style="font-size:0.8em;color:var(--global-text-color);margin-top:4px;">Scroll to zoom · Click and drag to pan · Double-click to zoom in</p>
 
 <div id="district-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="dp-name" style="font-size:1.2em;font-weight:bold;"></div>
@@ -77,13 +80,14 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">3 trips</span>
 </div>
 
-<div style="position:relative;margin-bottom:10px;">
+<div id="india-map-container" style="position:relative;margin-bottom:10px;">
   <div id="india-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
   </div>
 </div>
+<p style="font-size:0.8em;color:var(--global-text-color);margin-top:4px;">Scroll to zoom · Click and drag to pan · Double-click to zoom in</p>
 
 <div id="india-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="ip-name" style="font-size:1.2em;font-weight:bold;margin-bottom:8px;"></div>
@@ -101,13 +105,14 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">2 trips abroad</span>
 </div>
 
-<div style="position:relative;margin-bottom:10px;">
+<div id="world-map-container" style="position:relative;margin-bottom:10px;">
   <div id="world-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
   </div>
 </div>
+<p style="font-size:0.8em;color:var(--global-text-color);margin-top:4px;">Scroll to zoom · Click and drag to pan · Double-click to zoom in</p>
 
 <div id="world-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="wp-name" style="font-size:1.2em;font-weight:bold;"></div>
@@ -122,6 +127,8 @@ nav: false
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script>
 (function () {
+
+  var tooltip = document.getElementById('map-tooltip');
 
   // ── Bangladesh ─────────────────────────────────────────────────────────────
 
@@ -197,32 +204,65 @@ nav: false
     .attr('viewBox', '0 0 ' + bdW + ' ' + bdH);
   var bdSelected = null;
 
-  d3.json('/assets/geojson/bd-districts.json')
-    .then(function (geojson) {
-      var proj = d3.geoMercator().fitSize([bdW, bdH], geojson);
-      var path = d3.geoPath().projection(proj);
-      var paths = bdSvg.selectAll('path')
-        .data(geojson.features).enter().append('path')
-        .attr('d', path)
-        .attr('fill', function (d) { return bdSpots[getBdName(d.properties)] ? '#2a9d8f' : '#e9f0e6'; })
-        .attr('stroke', '#ffffff').attr('stroke-width', 0.8)
-        .style('cursor', 'pointer')
-        .on('mouseover', function () { d3.select(this).style('opacity', 0.8); })
-        .on('mouseout',  function () { d3.select(this).style('opacity', 1); })
-        .on('click', function (event, d) {
-          var name = getBdName(d.properties);
-          if (bdSelected) d3.select(bdSelected).attr('stroke', '#ffffff').attr('stroke-width', 0.8);
-          bdSelected = this;
-          d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 2);
-          showDistrictPanel(name);
-        });
-      paths.append('title').text(function (d) { return getBdName(d.properties); });
-    })
-    .catch(function () {
+  Promise.all([
+    d3.json('/assets/geojson/bd-districts.json').catch(function() { return null; }),
+    d3.json('/assets/geojson/bangladesh.geo.json').catch(function() { return null; })
+  ]).then(function(results) {
+    var a = results[0], b = results[1];
+    if (!a && !b) {
       bdSvg.append('text').attr('x', bdW / 2).attr('y', bdH / 2)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
         .attr('fill', '#666').text('Map unavailable');
-    });
+      return;
+    }
+    var geojson = (!a) ? b : (!b) ? a : (b.features && b.features.length > a.features.length) ? b : a;
+    var proj = d3.geoMercator().fitSize([bdW, bdH], geojson);
+    var path = d3.geoPath().projection(proj);
+    var paths = bdSvg.selectAll('path')
+      .data(geojson.features).enter().append('path')
+      .attr('d', path)
+      .attr('fill', function (d) { return bdSpots[getBdName(d.properties)] ? '#2a9d8f' : '#e9f0e6'; })
+      .attr('stroke', '#ffffff').attr('stroke-width', 0.8)
+      .style('cursor', 'pointer')
+      .on('mouseover', function () { d3.select(this).style('opacity', 0.8); })
+      .on('mouseout',  function () { d3.select(this).style('opacity', 1); })
+      .on('mousemove', function(event, d) {
+        var name = getBdName(d.properties);
+        tooltip.innerHTML = name;
+        tooltip.style.left = (event.clientX + 12) + 'px';
+        tooltip.style.top  = (event.clientY + 12) + 'px';
+        tooltip.style.display = 'block';
+      })
+      .on('mouseleave', function() { tooltip.style.display = 'none'; })
+      .on('click', function (event, d) {
+        var name = getBdName(d.properties);
+        if (bdSelected) d3.select(bdSelected).attr('stroke', '#ffffff').attr('stroke-width', 0.8);
+        bdSelected = this;
+        d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 2);
+        showDistrictPanel(name);
+      });
+    paths.append('title').text(function (d) { return getBdName(d.properties); });
+    var zoom = d3.zoom()
+      .scaleExtent([1, 8])
+      .on('zoom', function(event) {
+        bdSvg.selectAll('path').attr('transform', event.transform);
+      });
+    bdSvg.call(zoom);
+    d3.select('#bd-map-container').insert('button', ':first-child')
+      .text('Reset zoom')
+      .style('position','absolute')
+      .style('bottom','10px')
+      .style('left','10px')
+      .style('z-index','10')
+      .style('background','var(--global-card-bg-color)')
+      .style('border','1px solid var(--global-divider-color)')
+      .style('border-radius','6px')
+      .style('padding','4px 10px')
+      .style('font-size','0.8em')
+      .style('cursor','pointer')
+      .style('color','var(--global-text-color)')
+      .on('click', function() { bdSvg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); });
+  });
 
   // ── India ──────────────────────────────────────────────────────────────────
 
@@ -259,28 +299,66 @@ nav: false
     var projection = d3.geoMercator();
     var pathGen = d3.geoPath().projection(projection);
     var sel = null;
-    d3.json('/assets/geojson/india-states.json').then(function (geojson) {
+    Promise.all([
+      d3.json('/assets/geojson/india-states.json').catch(function() { return null; }),
+      d3.json('/assets/geojson/india.geo.json').catch(function() { return null; })
+    ]).then(function(results) {
+      var a = results[0], b = results[1];
+      if (!a && !b) {
+        svg.append('text').attr('x', W / 2).attr('y', H / 2)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+          .attr('fill', '#888').attr('font-size', 13).text('Map unavailable');
+        return;
+      }
+      var geojson = (!a) ? b : (!b) ? a : (b.features && b.features.length > a.features.length) ? b : a;
       projection.fitExtent([[20,20],[W-20,H-20]], geojson);
       var paths = svg.selectAll('path')
         .data(geojson.features).enter().append('path')
         .attr('d', pathGen)
-        .attr('fill', function (d) { return indiaSpots[d.properties.NAME_1] ? '#2a9d8f' : '#e9f0e6'; })
+        .attr('fill', function (d) {
+          var name = d.properties.st_nm || d.properties.NAME_1 || d.properties.name || d.properties.STATE || '';
+          return indiaSpots[name] ? '#2a9d8f' : '#e9f0e6';
+        })
         .attr('stroke', '#ffffff').attr('stroke-width', 0.8)
         .style('cursor', 'pointer')
         .on('mouseover', function () { d3.select(this).style('opacity', 0.8); })
         .on('mouseout',  function () { d3.select(this).style('opacity', 1); })
+        .on('mousemove', function(event, d) {
+          var name = d.properties.st_nm || d.properties.NAME_1 || d.properties.name || d.properties.STATE || '';
+          tooltip.innerHTML = name;
+          tooltip.style.left = (event.clientX + 12) + 'px';
+          tooltip.style.top  = (event.clientY + 12) + 'px';
+          tooltip.style.display = 'block';
+        })
+        .on('mouseleave', function() { tooltip.style.display = 'none'; })
         .on('click', function (event, d) {
-          var name = d.properties.NAME_1;
+          var name = d.properties.st_nm || d.properties.NAME_1 || d.properties.name || d.properties.STATE || '';
           if (sel) d3.select(sel).attr('stroke', '#ffffff').attr('stroke-width', 0.8);
           sel = this;
           d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 2);
           showIndiaPanel(name);
         });
-      paths.append('title').text(function (d) { return d.properties.NAME_1; });
-    }).catch(function () {
-      svg.append('text').attr('x', W / 2).attr('y', H / 2)
-        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
-        .attr('fill', '#888').attr('font-size', 13).text('Map unavailable');
+      paths.append('title').text(function (d) { return d.properties.st_nm || d.properties.NAME_1 || d.properties.name || d.properties.STATE || ''; });
+      var zoom = d3.zoom()
+        .scaleExtent([1, 8])
+        .on('zoom', function(event) {
+          svg.selectAll('path').attr('transform', event.transform);
+        });
+      svg.call(zoom);
+      d3.select('#india-map-container').insert('button', ':first-child')
+        .text('Reset zoom')
+        .style('position','absolute')
+        .style('bottom','10px')
+        .style('left','10px')
+        .style('z-index','10')
+        .style('background','var(--global-card-bg-color)')
+        .style('border','1px solid var(--global-divider-color)')
+        .style('border-radius','6px')
+        .style('padding','4px 10px')
+        .style('font-size','0.8em')
+        .style('cursor','pointer')
+        .style('color','var(--global-text-color)')
+        .on('click', function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); });
     });
   }
 
@@ -326,38 +404,81 @@ nav: false
       .style('display', 'block');
     var pathGen = d3.geoPath();
     var sel = null;
-    d3.json('/assets/geojson/world-countries.json').then(function (geojson) {
-      geojson.features = geojson.features.filter(function (f) {
-        var n = f.properties.name || f.properties.NAME || f.properties.NAME_LONG || '';
-        return n !== 'Antarctica';
-      });
-      var projection = d3.geoNaturalEarth1().fitExtent([[10,10],[W-10,H-10]], geojson);
-      pathGen.projection(projection);
-      var paths = svg.selectAll('path')
-        .data(geojson.features).enter().append('path')
-        .attr('d', pathGen)
-        .attr('fill', function (d) {
-          var n = d.properties.name;
-          if (worldVisited[n]) return '#2a9d8f';
-          return '#e9f0e6';
-        })
-        .attr('stroke', '#ffffff').attr('stroke-width', 0.3)
-        .style('cursor', 'pointer')
-        .on('mouseover', function () { d3.select(this).style('opacity', 0.8); })
-        .on('mouseout',  function () { d3.select(this).style('opacity', 1); })
-        .on('click', function (event, d) {
-          var name = d.properties.name;
-          if (sel) d3.select(sel).attr('stroke', '#ffffff').attr('stroke-width', 0.3);
-          sel = this;
-          d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 1.5);
-          showWorldPanel(name);
+    var continentFiles = [
+      '/assets/geojson/asia.geo.json',
+      '/assets/geojson/europe.geo.json',
+      '/assets/geojson/south_america.geo.json',
+      '/assets/geojson/north_america.geo.json',
+      '/assets/geojson/africa.geo.json',
+      '/assets/geojson/oceania.geo.json'
+    ];
+    Promise.all(continentFiles.map(function(f) { return d3.json(f).catch(function() { return null; }); }))
+      .then(function(results) {
+        var merged = { type: 'FeatureCollection', features: [] };
+        results.forEach(function(r) { if (r && r.features) merged.features = merged.features.concat(r.features); });
+        if (merged.features.length > 0) return merged;
+        return d3.json('/assets/geojson/world-countries.json');
+      })
+      .then(function(geojson) {
+        geojson.features = geojson.features.filter(function(f) {
+          var n = f.properties.name || f.properties.NAME || f.properties.NAME_LONG || f.properties.ADMIN || '';
+          return n !== 'Antarctica';
         });
-      paths.append('title').text(function (d) { return d.properties.name; });
-    }).catch(function () {
-      svg.append('text').attr('x', W / 2).attr('y', H / 2)
-        .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
-        .attr('fill', '#888').attr('font-size', 13).text('Map unavailable');
-    });
+        var projection = d3.geoNaturalEarth1().fitExtent([[10,10],[W-10,H-10]], geojson);
+        pathGen.projection(projection);
+        var paths = svg.selectAll('path')
+          .data(geojson.features).enter().append('path')
+          .attr('d', pathGen)
+          .attr('fill', function (d) {
+            var n = d.properties.name || d.properties.NAME || d.properties.ADMIN || d.properties.NAME_LONG || '';
+            return worldVisited[n] ? '#2a9d8f' : '#e9f0e6';
+          })
+          .attr('stroke', '#ffffff').attr('stroke-width', 0.3)
+          .style('cursor', 'pointer')
+          .on('mouseover', function () { d3.select(this).style('opacity', 0.8); })
+          .on('mouseout',  function () { d3.select(this).style('opacity', 1); })
+          .on('mousemove', function(event, d) {
+            var n = d.properties.name || d.properties.NAME || d.properties.ADMIN || d.properties.NAME_LONG || '';
+            tooltip.innerHTML = n;
+            tooltip.style.left = (event.clientX + 12) + 'px';
+            tooltip.style.top  = (event.clientY + 12) + 'px';
+            tooltip.style.display = 'block';
+          })
+          .on('mouseleave', function() { tooltip.style.display = 'none'; })
+          .on('click', function (event, d) {
+            var name = d.properties.name || d.properties.NAME || d.properties.ADMIN || d.properties.NAME_LONG || '';
+            if (sel) d3.select(sel).attr('stroke', '#ffffff').attr('stroke-width', 0.3);
+            sel = this;
+            d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 1.5);
+            showWorldPanel(name);
+          });
+        paths.append('title').text(function (d) { return d.properties.name || d.properties.NAME || d.properties.ADMIN || d.properties.NAME_LONG || ''; });
+        var zoom = d3.zoom()
+          .scaleExtent([1, 8])
+          .on('zoom', function(event) {
+            svg.selectAll('path').attr('transform', event.transform);
+          });
+        svg.call(zoom);
+        d3.select('#world-map-container').insert('button', ':first-child')
+          .text('Reset zoom')
+          .style('position','absolute')
+          .style('bottom','10px')
+          .style('left','10px')
+          .style('z-index','10')
+          .style('background','var(--global-card-bg-color)')
+          .style('border','1px solid var(--global-divider-color)')
+          .style('border-radius','6px')
+          .style('padding','4px 10px')
+          .style('font-size','0.8em')
+          .style('cursor','pointer')
+          .style('color','var(--global-text-color)')
+          .on('click', function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); });
+      })
+      .catch(function () {
+        svg.append('text').attr('x', W / 2).attr('y', H / 2)
+          .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
+          .attr('fill', '#888').attr('font-size', 13).text('Map unavailable');
+      });
   }
 
   // ── Tab switcher ───────────────────────────────────────────────────────────
