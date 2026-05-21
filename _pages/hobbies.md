@@ -54,7 +54,7 @@ nav: false
 
 <div style="position:relative;margin-bottom:10px;">
   <div id="bd-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
-  <div style="position:absolute;top:10px;right:10px;background:rgba(255,255,255,0.85);border-radius:8px;padding:6px 10px;font-size:0.78em;line-height:1.8;z-index:10;">
+  <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.78em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Not yet visited
   </div>
@@ -79,7 +79,7 @@ nav: false
 
 <div style="position:relative;margin-bottom:10px;">
   <div id="india-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;height:560px;"></div>
-  <div style="position:absolute;top:10px;right:10px;background:rgba(255,255,255,0.85);border-radius:8px;padding:6px 10px;font-size:0.78em;line-height:1.8;z-index:10;">
+  <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.78em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Not yet visited
   </div>
@@ -101,8 +101,8 @@ nav: false
 </div>
 
 <div style="position:relative;margin-bottom:10px;">
-  <div id="world-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
-  <div style="position:absolute;top:10px;right:10px;background:rgba(255,255,255,0.85);border-radius:8px;padding:6px 10px;font-size:0.78em;line-height:1.8;z-index:10;">
+  <div id="world-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;height:420px;"></div>
+  <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.78em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9c46a;margin-right:5px;vertical-align:middle;"></span>Wishlist<br>
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Not yet
@@ -249,7 +249,7 @@ nav: false
     indiaMapInited = true;
     var container = document.getElementById('india-map');
     var W = container.clientWidth || 620;
-    var H = 520;
+    var H = Math.round(W * 1.3);
     var svg = d3.select('#india-map').append('svg')
       .attr('width', '100%').attr('height', H)
       .attr('viewBox', '0 0 ' + W + ' ' + H).style('display', 'block');
@@ -257,7 +257,7 @@ nav: false
     var pathGen = d3.geoPath().projection(proj);
     var sel = null;
     d3.json('/assets/geojson/india-states.json').then(function (geojson) {
-      proj.fitSize([W, H], geojson);
+      proj.fitExtent([[20, 20], [W - 20, H - 20]], geojson);
       var paths = svg.selectAll('path')
         .data(geojson.features).enter().append('path')
         .attr('d', pathGen)
@@ -346,7 +346,7 @@ nav: false
     var pathGen = d3.geoPath().projection(proj);
     var sel = null;
     d3.json('/assets/geojson/world-countries.json').then(function (geojson) {
-      proj.fitSize([W, H], geojson);
+      proj.fitExtent([[10, 10], [W - 10, H - 10]], geojson);
       var paths = svg.selectAll('path')
         .data(geojson.features).enter().append('path')
         .attr('d', pathGen)
