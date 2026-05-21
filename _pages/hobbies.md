@@ -334,11 +334,12 @@ nav: false
   // ── Bangladesh ─────────────────────────────────────────────────────────────
 
   var bdAliases = {
-    "Jashore":    "Jessore",
-    "Chattogram": "Chittagong",
-    "Coxsbazar":  "Cox's Bazar",
-    "Cumilla":    "Comilla",
-    "Bogura":     "Bogra"
+    "Jashore":       "Jessore",
+    "Chattogram":    "Chittagong",
+    "Coxsbazar":     "Cox's Bazar",
+    "Cumilla":       "Comilla",
+    "Bogura":        "Bogra",
+    "Khagrachhari":  "Khagrachari"
   };
 
   var bdSpots = {
