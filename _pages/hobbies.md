@@ -34,8 +34,6 @@ nav: false
 
 </div>
 
-<style>#travels-section .leaflet-container{background:#dce9f5!important}</style>
-
 <div id="travels-section" style="margin-top: 40px;">
 
 <h2>Travels</h2>
@@ -45,118 +43,137 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.85em;margin-right:8px;margin-bottom:8px;">7 / 8 divisions covered</span>
 </div>
 
-<div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;font-size:0.85em;color:var(--global-text-color);">
+<div style="display:flex;align-items:center;gap:14px;margin-bottom:10px;font-size:0.85em;">
   <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#3a7bd5;margin-right:5px;vertical-align:middle;"></span>Visited</span>
   <span><span style="display:inline-block;width:13px;height:13px;border-radius:3px;background:#c8d6e0;margin-right:5px;vertical-align:middle;"></span>Not yet visited</span>
 </div>
 
-<div id="bd-map" style="height:560px;background:#dce9f5;border:1px solid var(--global-divider-color);border-radius:10px;"></div>
+<div id="bd-map" style="background:#dce9f5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
 
 <div id="district-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="dp-name" style="font-size:1.1em;font-weight:bold;"></div>
-  <div id="dp-div" style="font-size:0.85em;color:var(--global-text-color);margin-bottom:8px;"></div>
-  <div id="dp-spots" style="display:flex;flex-wrap:wrap;gap:6px;"></div>
+  <div id="dp-div" style="font-size:0.85em;font-style:italic;margin-bottom:8px;"></div>
+  <div id="dp-spots"></div>
 </div>
 
 </div>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script>
 (function () {
-  var districtData = {
-    "Bandarban":   {div:"Chittagong Division",spots:["Nilgiri Hill","Boga Lake","Chimbuk Hill","Golden Temple (Swarna Muri)","Nafakhum Waterfall","Shoilo Propat","Meghla Parjatan","Sangu River"]},
-    "Chittagong":  {div:"Chittagong Division",spots:["Patenga Beach","Foy's Lake","Chandranath Hill","Sitakunda Eco Park","Ethnological Museum","Bangabandhu Safari Park","War Cemetery","Karnaphuli River"]},
-    "Cox's Bazar": {div:"Chittagong Division",spots:["Cox's Bazar Beach (World's Longest)","Inani Beach","Himchari National Park","Maheshkhali Island","Teknaf Wildlife Sanctuary","Saint Martin's Island","Laboni Beach"]},
-    "Khagrachari": {div:"Chittagong Division",spots:["Alutila Cave","Richhang Waterfall","Marishya River Valley","Dighinala","Tribal Culture Museum","Parjatan Hill Resort"]},
-    "Rangamati":   {div:"Chittagong Division",spots:["Kaptai Lake","Shuvolong Waterfall","Rajban Vihara","Hanging Bridge","Tribal Cultural Institute Museum","DC Bungalow Hilltop","Kaptai Dam"]},
-    "Dhaka":       {div:"Dhaka Division",spots:["Lalbagh Fort","Ahsan Manzil (Pink Palace)","Star Mosque","National Museum","Liberation War Museum","Baldha Garden","Sonargaon (Panam City)","Dhakeshwari Temple"]},
-    "Kishoreganj": {div:"Dhaka Division",spots:["Sholakia Eidgah (Largest in Bangladesh)","Egaro Sindhu","Ashtagram Haor","Nikli Haor","Jangalbari Fort","Shaheb Bari"]},
-    "Tangail":     {div:"Dhaka Division",spots:["Atia Mosque (Mughal)","Mahera Zamindarbari","Dhanbari Nawab Palace","Butterfly Park","Jamuna Bondhu Park","Nuhash Palli"]},
-    "Jamalpur":    {div:"Mymensingh Division",spots:["Yamuna River Bank","Melandaha Zamindarbari","Garibpur Ruins","Dhal Char Area","Moinuddin Ahmed Park"]},
-    "Mymensingh":  {div:"Mymensingh Division",spots:["Shashi Lodge (Alexander Castle)","Bangladesh Agricultural University Campus","Botanical Garden","Muktagacha Zamindarbari","Muktagacha Monda","Brahmaputra River"]},
-    "Sherpur":     {div:"Mymensingh Division",spots:["Garo Hills Border Area","Gazni Mosque (Mughal)","Nalitabari Natural Park","Madhupur Forest Edge","Mrittika Eco Park"]},
-    "Bagerhat":    {div:"Khulna Division",spots:["Sixty Dome Mosque (UNESCO)","Khan Jahan Ali Shrine","Nine Dome Mosque","Shat Gombuj Mosque Complex","Reza Khoda Mosque","Khan Jahan Ali Pond"]},
-    "Jessore":     {div:"Khulna Division",spots:["Michael Madhusudan Dutta Birthplace (Sagardari)","Chhaygazi Mosque","Tulsi Chura Flower Fields (seasonal)","Jessore Cantonment Area"]},
-    "Khulna":      {div:"Khulna Division",spots:["Sundarbans Mangrove Forest (Royal Bengal Tiger)","Rupsa River","Khan Jahan Ali Bridge","Khulna Museum","Mongla Port","Shyamnagar"]},
-    "Kushtia":     {div:"Khulna Division",spots:["Lalon Shah Mazar (Chheuria)","Rabindranath's Kuthibari (Shilaidaha)","Hardinge Bridge","Lalon Academy","Sadhughat","Padma River Bank"]},
-    "Pabna":       {div:"Rajshahi Division",spots:["Hardinge Bridge (Historic Rail Bridge)","Lalon Shah's Birthplace Area","Pabna Mental Hospital (Historic)","Chalan Beel","Padma River Ghats"]},
-    "Rajshahi":    {div:"Rajshahi Division",spots:["Varendra Research Museum","Bagha Mosque (Mughal)","Puthia Temple Complex","Rajshahi University Campus","Padma River Promenade","Shah Makhdum Mosque"]},
-    "Sirajganj":   {div:"Rajshahi Division",spots:["Bangabandhu Bridge (Jamuna Bridge)","Enayetpur Mosque","Chalan Beel","Jamuna River Bank","Kazipur Erosion Area"]},
-    "Dinajpur":    {div:"Rangpur Division",spots:["Kantajew Temple (18th Century Terra Cotta)","Ramsagar (Largest Man-made Lake)","Dinajpur Rajbari (Palace)","Sita Kunda","Nayabad Mosque","Punarbhaba River"]},
-    "Gaibandha":   {div:"Rangpur Division",spots:["Balashi Ghat","Brahmaputra & Jamuna Confluence","Char Areas (River Islands)","Sagarpara Zamindar Bari"]},
-    "Kurigram":    {div:"Rangpur Division",spots:["Teesta River","Char Rajibpur","Chilon Beel","Bengai River","Northern Char Areas","Ulipur"]},
-    "Nilphamari":  {div:"Rangpur Division",spots:["Nilsagar Lake (2nd Largest Natural Lake)","Uttara Gono Bhaban (State Guest House)","Saidpur Airport & Town","Teesta Rail Bridge","Domar Area"]},
-    "Panchagarh":  {div:"Rangpur Division",spots:["Tetulia (Northernmost Upazila)","Bangladesh-India Zero Point","Tea Gardens of Tetulia","Bhitargarh Ruins (Ancient Fort)","Atharokhami Mosque","Mahali River Bank"]},
-    "Rangpur":     {div:"Rangpur Division",spots:["Tajhat Palace (Rangpur Rajbari)","Rangpur Zoo","Carmichael College (Historic)","Rangpur Museum","Ghaghat River","Kautuk Eco Park"]},
-    "Thakurgaon":  {div:"Rangpur Division",spots:["Thakurgaon Sugar Mill","Haripur (Bordering India)","Salgram Rajbari Ruins","Jamalganj Mosque","Sthal Padma River"]},
-    "Sylhet":      {div:"Sylhet Division",spots:["Hazrat Shah Jalal (R) Mazar","Hazrat Shah Paran (R) Mazar","Jaflong (Crystal-clear River & Stones)","Ratargul Swamp Forest","Lalakhal (Green River)","Bichanakandi","Tea Garden Tour","Madhabpur Lake","Ali Amjad's Clock"]}
-  };
-
   var aliases = {
-    "Jashore":     "Jessore",
-    "Jessore":     "Jessore",
-    "Chattogram":  "Chittagong",
-    "Chittagong":  "Chittagong",
-    "Coxsbazar":   "Cox's Bazar",
-    "Cox's Bazar": "Cox's Bazar"
+    "Jashore":    "Jessore",
+    "Chattogram": "Chittagong",
+    "Coxsbazar":  "Cox's Bazar",
+    "Cumilla":    "Comilla",
+    "Bogura":     "Bogra"
   };
 
-  function normalize(n) { return aliases[n] || n; }
-  function getName(props) { return normalize(props.NAME_2 || props.name || props.DISTRICT || ''); }
+  var spots = {
+    "Bandarban":   ["Nilgiri Hill","Boga Lake","Chimbuk Hill","Golden Temple (Swarna Muri)","Nafakhum Waterfall","Shoilo Propat","Sangu River"],
+    "Chittagong":  ["Patenga Beach","Foy's Lake","Chandranath Hill","Sitakunda Eco Park","Ethnological Museum","Bangabandhu Safari Park","War Cemetery"],
+    "Cox's Bazar": ["Cox's Bazar Beach (World's Longest)","Inani Beach","Himchari National Park","Maheshkhali Island","Saint Martin's Island","Laboni Beach"],
+    "Khagrachari": ["Alutila Cave","Richhang Waterfall","Marishya River Valley","Tribal Culture Museum","Parjatan Hill Resort"],
+    "Rangamati":   ["Kaptai Lake","Shuvolong Waterfall","Rajban Vihara","Hanging Bridge","Tribal Cultural Institute Museum","Kaptai Dam"],
+    "Dhaka":       ["Lalbagh Fort","Ahsan Manzil (Pink Palace)","Star Mosque","National Museum","Liberation War Museum","Sonargaon (Panam City)","Dhakeshwari Temple"],
+    "Kishoreganj": ["Sholakia Eidgah (Largest in Bangladesh)","Egaro Sindhu","Ashtagram Haor","Nikli Haor","Jangalbari Fort"],
+    "Tangail":     ["Atia Mosque (Mughal)","Mahera Zamindarbari","Dhanbari Nawab Palace","Butterfly Park","Nuhash Palli"],
+    "Jamalpur":    ["Yamuna River Bank","Melandaha Zamindarbari","Garibpur Ruins","Dhal Char Area"],
+    "Mymensingh":  ["Shashi Lodge (Alexander Castle)","Bangladesh Agricultural University","Botanical Garden","Muktagacha Zamindarbari","Brahmaputra River"],
+    "Sherpur":     ["Garo Hills Border Area","Gazni Mosque (Mughal)","Nalitabari Natural Park","Mrittika Eco Park"],
+    "Bagerhat":    ["Sixty Dome Mosque (UNESCO)","Khan Jahan Ali Shrine","Nine Dome Mosque","Shat Gombuj Complex","Khan Jahan Ali Pond"],
+    "Jessore":     ["Michael Madhusudan Dutta Birthplace (Sagardari)","Chhaygazi Mosque","Tulsi Chura Flower Fields"],
+    "Khulna":      ["Sundarbans (Royal Bengal Tiger)","Rupsa River","Khan Jahan Ali Bridge","Khulna Museum","Mongla Port"],
+    "Kushtia":     ["Lalon Shah Mazar","Rabindranath's Kuthibari (Shilaidaha)","Hardinge Bridge","Lalon Academy","Padma River Bank"],
+    "Pabna":       ["Hardinge Bridge (Historic Rail Bridge)","Lalon Shah's Birthplace Area","Pabna Mental Hospital (Historic)","Chalan Beel","Padma River Ghats"],
+    "Rajshahi":    ["Varendra Research Museum","Bagha Mosque (Mughal)","Puthia Temple Complex","Rajshahi University Campus","Padma River Promenade"],
+    "Sirajganj":   ["Bangabandhu Bridge (Jamuna Bridge)","Enayetpur Mosque","Chalan Beel","Jamuna River Bank"],
+    "Dinajpur":    ["Kantajew Temple (Terra Cotta)","Ramsagar (Largest Man-made Lake)","Dinajpur Rajbari","Nayabad Mosque"],
+    "Gaibandha":   ["Balashi Ghat","Brahmaputra & Jamuna Confluence","Char Areas (River Islands)"],
+    "Kurigram":    ["Teesta River","Char Rajibpur","Chilon Beel","Bengai River"],
+    "Nilphamari":  ["Nilsagar Lake (2nd Largest Natural Lake)","Uttara Gono Bhaban","Saidpur Airport & Town","Teesta Rail Bridge"],
+    "Panchagarh":  ["Tetulia (Northernmost Upazila)","Bangladesh-India Zero Point","Tea Gardens of Tetulia","Bhitargarh Ruins (Ancient Fort)"],
+    "Rangpur":     ["Tajhat Palace (Rangpur Rajbari)","Rangpur Zoo","Carmichael College (Historic)","Rangpur Museum","Ghaghat River"],
+    "Thakurgaon":  ["Thakurgaon Sugar Mill","Haripur (Bordering India)","Salgram Rajbari Ruins","Jamalganj Mosque"],
+    "Sylhet":      ["Hazrat Shah Jalal (R) Mazar","Hazrat Shah Paran (R) Mazar","Jaflong","Ratargul Swamp Forest","Lalakhal","Bichanakandi","Tea Garden Tour","Madhabpur Lake","Ali Amjad's Clock"]
+  };
 
-  function getStyle(name) {
-    return {
-      color: '#ffffff',
-      weight: 1.2,
-      fillColor: districtData[name] ? '#3a7bd5' : '#c8d6e0',
-      fillOpacity: districtData[name] ? 0.82 : 0.55
-    };
+  var divisionMap = {
+    "Bandarban":"Chittagong Division","Chittagong":"Chittagong Division","Cox's Bazar":"Chittagong Division","Khagrachari":"Chittagong Division","Rangamati":"Chittagong Division","Feni":"Chittagong Division","Lakshmipur":"Chittagong Division","Noakhali":"Chittagong Division","Comilla":"Chittagong Division","Chandpur":"Chittagong Division","Brahmanbaria":"Chittagong Division",
+    "Dhaka":"Dhaka Division","Kishoreganj":"Dhaka Division","Tangail":"Dhaka Division","Gazipur":"Dhaka Division","Manikganj":"Dhaka Division","Munshiganj":"Dhaka Division","Narayanganj":"Dhaka Division","Narsingdi":"Dhaka Division","Faridpur":"Dhaka Division","Gopalganj":"Dhaka Division","Madaripur":"Dhaka Division","Rajbari":"Dhaka Division","Shariatpur":"Dhaka Division",
+    "Jamalpur":"Mymensingh Division","Mymensingh":"Mymensingh Division","Sherpur":"Mymensingh Division","Netrokona":"Mymensingh Division",
+    "Bagerhat":"Khulna Division","Jessore":"Khulna Division","Khulna":"Khulna Division","Kushtia":"Khulna Division","Magura":"Khulna Division","Meherpur":"Khulna Division","Narail":"Khulna Division","Satkhira":"Khulna Division","Jhenaidah":"Khulna Division","Chuadanga":"Khulna Division",
+    "Pabna":"Rajshahi Division","Rajshahi":"Rajshahi Division","Sirajganj":"Rajshahi Division","Bogra":"Rajshahi Division","Joypurhat":"Rajshahi Division","Naogaon":"Rajshahi Division","Natore":"Rajshahi Division","Chapainawabganj":"Rajshahi Division",
+    "Dinajpur":"Rangpur Division","Gaibandha":"Rangpur Division","Kurigram":"Rangpur Division","Nilphamari":"Rangpur Division","Panchagarh":"Rangpur Division","Rangpur":"Rangpur Division","Thakurgaon":"Rangpur Division","Lalmonirhat":"Rangpur Division",
+    "Sylhet":"Sylhet Division","Habiganj":"Sylhet Division","Moulvibazar":"Sylhet Division","Sunamganj":"Sylhet Division",
+    "Barguna":"Barisal Division","Barisal":"Barisal Division","Bhola":"Barisal Division","Jhalokati":"Barisal Division","Patuakhali":"Barisal Division","Pirojpur":"Barisal Division"
+  };
+
+  function getName(props) {
+    var raw = props.NAME_2 || props.name || props.DISTRICT || '';
+    return aliases[raw] || raw;
   }
 
   function showPanel(name) {
-    var data = districtData[name];
     document.getElementById('dp-name').textContent = name;
-    document.getElementById('dp-div').textContent = data.div;
-    document.getElementById('dp-spots').innerHTML = data.spots.map(function (s) {
-      return '<span style="background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:20px;padding:3px 10px;font-size:0.82em;">' + s + '</span>';
+    document.getElementById('dp-div').textContent = divisionMap[name] || '';
+    document.getElementById('dp-spots').innerHTML = spots[name].map(function (s) {
+      return '<span style="background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:20px;padding:3px 10px;font-size:0.82em;margin:3px;display:inline-block;">' + s + '</span>';
     }).join('');
     document.getElementById('district-panel').style.display = 'block';
   }
 
-  var map = L.map('bd-map', {scrollWheelZoom: false, attributionControl: false}).setView([23.7, 90.35], 7);
+  var container = document.getElementById('bd-map');
+  var W = container.clientWidth || 620;
+  var H = Math.round(W * 1.1);
 
-  var selectedLayer = null;
+  var svg = d3.select('#bd-map')
+    .append('svg')
+    .attr('width', '100%')
+    .attr('viewBox', '0 0 ' + W + ' ' + H);
+
+  var selectedPath = null;
 
   fetch('https://raw.githubusercontent.com/fahimreza-dev/bangladesh-geojson/master/bd-districts.json')
     .then(function (r) { return r.json(); })
-    .then(function (data) {
-      L.geoJSON(data, {
-        style: function (f) { return getStyle(getName(f.properties)); },
-        onEachFeature: function (f, layer) {
-          var name = getName(f.properties);
-          layer.on({
-            mouseover: function () {
-              if (layer === selectedLayer) return;
-              layer.setStyle({fillOpacity: 1, weight: 2});
-            },
-            mouseout: function () {
-              if (layer === selectedLayer) return;
-              layer.setStyle(getStyle(name));
-            },
-            click: function () {
-              if (selectedLayer && selectedLayer !== layer) {
-                selectedLayer.setStyle(getStyle(getName(selectedLayer.feature.properties)));
-              }
-              if (districtData[name]) {
-                selectedLayer = layer;
-                layer.setStyle({fillOpacity: 1, weight: 2.5});
-                showPanel(name);
-              }
-            }
-          });
-        }
-      }).addTo(map);
+    .then(function (geojson) {
+      var projection = d3.geoMercator().fitSize([W, H], geojson);
+      var pathGen = d3.geoPath().projection(projection);
+
+      var paths = svg.selectAll('path')
+        .data(geojson.features)
+        .enter()
+        .append('path')
+        .attr('d', pathGen)
+        .attr('fill', function (d) {
+          return spots[getName(d.properties)] ? '#3a7bd5' : '#c8d6e0';
+        })
+        .attr('stroke', '#ffffff')
+        .attr('stroke-width', 0.8)
+        .style('cursor', function (d) {
+          return spots[getName(d.properties)] ? 'pointer' : 'default';
+        })
+        .on('click', function (event, d) {
+          var name = getName(d.properties);
+          if (!spots[name]) return;
+          if (selectedPath) {
+            d3.select(selectedPath).attr('stroke', '#ffffff').attr('stroke-width', 0.8);
+          }
+          selectedPath = this;
+          d3.select(this).attr('stroke', '#1a1a1a').attr('stroke-width', 1.8);
+          showPanel(name);
+        });
+
+      paths.append('title').text(function (d) { return getName(d.properties); });
+    })
+    .catch(function () {
+      svg.append('text')
+        .attr('x', W / 2)
+        .attr('y', H / 2)
+        .attr('text-anchor', 'middle')
+        .attr('dominant-baseline', 'middle')
+        .attr('fill', '#666')
+        .text('Map unavailable');
     });
 }());
 </script>
