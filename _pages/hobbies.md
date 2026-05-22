@@ -40,16 +40,16 @@ nav: false
 
 <div id="map-tooltip" style="position:fixed;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 12px;font-size:0.88em;color:var(--global-text-color);pointer-events:none;display:none;z-index:9999;"></div>
 
-<div id="travel-tabs" style="display:flex;gap:0;margin-bottom:16px;border-bottom:2px solid var(--global-divider-color);overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;">
-  <button onclick="switchTab('bangladesh')" id="tab-bangladesh" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;font-weight:bold;border-bottom:3px solid #2a9d8f;margin-bottom:-2px;color:#2a9d8f;">Bangladesh</button>
-  <button onclick="switchTab('india')" id="tab-india" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">India</button>
-  <button onclick="switchTab('world')" id="tab-world" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">World</button>
-  <button onclick="switchTab('africa')" id="tab-africa" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Africa</button>
-  <button onclick="switchTab('asia')" id="tab-asia" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Asia</button>
-  <button onclick="switchTab('namerica')" id="tab-namerica" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">North America</button>
-  <button onclick="switchTab('samerica')" id="tab-samerica" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">South America</button>
-  <button onclick="switchTab('europe')" id="tab-europe" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Europe</button>
-  <button onclick="switchTab('oceania')" id="tab-oceania" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Oceania</button>
+<div id="travel-tabs" style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:16px;border-bottom:2px solid var(--global-divider-color);">
+  <button onclick="switchTab('bangladesh')" id="tab-bangladesh" style="padding:6px 12px;border:none;background:none;cursor:pointer;font-size:0.88em;font-weight:bold;border-bottom:3px solid #2a9d8f;margin-bottom:-2px;color:#2a9d8f;">Bangladesh</button>
+  <button onclick="switchTab('india')" id="tab-india" style="padding:6px 12px;border:none;background:none;cursor:pointer;font-size:0.88em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">India</button>
+  <button onclick="switchTab('world')" id="tab-world" style="padding:6px 12px;border:none;background:none;cursor:pointer;font-size:0.88em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">World</button>
+  <button onclick="switchTab('africa')" id="tab-africa" style="padding:6px 12px;border:none;background:none;cursor:pointer;font-size:0.88em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Africa</button>
+  <button onclick="switchTab('asia')" id="tab-asia" style="padding:6px 12px;border:none;background:none;cursor:pointer;font-size:0.88em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Asia</button>
+  <button onclick="switchTab('namerica')" id="tab-namerica" style="padding:6px 12px;border:none;background:none;cursor:pointer;font-size:0.88em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">North America</button>
+  <button onclick="switchTab('samerica')" id="tab-samerica" style="padding:6px 12px;border:none;background:none;cursor:pointer;font-size:0.88em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">South America</button>
+  <button onclick="switchTab('europe')" id="tab-europe" style="padding:6px 12px;border:none;background:none;cursor:pointer;font-size:0.88em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Europe</button>
+  <button onclick="switchTab('oceania')" id="tab-oceania" style="padding:6px 12px;border:none;background:none;cursor:pointer;font-size:0.88em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Oceania</button>
 </div>
 
 <!-- ── Bangladesh panel ────────────────────────────────────────────────────── -->
@@ -61,10 +61,10 @@ nav: false
 </div>
 
 <div id="bd-map-container" style="position:relative;margin-bottom:10px;">
-  <div id="bd-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
+  <div id="bd-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#eaf1f8;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
     <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
       <button id="bd-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
       <button id="bd-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -91,10 +91,10 @@ nav: false
 </div>
 
 <div id="india-map-container" style="position:relative;margin-bottom:10px;">
-  <div id="india-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+  <div id="india-map" style="background:#c9dbc5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#4a7c59;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#f0ede4;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
     <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
       <button id="india-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
       <button id="india-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -120,10 +120,10 @@ nav: false
 </div>
 
 <div id="world-map-container" style="position:relative;margin-bottom:10px;">
-  <div id="world-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+  <div id="world-map" style="background:#cfd8e3;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e07b54;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#eef2f5;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
     <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
       <button id="world-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
       <button id="world-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -142,11 +142,14 @@ nav: false
 
 <!-- ── Africa panel ─────────────────────────────────────────────────────────── -->
 <div id="panel-africa" style="display:none;">
+<div style="margin-bottom:10px;">
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 54 Countries Visited</span>
+</div>
   <div id="africa-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="africa-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="africa-map" style="background:#f5e6c8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#c17f24;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#fdf6e8;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="africa-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="africa-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -162,11 +165,14 @@ nav: false
 
 <!-- ── Asia panel ───────────────────────────────────────────────────────────── -->
 <div id="panel-asia" style="display:none;">
+<div style="margin-bottom:10px;">
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">2 / 49 Countries Visited</span>
+</div>
   <div id="asia-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="asia-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="asia-map" style="background:#c8d4ed;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#3d5a99;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e8ecf4;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="asia-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="asia-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -182,11 +188,14 @@ nav: false
 
 <!-- ── North America panel ──────────────────────────────────────────────────── -->
 <div id="panel-namerica" style="display:none;">
+<div style="margin-bottom:10px;">
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 23 Countries Visited</span>
+</div>
   <div id="namerica-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="namerica-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="namerica-map" style="background:#e8d0d0;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#b03060;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#fdf0f0;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="namerica-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="namerica-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -202,11 +211,14 @@ nav: false
 
 <!-- ── South America panel ──────────────────────────────────────────────────── -->
 <div id="panel-samerica" style="display:none;">
+<div style="margin-bottom:10px;">
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 12 Countries Visited</span>
+</div>
   <div id="samerica-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="samerica-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="samerica-map" style="background:#c5ddd1;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2e7d5e;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#f0f7f4;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="samerica-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="samerica-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -222,11 +234,14 @@ nav: false
 
 <!-- ── Europe panel ─────────────────────────────────────────────────────────── -->
 <div id="panel-europe" style="display:none;">
+<div style="margin-bottom:10px;">
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 44 Countries Visited</span>
+</div>
   <div id="europe-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="europe-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="europe-map" style="background:#d5cce8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#6a4c93;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#f2eff9;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="europe-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="europe-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -242,11 +257,14 @@ nav: false
 
 <!-- ── Oceania panel ────────────────────────────────────────────────────────── -->
 <div id="panel-oceania" style="display:none;">
+<div style="margin-bottom:10px;">
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 14 Countries Visited</span>
+</div>
   <div id="oceania-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="oceania-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="oceania-map" style="background:#b8e8e0;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1a8a7a;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e8f8f6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="oceania-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="oceania-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -351,7 +369,7 @@ nav: false
     var paths = bdSvg.selectAll('path')
       .data(geojson.features).enter().append('path')
       .attr('d', path)
-      .attr('fill', function (d) { return bdSpots[getBdName(d.properties)] ? '#2a9d8f' : '#e9f0e6'; })
+      .attr('fill', function (d) { return bdSpots[getBdName(d.properties)] ? '#1b6ca8' : '#eaf1f8'; })
       .attr('stroke', '#ffffff').attr('stroke-width', 0.8)
       .style('cursor', 'pointer')
       .on('mouseover', function () { d3.select(this).style('opacity', 0.8); })
@@ -366,9 +384,12 @@ nav: false
       .on('mouseleave', function() { tooltip.style.display = 'none'; })
       .on('click', function (event, d) {
         var name = getBdName(d.properties);
-        if (bdSelected) d3.select(bdSelected).attr('stroke', '#ffffff').attr('stroke-width', 0.8);
+        if (bdSelected) {
+          var prevName = getBdName(d3.select(bdSelected).datum().properties);
+          d3.select(bdSelected).attr('fill', bdSpots[prevName] ? '#1b6ca8' : '#eaf1f8').attr('stroke', '#ffffff').attr('stroke-width', 0.8);
+        }
         bdSelected = this;
-        d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 2);
+        d3.select(this).attr('fill', '#0d3d6b').attr('stroke', '#ffffff').attr('stroke-width', 0.8);
         showDistrictPanel(name);
       });
     paths.append('title').text(function (d) { return getBdName(d.properties); });
@@ -435,7 +456,7 @@ nav: false
         .attr('d', pathGen)
         .attr('fill', function (d) {
           var name = d.properties.st_nm || d.properties.NAME_1 || d.properties.name || d.properties.STATE || '';
-          return indiaSpots[name] ? '#2a9d8f' : '#e9f0e6';
+          return indiaSpots[name] ? '#4a7c59' : '#f0ede4';
         })
         .attr('stroke', '#ffffff').attr('stroke-width', 0.8)
         .style('cursor', 'pointer')
@@ -451,9 +472,13 @@ nav: false
         .on('mouseleave', function() { tooltip.style.display = 'none'; })
         .on('click', function (event, d) {
           var name = d.properties.st_nm || d.properties.NAME_1 || d.properties.name || d.properties.STATE || '';
-          if (sel) d3.select(sel).attr('stroke', '#ffffff').attr('stroke-width', 0.8);
+          if (sel) {
+            var prevProps = d3.select(sel).datum().properties;
+            var prevName = prevProps.st_nm || prevProps.NAME_1 || prevProps.name || prevProps.STATE || '';
+            d3.select(sel).attr('fill', indiaSpots[prevName] ? '#4a7c59' : '#f0ede4').attr('stroke', '#ffffff').attr('stroke-width', 0.8);
+          }
           sel = this;
-          d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 2);
+          d3.select(this).attr('fill', '#2a4a34').attr('stroke', '#ffffff').attr('stroke-width', 0.8);
           showIndiaPanel(name);
         });
       paths.append('title').text(function (d) { return d.properties.st_nm || d.properties.NAME_1 || d.properties.name || d.properties.STATE || ''; });
@@ -546,7 +571,7 @@ nav: false
           .attr('fill', function (d) {
             var n = d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || '';
             if (n === 'Antarctica') return '#dce9f5';
-            return worldVisited[n] ? '#2a9d8f' : '#e9f0e6';
+            return worldVisited[n] ? '#e07b54' : '#eef2f5';
           })
           .attr('stroke', '#ffffff').attr('stroke-width', 0.3)
           .style('cursor', 'pointer')
@@ -562,9 +587,14 @@ nav: false
           .on('mouseleave', function() { tooltip.style.display = 'none'; })
           .on('click', function (event, d) {
             var name = d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || '';
-            if (sel) d3.select(sel).attr('stroke', '#ffffff').attr('stroke-width', 0.3);
+            if (sel) {
+              var prevProps = d3.select(sel).datum().properties;
+              var prevName = prevProps.ADMIN || prevProps.admin || prevProps.name || prevProps.NAME || prevProps.NAME_LONG || prevProps.sovereignt || '';
+              var prevFill = prevName === 'Antarctica' ? '#dce9f5' : (worldVisited[prevName] ? '#e07b54' : '#eef2f5');
+              d3.select(sel).attr('fill', prevFill).attr('stroke', '#ffffff').attr('stroke-width', 0.3);
+            }
             sel = this;
-            d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', 1.5);
+            d3.select(this).attr('fill', name === 'Antarctica' ? '#dce9f5' : '#a84f2a').attr('stroke', '#ffffff').attr('stroke-width', 0.3);
             showWorldPanel(name);
           });
         paths.append('title').text(function (d) { return d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || ''; });
@@ -595,7 +625,7 @@ nav: false
     return props.ADMIN || props.admin || props.name || props.NAME || props.NAME_LONG || props.sovereignt || props.ADM2_EN || props.st_nm || '';
   }
 
-  function renderSimpleMap(tabId, geojsonUrl, heightRatio, projType, strokeW, filterAnt) {
+  function renderSimpleMap(tabId, geojsonUrl, heightRatio, projType, strokeW, filterAnt, visitedColor, unvisitedColor, selectedColor) {
     var mapId       = tabId + '-map';
     var containerId = tabId + '-map-container';
     var infoPanelId = tabId + '-info-panel';
@@ -622,7 +652,7 @@ nav: false
         var paths = svg.selectAll('path')
           .data(geojson.features).enter().append('path')
           .attr('d', pathGen)
-          .attr('fill', function(d) { return worldVisited[getName(d.properties)] ? '#2a9d8f' : '#e9f0e6'; })
+          .attr('fill', function(d) { return worldVisited[getName(d.properties)] ? visitedColor : unvisitedColor; })
           .attr('stroke', '#ffffff').attr('stroke-width', strokeW)
           .style('cursor', 'pointer')
           .on('mouseover', function() { d3.select(this).style('opacity', 0.8); })
@@ -637,9 +667,12 @@ nav: false
           .on('mouseleave', function() { tooltip.style.display = 'none'; })
           .on('click', function(event, d) {
             var n = getName(d.properties);
-            if (sel) d3.select(sel).attr('stroke', '#ffffff').attr('stroke-width', strokeW);
+            if (sel) {
+              var prevName = getName(d3.select(sel).datum().properties);
+              d3.select(sel).attr('fill', worldVisited[prevName] ? visitedColor : unvisitedColor).attr('stroke', '#ffffff').attr('stroke-width', strokeW);
+            }
             sel = this;
-            d3.select(this).attr('stroke', '#1a6b62').attr('stroke-width', strokeW * 3);
+            d3.select(this).attr('fill', selectedColor).attr('stroke', '#ffffff').attr('stroke-width', strokeW * 2);
             document.getElementById(infoNameId).textContent = n;
             document.getElementById(infoPanelId).style.display = 'block';
           });
@@ -672,12 +705,12 @@ nav: false
   var europeMapInited   = false;
   var oceaniaMapInited  = false;
 
-  function initAfricaMap()   { africaMapInited = true;   renderSimpleMap('africa',   '/assets/geojson/africa.geo.json',        0.56, 'naturalearth', 0.5, false); }
-  function initAsiaMap()     { asiaMapInited = true;     renderSimpleMap('asia',     '/assets/geojson/asia.geo.json',          0.56, 'naturalearth', 0.5, false); }
-  function initNAmericaMap() { namericaMapInited = true; renderSimpleMap('namerica', '/assets/geojson/north_america.geo.json', 0.56, 'naturalearth', 0.5, false); }
-  function initSAmericaMap() { samericaMapInited = true; renderSimpleMap('samerica', '/assets/geojson/south_america.geo.json', 0.56, 'naturalearth', 0.5, false); }
-  function initEuropeMap()   { europeMapInited = true;   renderSimpleMap('europe',   '/assets/geojson/europe.geo.json',        0.56, 'naturalearth', 0.5, false); }
-  function initOceaniaMap()  { oceaniaMapInited = true;  renderSimpleMap('oceania',  '/assets/geojson/oceania.geo.json',       0.56, 'naturalearth', 0.5, false); }
+  function initAfricaMap()   { africaMapInited = true;   renderSimpleMap('africa',   '/assets/geojson/africa.geo.json',        0.56, 'naturalearth', 0.5, false, '#c17f24', '#fdf6e8', '#7a4e0d'); }
+  function initAsiaMap()     { asiaMapInited = true;     renderSimpleMap('asia',     '/assets/geojson/asia.geo.json',          0.56, 'naturalearth', 0.5, false, '#3d5a99', '#e8ecf4', '#1e2e5a'); }
+  function initNAmericaMap() { namericaMapInited = true; renderSimpleMap('namerica', '/assets/geojson/north_america.geo.json', 0.56, 'naturalearth', 0.5, false, '#b03060', '#fdf0f0', '#6e1530'); }
+  function initSAmericaMap() { samericaMapInited = true; renderSimpleMap('samerica', '/assets/geojson/south_america.geo.json', 0.56, 'naturalearth', 0.5, false, '#2e7d5e', '#f0f7f4', '#1a4a38'); }
+  function initEuropeMap()   { europeMapInited = true;   renderSimpleMap('europe',   '/assets/geojson/europe.geo.json',        0.56, 'naturalearth', 0.5, false, '#6a4c93', '#f2eff9', '#3d2260'); }
+  function initOceaniaMap()  { oceaniaMapInited = true;  renderSimpleMap('oceania',  '/assets/geojson/oceania.geo.json',       0.56, 'naturalearth', 0.5, false, '#1a8a7a', '#e8f8f6', '#0d5248'); }
 
   // ── Tab switcher ───────────────────────────────────────────────────────────
 
