@@ -44,9 +44,6 @@ nav: false
   <button onclick="switchTab('bangladesh')" id="tab-bangladesh" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;font-weight:bold;border-bottom:3px solid #2a9d8f;margin-bottom:-2px;color:#2a9d8f;">Bangladesh</button>
   <button onclick="switchTab('india')" id="tab-india" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">India</button>
   <button onclick="switchTab('world')" id="tab-world" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">World</button>
-  <button onclick="switchTab('bd2')" id="tab-bd2" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">BD v2</button>
-  <button onclick="switchTab('india2')" id="tab-india2" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">India v2</button>
-  <button onclick="switchTab('world2')" id="tab-world2" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">World v2</button>
   <button onclick="switchTab('africa')" id="tab-africa" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Africa</button>
   <button onclick="switchTab('asia')" id="tab-asia" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">Asia</button>
   <button onclick="switchTab('namerica')" id="tab-namerica" style="padding:8px 20px;border:none;background:none;cursor:pointer;font-size:1.05em;color:var(--global-text-color);border-bottom:3px solid transparent;margin-bottom:-2px;">North America</button>
@@ -141,66 +138,6 @@ nav: false
   <div id="wp-spots"></div>
 </div>
 
-</div>
-
-<!-- ── BD v2 panel ─────────────────────────────────────────────────────────── -->
-<div id="panel-bd2" style="display:none;">
-  <div id="bd2-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="bd2-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
-    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
-      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
-        <button id="bd2-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
-        <button id="bd2-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
-        <button id="bd2-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
-      </div>
-      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
-    </div>
-  </div>
-  <div id="bd2-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
-    <div id="bd2-info-name" style="font-size:1.2em;font-weight:bold;"></div>
-  </div>
-</div>
-
-<!-- ── India v2 panel ──────────────────────────────────────────────────────── -->
-<div id="panel-india2" style="display:none;">
-  <div id="india2-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="india2-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
-    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
-      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
-        <button id="india2-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
-        <button id="india2-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
-        <button id="india2-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
-      </div>
-      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
-    </div>
-  </div>
-  <div id="india2-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
-    <div id="india2-info-name" style="font-size:1.2em;font-weight:bold;"></div>
-  </div>
-</div>
-
-<!-- ── World v2 panel ──────────────────────────────────────────────────────── -->
-<div id="panel-world2" style="display:none;">
-  <div id="world2-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="world2-map" style="background:#cde8e5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
-    <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2a9d8f;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e9f0e6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
-      <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
-        <button id="world2-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
-        <button id="world2-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
-        <button id="world2-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
-      </div>
-      <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
-    </div>
-  </div>
-  <div id="world2-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
-    <div id="world2-info-name" style="font-size:1.2em;font-weight:bold;"></div>
-  </div>
 </div>
 
 <!-- ── Africa panel ─────────────────────────────────────────────────────────── -->
@@ -595,15 +532,12 @@ nav: false
       .then(function(results) {
         var merged = { type: 'FeatureCollection', features: [] };
         results.forEach(function(r) { if (r && r.features) merged.features = merged.features.concat(r.features); });
-        if (merged.features.length > 0) return merged;
-        return d3.json('/assets/geojson/world_map.geo.json')
-          .catch(function() { return d3.json('/assets/geojson/world-countries.json'); });
+        return d3.json('/assets/geojson/antarctica.geo.json').catch(function() { return null; }).then(function(ant) {
+          if (ant && ant.features) merged.features = merged.features.concat(ant.features);
+          return merged;
+        });
       })
       .then(function(geojson) {
-        geojson.features = geojson.features.filter(function(f) {
-          var n = f.properties.ADMIN || f.properties.admin || f.properties.name || f.properties.NAME || f.properties.NAME_LONG || f.properties.sovereignt || '';
-          return n !== 'Antarctica';
-        });
         var projection = d3.geoNaturalEarth1().fitExtent([[10,10],[W-10,H-10]], geojson);
         pathGen.projection(projection);
         var paths = svg.selectAll('path')
@@ -611,6 +545,7 @@ nav: false
           .attr('d', pathGen)
           .attr('fill', function (d) {
             var n = d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || '';
+            if (n === 'Antarctica') return '#dce9f5';
             return worldVisited[n] ? '#2a9d8f' : '#e9f0e6';
           })
           .attr('stroke', '#ffffff').attr('stroke-width', 0.3)
@@ -728,11 +663,8 @@ nav: false
       });
   }
 
-  // ── Comparison tab init functions ──────────────────────────────────────────
+  // ── Continent tab init functions ───────────────────────────────────────────
 
-  var bd2MapInited      = false;
-  var india2MapInited   = false;
-  var world2MapInited   = false;
   var africaMapInited   = false;
   var asiaMapInited     = false;
   var namericaMapInited = false;
@@ -740,9 +672,6 @@ nav: false
   var europeMapInited   = false;
   var oceaniaMapInited  = false;
 
-  function initBd2Map()      { bd2MapInited = true;      renderSimpleMap('bd2',      '/assets/geojson/bangladesh.geo.json',   1.35, 'mercator',     0.8, false); }
-  function initIndia2Map()   { india2MapInited = true;   renderSimpleMap('india2',   '/assets/geojson/india.geo.json',         1.35, 'mercator',     0.8, false); }
-  function initWorld2Map()   { world2MapInited = true;   renderSimpleMap('world2',   '/assets/geojson/world_map.geo.json',     0.56, 'naturalearth', 0.3, true);  }
   function initAfricaMap()   { africaMapInited = true;   renderSimpleMap('africa',   '/assets/geojson/africa.geo.json',        0.56, 'naturalearth', 0.5, false); }
   function initAsiaMap()     { asiaMapInited = true;     renderSimpleMap('asia',     '/assets/geojson/asia.geo.json',          0.56, 'naturalearth', 0.5, false); }
   function initNAmericaMap() { namericaMapInited = true; renderSimpleMap('namerica', '/assets/geojson/north_america.geo.json', 0.56, 'naturalearth', 0.5, false); }
@@ -753,7 +682,7 @@ nav: false
   // ── Tab switcher ───────────────────────────────────────────────────────────
 
   window.switchTab = function(name) {
-    ['bangladesh', 'india', 'world', 'bd2', 'india2', 'world2', 'africa', 'asia', 'namerica', 'samerica', 'europe', 'oceania'].forEach(function(t) {
+    ['bangladesh', 'india', 'world', 'africa', 'asia', 'namerica', 'samerica', 'europe', 'oceania'].forEach(function(t) {
       document.getElementById('panel-' + t).style.display = t === name ? 'block' : 'none';
       var btn = document.getElementById('tab-' + t);
       btn.style.borderBottomColor = t === name ? '#2a9d8f' : 'transparent';
@@ -762,9 +691,6 @@ nav: false
     });
     if (name === 'india'    && !indiaMapInited)    setTimeout(initIndiaMap,    0);
     if (name === 'world'    && !worldMapInited)    setTimeout(initWorldMap,    0);
-    if (name === 'bd2'      && !bd2MapInited)      setTimeout(initBd2Map,      0);
-    if (name === 'india2'   && !india2MapInited)   setTimeout(initIndia2Map,   0);
-    if (name === 'world2'   && !world2MapInited)   setTimeout(initWorld2Map,   0);
     if (name === 'africa'   && !africaMapInited)   setTimeout(initAfricaMap,   0);
     if (name === 'asia'     && !asiaMapInited)     setTimeout(initAsiaMap,     0);
     if (name === 'namerica' && !namericaMapInited) setTimeout(initNAmericaMap, 0);
