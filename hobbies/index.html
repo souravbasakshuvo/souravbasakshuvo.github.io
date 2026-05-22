@@ -72,18 +72,18 @@
     document.getElementById('district-panel').style.display = 'block';
   }
 
-  var bdContainer = document.getElementById('bd-map');
-  var bdW = Math.round((bdContainer.offsetWidth || 620) * 0.85);
-  var bdH = Math.round(bdW * 1.2);
-  bdContainer.style.height = bdH + 'px';
+  var container = document.getElementById('bd-map');
+  var W = container.offsetWidth || 680;
+  var H = Math.round(W * 1.35);
+  container.style.height = H + 'px';
   var bdSvg = d3.select('#bd-map').append('svg')
     .attr('width', '100%')
-    .attr('viewBox', '0 0 ' + bdW + ' ' + bdH);
+    .attr('viewBox', '0 0 ' + W + ' ' + H);
   var bdSelected = null;
 
   d3.json('/assets/geojson/bd-districts.json')
     .then(function(geojson) {
-    var proj = d3.geoMercator().fitSize([bdW, bdH], geojson);
+    var proj = d3.geoMercator().fitExtent([[10,10],[W-10,H-10]], geojson);
     var path = d3.geoPath().projection(proj);
     var paths = bdSvg.selectAll('path')
       .data(geojson.features).enter().append('path')
@@ -124,7 +124,7 @@
     document.getElementById('bd-zoom-reset').onclick = function() { bdSvg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
     })
     .catch(function() {
-      bdSvg.append('text').attr('x', bdW / 2).attr('y', bdH / 2)
+      bdSvg.append('text').attr('x', W / 2).attr('y', H / 2)
         .attr('text-anchor', 'middle').attr('dominant-baseline', 'middle')
         .attr('fill', '#666').text('Map unavailable');
     });
