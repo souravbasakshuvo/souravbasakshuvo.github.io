@@ -79,7 +79,6 @@ nav: false
 <div id="district-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="dp-name" style="font-size:1.2em;font-weight:bold;"></div>
   <div id="dp-div" style="font-size:0.95em;font-style:italic;margin-bottom:8px;"></div>
-  <!-- upazila info can be added later -->
   <div id="dp-spots"></div>
 </div>
 
@@ -496,9 +495,9 @@ nav: false
   var indiaCities = {
     "Delhi":         "New Delhi (Capital Territory)",
     "Rajasthan":     "Jaipur (Pink City)",
-    "Uttar Pradesh": "Agra, Mathura, Vrindavan",
+    "Uttar Pradesh": "Agra · Mathura · Vrindavan",
     "West Bengal":   "Kolkata (City of Joy)",
-    "Orissa":        "Puri, Konark, Bhubaneswar"
+    "Orissa":        "Puri · Konark · Bhubaneswar"
   };
 
   var indiaMapInited = false;
@@ -507,7 +506,7 @@ nav: false
     document.getElementById('ip-name').textContent = name;
     var cities = indiaCities[name];
     document.getElementById('ip-cities').innerHTML = cities
-      ? '<em>Districts/Cities: ' + cities + '</em>'
+      ? '<em style="font-size:0.9em;">City/District: ' + cities + '</em>'
       : '';
     document.getElementById('ip-spots').innerHTML = indiaSpots[name]
       ? '<strong style="font-size:0.88em;display:block;margin-bottom:4px;">Places visited:</strong>' + indiaSpots[name].spots.map(function (s) {
@@ -627,7 +626,7 @@ nav: false
 
   var worldSpots = {
     "Bangladesh": {note:"Home country — see Bangladesh tab", spots:[]},
-    "India":      {note:"Golden Triangle + Kolkata", spots:["Red Fort","Taj Mahal","Amber Fort (Jaipur)","Victoria Memorial (Kolkata)","India Gate","Qutub Minar","Agra Fort","Howrah Bridge"]}
+    "India":      {note:"5 states visited", spots:["Delhi — Red Fort, India Gate, Qutub Minar, Humayun's Tomb, Jama Masjid, Chandni Chowk","Rajasthan (Jaipur) — Amber Fort, Hawa Mahal, City Palace, Jantar Mantar, Nahargarh Fort","Uttar Pradesh — Taj Mahal (Agra), Agra Fort, Fatehpur Sikri, Mathura, Vrindavan","West Bengal (Kolkata) — Victoria Memorial, Howrah Bridge, Dakshineswar Temple, Park Street","Odisha — Jagannath Temple (Puri), Konark Sun Temple, Puri Beach, Bhubaneswar"]}
   };
 
   var worldMapInited = false;
