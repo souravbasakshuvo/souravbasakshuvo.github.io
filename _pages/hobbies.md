@@ -684,7 +684,6 @@ nav: false
           .data(geojson.features).enter().append('path')
           .attr('d', pathGen)
           .attr('fill', function(d) {
-            if (d.properties.continent === 'Antarctica') return '#dce9f5';
             var n = d.properties.name || d.properties.ADMIN || d.properties.NAME || d.properties.NAME_LONG || '';
             return worldVisited[n] ? '#1b6ca8' : '#f5efe6';
           })
@@ -705,18 +704,18 @@ nav: false
             if (sel) {
               var prevProps = d3.select(sel).datum().properties;
               var prevName = prevProps.ADMIN || prevProps.admin || prevProps.name || prevProps.NAME || prevProps.NAME_LONG || prevProps.sovereignt || '';
-              var prevFill = prevProps.continent === 'Antarctica' ? '#dce9f5' : (worldVisited[prevName] ? '#1b6ca8' : '#f5efe6');
+              var prevFill = worldVisited[prevName] ? '#1b6ca8' : '#f5efe6';
               d3.select(sel).attr('fill', prevFill).attr('stroke', '#ffffff').attr('stroke-width', 0.3);
             }
             sel = this;
-            d3.select(this).attr('fill', d.properties.continent === 'Antarctica' ? '#dce9f5' : '#0d3d6b').attr('stroke', '#ffffff').attr('stroke-width', 0.3);
+            d3.select(this).attr('fill', '#0d3d6b').attr('stroke', '#ffffff').attr('stroke-width', 0.3);
             showWorldPanel(name);
           })
           .on('dblclick', function(event, d) {
             event.stopPropagation();
             if (sel === this) {
               var name = d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || '';
-              var fill = d.properties.continent === 'Antarctica' ? '#dce9f5' : (worldVisited[name] ? '#1b6ca8' : '#f5efe6');
+              var fill = worldVisited[name] ? '#1b6ca8' : '#f5efe6';
               d3.select(this).attr('fill', fill);
               sel = null;
               document.getElementById('world-panel').style.display = 'none';
@@ -738,7 +737,7 @@ nav: false
           if (sel) {
             var prevProps = d3.select(sel).datum().properties;
             var prevName = prevProps.ADMIN || prevProps.admin || prevProps.name || prevProps.NAME || prevProps.NAME_LONG || prevProps.sovereignt || '';
-            var prevFill = prevProps.continent === 'Antarctica' ? '#dce9f5' : (worldVisited[prevName] ? '#1b6ca8' : '#f5efe6');
+            var prevFill = worldVisited[prevName] ? '#1b6ca8' : '#f5efe6';
             d3.select(sel).attr('fill', prevFill);
             sel = null;
             document.getElementById('world-panel').style.display = 'none';
