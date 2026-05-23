@@ -17,10 +17,6 @@ nav: false
     <p style="margin: 0;">I enjoy keeping and raising birds, observing their behaviours and personalities. It is a rewarding hobby that brings life and energy to my living space.</p>
   </div>
 
-  <div style="border: 1px solid rgba(128,128,128,0.2); border-radius: 10px; padding: 20px 24px;">
-    <h4 style="margin-top: 0;">✈️ Travelling</h4>
-    <p style="margin: 0;">Exploring new places, cultures, and cuisines energizes me. Travelling broadens perspective and inspires fresh ideas both in life and research.</p>
-  </div>
 
   <div style="border: 1px solid rgba(128,128,128,0.2); border-radius: 10px; padding: 20px 24px;">
     <h4 style="margin-top: 0;">♟️ Chess</h4>
@@ -36,7 +32,8 @@ nav: false
 
 <div id="travels-section" style="margin-top: 40px;">
 
-<h2>Travels</h2>
+<h2>✈️ Travels</h2>
+<p style="font-size:0.95em;color:var(--global-text-color);margin-top:-8px;margin-bottom:20px;">My dream is to witness every corner of this world and marvel at the creations of the Almighty. Here are the places I have had the blessing to visit so far.</p>
 
 <div id="map-tooltip" style="position:fixed;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 12px;font-size:0.88em;color:var(--global-text-color);pointer-events:none;display:none;z-index:9999;"></div>
 
