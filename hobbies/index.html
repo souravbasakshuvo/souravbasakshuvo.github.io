@@ -411,9 +411,8 @@
             }
           });
         paths.append('title').text(function (d) { return d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || ''; });
-        svg.selectAll('path').filter(function(d) {
-          var n = d.properties.name || d.properties.ADMIN || d.properties.NAME || d.properties.NAME_LONG || '';
-          return n === 'Antarctica';
+        paths.filter(function(d) {
+          return (d.properties.name || '') === 'Antarctica';
         }).style('pointer-events', 'none').style('cursor', 'default');
         var zoom = d3.zoom()
           .scaleExtent([1, 8])
