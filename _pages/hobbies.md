@@ -71,6 +71,9 @@ nav: false
       <button id="bd-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
     </div>
     <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
+    <div style="margin-top:6px;">
+      <button id="bd-fullscreen" style="width:100%;padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">⛶ Fullscreen</button>
+    </div>
   </div>
 </div>
 <div id="district-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -102,6 +105,9 @@ nav: false
       <button id="india-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
     </div>
     <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
+    <div style="margin-top:6px;">
+      <button id="india-fullscreen" style="width:100%;padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">⛶ Fullscreen</button>
+    </div>
   </div>
 </div>
 <div id="india-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -132,6 +138,9 @@ nav: false
       <button id="world-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
     </div>
     <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
+    <div style="margin-top:6px;">
+      <button id="world-fullscreen" style="width:100%;padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">⛶ Fullscreen</button>
+    </div>
   </div>
 </div>
 <div id="world-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -158,6 +167,9 @@ nav: false
         <button id="africa-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
       </div>
       <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
+      <div style="margin-top:6px;">
+        <button id="africa-fullscreen" style="width:100%;padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">⛶ Fullscreen</button>
+      </div>
     </div>
   </div>
   <div id="africa-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -181,6 +193,9 @@ nav: false
         <button id="asia-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
       </div>
       <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
+      <div style="margin-top:6px;">
+        <button id="asia-fullscreen" style="width:100%;padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">⛶ Fullscreen</button>
+      </div>
     </div>
   </div>
   <div id="asia-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -204,6 +219,9 @@ nav: false
         <button id="namerica-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
       </div>
       <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
+      <div style="margin-top:6px;">
+        <button id="namerica-fullscreen" style="width:100%;padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">⛶ Fullscreen</button>
+      </div>
     </div>
   </div>
   <div id="namerica-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -227,6 +245,9 @@ nav: false
         <button id="samerica-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
       </div>
       <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
+      <div style="margin-top:6px;">
+        <button id="samerica-fullscreen" style="width:100%;padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">⛶ Fullscreen</button>
+      </div>
     </div>
   </div>
   <div id="samerica-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -250,6 +271,9 @@ nav: false
         <button id="europe-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
       </div>
       <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
+      <div style="margin-top:6px;">
+        <button id="europe-fullscreen" style="width:100%;padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">⛶ Fullscreen</button>
+      </div>
     </div>
   </div>
   <div id="europe-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -273,6 +297,9 @@ nav: false
         <button id="oceania-zoom-reset" style="padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">Reset</button>
       </div>
       <div style="margin-top:4px;font-size:0.72em;color:var(--global-text-color);opacity:0.7;">Ctrl+scroll to zoom</div>
+      <div style="margin-top:6px;">
+        <button id="oceania-fullscreen" style="width:100%;padding:2px 7px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:0.78em;color:var(--global-text-color);">⛶ Fullscreen</button>
+      </div>
     </div>
   </div>
   <div id="oceania-info-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
@@ -282,6 +309,11 @@ nav: false
 
 </div>
 
+<style>
+:-webkit-full-screen { background: #b8d0e8; }
+:-moz-full-screen { background: #b8d0e8; }
+:fullscreen { background: #b8d0e8; }
+</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script>
 (function () {
@@ -428,6 +460,22 @@ nav: false
     document.getElementById('bd-zoom-in').onclick    = function() { bdSvg.transition().duration(300).call(zoom.scaleBy, 1.5); };
     document.getElementById('bd-zoom-out').onclick   = function() { bdSvg.transition().duration(300).call(zoom.scaleBy, 0.67); };
     document.getElementById('bd-zoom-reset').onclick = function() { bdSvg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
+    document.getElementById('bd-fullscreen').onclick = function() {
+      var el = document.getElementById('bd-map').parentElement;
+      if (!document.fullscreenElement) {
+        el.requestFullscreen().then(function() {
+          document.getElementById('bd-fullscreen').textContent = '✕ Exit fullscreen';
+        }).catch(function(){});
+      } else {
+        document.exitFullscreen();
+        document.getElementById('bd-fullscreen').textContent = '⛶ Fullscreen';
+      }
+    };
+    document.addEventListener('fullscreenchange', function() {
+      if (!document.fullscreenElement) {
+        document.getElementById('bd-fullscreen').textContent = '⛶ Fullscreen';
+      }
+    });
     })
     .catch(function() {
       bdSvg.append('text').attr('x', W / 2).attr('y', H / 2)
@@ -549,6 +597,22 @@ nav: false
       document.getElementById('india-zoom-in').onclick    = function() { svg.transition().duration(300).call(zoom.scaleBy, 1.5); };
       document.getElementById('india-zoom-out').onclick   = function() { svg.transition().duration(300).call(zoom.scaleBy, 0.67); };
       document.getElementById('india-zoom-reset').onclick = function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
+      document.getElementById('india-fullscreen').onclick = function() {
+        var el = document.getElementById('india-map').parentElement;
+        if (!document.fullscreenElement) {
+          el.requestFullscreen().then(function() {
+            document.getElementById('india-fullscreen').textContent = '✕ Exit fullscreen';
+          }).catch(function(){});
+        } else {
+          document.exitFullscreen();
+          document.getElementById('india-fullscreen').textContent = '⛶ Fullscreen';
+        }
+      };
+      document.addEventListener('fullscreenchange', function() {
+        if (!document.fullscreenElement) {
+          document.getElementById('india-fullscreen').textContent = '⛶ Fullscreen';
+        }
+      });
       })
       .catch(function() {
         svg.append('text').attr('x', W / 2).attr('y', H / 2)
@@ -686,6 +750,22 @@ nav: false
         document.getElementById('world-zoom-in').onclick    = function() { svg.transition().duration(300).call(zoom.scaleBy, 1.5); };
         document.getElementById('world-zoom-out').onclick   = function() { svg.transition().duration(300).call(zoom.scaleBy, 0.67); };
         document.getElementById('world-zoom-reset').onclick = function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
+        document.getElementById('world-fullscreen').onclick = function() {
+          var el = document.getElementById('world-map').parentElement;
+          if (!document.fullscreenElement) {
+            el.requestFullscreen().then(function() {
+              document.getElementById('world-fullscreen').textContent = '✕ Exit fullscreen';
+            }).catch(function(){});
+          } else {
+            document.exitFullscreen();
+            document.getElementById('world-fullscreen').textContent = '⛶ Fullscreen';
+          }
+        };
+        document.addEventListener('fullscreenchange', function() {
+          if (!document.fullscreenElement) {
+            document.getElementById('world-fullscreen').textContent = '⛶ Fullscreen';
+          }
+        });
       })
       .catch(function () {
         svg.append('text').attr('x', W / 2).attr('y', H / 2)
@@ -782,6 +862,22 @@ nav: false
         document.getElementById(tabId + '-zoom-in').onclick    = function() { svg.transition().duration(300).call(zoom.scaleBy, 1.5); };
         document.getElementById(tabId + '-zoom-out').onclick   = function() { svg.transition().duration(300).call(zoom.scaleBy, 0.67); };
         document.getElementById(tabId + '-zoom-reset').onclick = function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
+        document.getElementById(tabId + '-fullscreen').onclick = function() {
+          var el = document.getElementById(tabId + '-map').parentElement;
+          if (!document.fullscreenElement) {
+            el.requestFullscreen().then(function() {
+              document.getElementById(tabId + '-fullscreen').textContent = '✕ Exit fullscreen';
+            }).catch(function(){});
+          } else {
+            document.exitFullscreen();
+            document.getElementById(tabId + '-fullscreen').textContent = '⛶ Fullscreen';
+          }
+        };
+        document.addEventListener('fullscreenchange', function() {
+          if (!document.fullscreenElement) {
+            document.getElementById(tabId + '-fullscreen').textContent = '⛶ Fullscreen';
+          }
+        });
       })
       .catch(function(err) {
         console.error(tabId + ' map failed:', err);
