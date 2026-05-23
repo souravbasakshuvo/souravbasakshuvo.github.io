@@ -91,10 +91,10 @@ nav: false
 </div>
 
 <div id="india-map-container" style="position:relative;margin-bottom:10px;">
-  <div id="india-map" style="background:#c9dbc5;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+  <div id="india-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#4a7c59;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#f0ede4;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#eaf1f8;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
     <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
       <button id="india-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
       <button id="india-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -120,10 +120,10 @@ nav: false
 </div>
 
 <div id="world-map-container" style="position:relative;margin-bottom:10px;">
-  <div id="world-map" style="background:#cfd8e3;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+  <div id="world-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e07b54;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#eef2f5;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+    <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#eaf1f8;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
     <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
       <button id="world-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
       <button id="world-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -146,10 +146,10 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 54 Countries Visited</span>
 </div>
   <div id="africa-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="africa-map" style="background:#f5e6c8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="africa-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#c17f24;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#fdf6e8;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#eaf1f8;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="africa-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="africa-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -169,10 +169,10 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">2 / 49 Countries Visited</span>
 </div>
   <div id="asia-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="asia-map" style="background:#c8d4ed;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="asia-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#3d5a99;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e8ecf4;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#eaf1f8;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="asia-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="asia-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -192,10 +192,10 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 23 Countries Visited</span>
 </div>
   <div id="namerica-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="namerica-map" style="background:#e8d0d0;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="namerica-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#b03060;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#fdf0f0;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#eaf1f8;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="namerica-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="namerica-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -215,10 +215,10 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 12 Countries Visited</span>
 </div>
   <div id="samerica-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="samerica-map" style="background:#c5ddd1;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="samerica-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#2e7d5e;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#f0f7f4;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#eaf1f8;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="samerica-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="samerica-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -238,10 +238,10 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 44 Countries Visited</span>
 </div>
   <div id="europe-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="europe-map" style="background:#d5cce8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="europe-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#6a4c93;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#f2eff9;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#eaf1f8;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="europe-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="europe-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -261,10 +261,10 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 14 Countries Visited</span>
 </div>
   <div id="oceania-map-container" style="position:relative;margin-bottom:10px;">
-    <div id="oceania-map" style="background:#b8e8e0;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
+    <div id="oceania-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1a8a7a;margin-right:5px;vertical-align:middle;"></span>Visited<br>
-      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e8f8f6;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
+      <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#eaf1f8;border:1px solid #ccc;margin-right:5px;vertical-align:middle;"></span>Yet to be visited
       <div style="margin-top:8px;display:flex;gap:4px;align-items:center;">
         <button id="oceania-zoom-in" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">+</button>
         <button id="oceania-zoom-out" style="width:24px;height:24px;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:4px;cursor:pointer;font-size:1em;color:var(--global-text-color);line-height:1;">−</button>
@@ -391,18 +391,36 @@ nav: false
         bdSelected = this;
         d3.select(this).attr('fill', '#0d3d6b').attr('stroke', '#ffffff').attr('stroke-width', 0.8);
         showDistrictPanel(name);
+      })
+      .on('dblclick', function(event, d) {
+        event.stopPropagation();
+        if (bdSelected === this) {
+          var name = getBdName(d.properties);
+          d3.select(this).attr('fill', bdSpots[name] ? '#1b6ca8' : '#eaf1f8');
+          bdSelected = null;
+          document.getElementById('district-panel').style.display = 'none';
+        }
       });
     paths.append('title').text(function (d) { return getBdName(d.properties); });
     var zoom = d3.zoom()
       .scaleExtent([1, 8])
       .filter(function(event) {
         if (event.type === 'wheel') return event.ctrlKey;
+        if (event.type === 'dblclick') return false;
         return true;
       })
       .on('zoom', function(event) {
         bdSvg.selectAll('path').attr('transform', event.transform);
       });
     bdSvg.call(zoom);
+    bdSvg.on('dblclick', function() {
+      if (bdSelected) {
+        var prevName = getBdName(d3.select(bdSelected).datum().properties);
+        d3.select(bdSelected).attr('fill', bdSpots[prevName] ? '#1b6ca8' : '#eaf1f8');
+        bdSelected = null;
+        document.getElementById('district-panel').style.display = 'none';
+      }
+    });
     document.getElementById('bd-zoom-in').onclick    = function() { bdSvg.transition().duration(300).call(zoom.scaleBy, 1.5); };
     document.getElementById('bd-zoom-out').onclick   = function() { bdSvg.transition().duration(300).call(zoom.scaleBy, 0.67); };
     document.getElementById('bd-zoom-reset').onclick = function() { bdSvg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
@@ -456,7 +474,7 @@ nav: false
         .attr('d', pathGen)
         .attr('fill', function (d) {
           var name = d.properties.st_nm || d.properties.NAME_1 || d.properties.name || d.properties.STATE || '';
-          return indiaSpots[name] ? '#4a7c59' : '#f0ede4';
+          return indiaSpots[name] ? '#1b6ca8' : '#eaf1f8';
         })
         .attr('stroke', '#ffffff').attr('stroke-width', 0.8)
         .style('cursor', 'pointer')
@@ -475,23 +493,42 @@ nav: false
           if (sel) {
             var prevProps = d3.select(sel).datum().properties;
             var prevName = prevProps.st_nm || prevProps.NAME_1 || prevProps.name || prevProps.STATE || '';
-            d3.select(sel).attr('fill', indiaSpots[prevName] ? '#4a7c59' : '#f0ede4').attr('stroke', '#ffffff').attr('stroke-width', 0.8);
+            d3.select(sel).attr('fill', indiaSpots[prevName] ? '#1b6ca8' : '#eaf1f8').attr('stroke', '#ffffff').attr('stroke-width', 0.8);
           }
           sel = this;
-          d3.select(this).attr('fill', '#2a4a34').attr('stroke', '#ffffff').attr('stroke-width', 0.8);
+          d3.select(this).attr('fill', '#0d3d6b').attr('stroke', '#ffffff').attr('stroke-width', 0.8);
           showIndiaPanel(name);
+        })
+        .on('dblclick', function(event, d) {
+          event.stopPropagation();
+          if (sel === this) {
+            var name = d.properties.st_nm || d.properties.NAME_1 || d.properties.name || d.properties.STATE || '';
+            d3.select(this).attr('fill', indiaSpots[name] ? '#1b6ca8' : '#eaf1f8');
+            sel = null;
+            document.getElementById('india-panel').style.display = 'none';
+          }
         });
       paths.append('title').text(function (d) { return d.properties.st_nm || d.properties.NAME_1 || d.properties.name || d.properties.STATE || ''; });
       var zoom = d3.zoom()
         .scaleExtent([1, 8])
         .filter(function(event) {
           if (event.type === 'wheel') return event.ctrlKey;
+          if (event.type === 'dblclick') return false;
           return true;
         })
         .on('zoom', function(event) {
           svg.selectAll('path').attr('transform', event.transform);
         });
       svg.call(zoom);
+      svg.on('dblclick', function() {
+        if (sel) {
+          var prevProps = d3.select(sel).datum().properties;
+          var prevName = prevProps.st_nm || prevProps.NAME_1 || prevProps.name || prevProps.STATE || '';
+          d3.select(sel).attr('fill', indiaSpots[prevName] ? '#1b6ca8' : '#eaf1f8');
+          sel = null;
+          document.getElementById('india-panel').style.display = 'none';
+        }
+      });
       document.getElementById('india-zoom-in').onclick    = function() { svg.transition().duration(300).call(zoom.scaleBy, 1.5); };
       document.getElementById('india-zoom-out').onclick   = function() { svg.transition().duration(300).call(zoom.scaleBy, 0.67); };
       document.getElementById('india-zoom-reset').onclick = function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
@@ -571,7 +608,7 @@ nav: false
           .attr('fill', function (d) {
             var n = d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || '';
             if (n === 'Antarctica') return '#dce9f5';
-            return worldVisited[n] ? '#e07b54' : '#eef2f5';
+            return worldVisited[n] ? '#1b6ca8' : '#eaf1f8';
           })
           .attr('stroke', '#ffffff').attr('stroke-width', 0.3)
           .style('cursor', 'pointer')
@@ -590,24 +627,45 @@ nav: false
             if (sel) {
               var prevProps = d3.select(sel).datum().properties;
               var prevName = prevProps.ADMIN || prevProps.admin || prevProps.name || prevProps.NAME || prevProps.NAME_LONG || prevProps.sovereignt || '';
-              var prevFill = prevName === 'Antarctica' ? '#dce9f5' : (worldVisited[prevName] ? '#e07b54' : '#eef2f5');
+              var prevFill = prevName === 'Antarctica' ? '#dce9f5' : (worldVisited[prevName] ? '#1b6ca8' : '#eaf1f8');
               d3.select(sel).attr('fill', prevFill).attr('stroke', '#ffffff').attr('stroke-width', 0.3);
             }
             sel = this;
-            d3.select(this).attr('fill', name === 'Antarctica' ? '#dce9f5' : '#a84f2a').attr('stroke', '#ffffff').attr('stroke-width', 0.3);
+            d3.select(this).attr('fill', name === 'Antarctica' ? '#dce9f5' : '#0d3d6b').attr('stroke', '#ffffff').attr('stroke-width', 0.3);
             showWorldPanel(name);
+          })
+          .on('dblclick', function(event, d) {
+            event.stopPropagation();
+            if (sel === this) {
+              var name = d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || '';
+              var fill = name === 'Antarctica' ? '#dce9f5' : (worldVisited[name] ? '#1b6ca8' : '#eaf1f8');
+              d3.select(this).attr('fill', fill);
+              sel = null;
+              document.getElementById('world-panel').style.display = 'none';
+            }
           });
         paths.append('title').text(function (d) { return d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || ''; });
         var zoom = d3.zoom()
           .scaleExtent([1, 8])
           .filter(function(event) {
             if (event.type === 'wheel') return event.ctrlKey;
+            if (event.type === 'dblclick') return false;
             return true;
           })
           .on('zoom', function(event) {
             svg.selectAll('path').attr('transform', event.transform);
           });
         svg.call(zoom);
+        svg.on('dblclick', function() {
+          if (sel) {
+            var prevProps = d3.select(sel).datum().properties;
+            var prevName = prevProps.ADMIN || prevProps.admin || prevProps.name || prevProps.NAME || prevProps.NAME_LONG || prevProps.sovereignt || '';
+            var prevFill = prevName === 'Antarctica' ? '#dce9f5' : (worldVisited[prevName] ? '#1b6ca8' : '#eaf1f8');
+            d3.select(sel).attr('fill', prevFill);
+            sel = null;
+            document.getElementById('world-panel').style.display = 'none';
+          }
+        });
         document.getElementById('world-zoom-in').onclick    = function() { svg.transition().duration(300).call(zoom.scaleBy, 1.5); };
         document.getElementById('world-zoom-out').onclick   = function() { svg.transition().duration(300).call(zoom.scaleBy, 0.67); };
         document.getElementById('world-zoom-reset').onclick = function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
@@ -675,15 +733,33 @@ nav: false
             d3.select(this).attr('fill', selectedColor).attr('stroke', '#ffffff').attr('stroke-width', strokeW * 2);
             document.getElementById(infoNameId).textContent = n;
             document.getElementById(infoPanelId).style.display = 'block';
+          })
+          .on('dblclick', function(event, d) {
+            event.stopPropagation();
+            if (sel === this) {
+              var n = getName(d.properties);
+              d3.select(this).attr('fill', worldVisited[n] ? visitedColor : unvisitedColor);
+              sel = null;
+              document.getElementById(infoPanelId).style.display = 'none';
+            }
           });
         paths.append('title').text(function(d) { return getName(d.properties); });
         var zoom = d3.zoom().scaleExtent([1, 8])
           .filter(function(event) {
             if (event.type === 'wheel') return event.ctrlKey;
+            if (event.type === 'dblclick') return false;
             return true;
           })
           .on('zoom', function(event) { svg.selectAll('path').attr('transform', event.transform); });
         svg.call(zoom);
+        svg.on('dblclick', function() {
+          if (sel) {
+            var prevName = getName(d3.select(sel).datum().properties);
+            d3.select(sel).attr('fill', worldVisited[prevName] ? visitedColor : unvisitedColor);
+            sel = null;
+            document.getElementById(infoPanelId).style.display = 'none';
+          }
+        });
         document.getElementById(tabId + '-zoom-in').onclick    = function() { svg.transition().duration(300).call(zoom.scaleBy, 1.5); };
         document.getElementById(tabId + '-zoom-out').onclick   = function() { svg.transition().duration(300).call(zoom.scaleBy, 0.67); };
         document.getElementById(tabId + '-zoom-reset').onclick = function() { svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity); };
@@ -705,12 +781,12 @@ nav: false
   var europeMapInited   = false;
   var oceaniaMapInited  = false;
 
-  function initAfricaMap()   { africaMapInited = true;   renderSimpleMap('africa',   '/assets/geojson/africa.geo.json',        0.56, 'naturalearth', 0.5, false, '#c17f24', '#fdf6e8', '#7a4e0d'); }
-  function initAsiaMap()     { asiaMapInited = true;     renderSimpleMap('asia',     '/assets/geojson/asia.geo.json',          0.56, 'naturalearth', 0.5, false, '#3d5a99', '#e8ecf4', '#1e2e5a'); }
-  function initNAmericaMap() { namericaMapInited = true; renderSimpleMap('namerica', '/assets/geojson/north_america.geo.json', 0.56, 'naturalearth', 0.5, false, '#b03060', '#fdf0f0', '#6e1530'); }
-  function initSAmericaMap() { samericaMapInited = true; renderSimpleMap('samerica', '/assets/geojson/south_america.geo.json', 0.56, 'naturalearth', 0.5, false, '#2e7d5e', '#f0f7f4', '#1a4a38'); }
-  function initEuropeMap()   { europeMapInited = true;   renderSimpleMap('europe',   '/assets/geojson/europe.geo.json',        0.56, 'naturalearth', 0.5, false, '#6a4c93', '#f2eff9', '#3d2260'); }
-  function initOceaniaMap()  { oceaniaMapInited = true;  renderSimpleMap('oceania',  '/assets/geojson/oceania.geo.json',       0.56, 'naturalearth', 0.5, false, '#1a8a7a', '#e8f8f6', '#0d5248'); }
+  function initAfricaMap()   { africaMapInited = true;   renderSimpleMap('africa',   '/assets/geojson/africa.geo.json',        0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
+  function initAsiaMap()     { asiaMapInited = true;     renderSimpleMap('asia',     '/assets/geojson/asia.geo.json',          0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
+  function initNAmericaMap() { namericaMapInited = true; renderSimpleMap('namerica', '/assets/geojson/north_america.geo.json', 0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
+  function initSAmericaMap() { samericaMapInited = true; renderSimpleMap('samerica', '/assets/geojson/south_america.geo.json', 0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
+  function initEuropeMap()   { europeMapInited = true;   renderSimpleMap('europe',   '/assets/geojson/europe.geo.json',        0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
+  function initOceaniaMap()  { oceaniaMapInited = true;  renderSimpleMap('oceania',  '/assets/geojson/oceania.geo.json',       0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
 
   // ── Tab switcher ───────────────────────────────────────────────────────────
 
