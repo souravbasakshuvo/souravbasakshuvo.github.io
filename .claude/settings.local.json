@@ -44,7 +44,14 @@
       "Bash(python3 *)",
       "Bash(Select-Object Name)",
       "Bash(gh api *)",
-      "Bash(claude config *)"
+      "Bash(claude config *)",
+      "PowerShell(Invoke-WebRequest -Uri \"https://raw.githubusercontent.com/fahimreza-dev/bangladesh-geojson/master/bd-districts.json\" -OutFile \"D:\\\\2_Projects_and_Codes_Github\\\\Github Portfolio\\\\souravbasakshuvo.github.io\\\\assets\\\\geojson\\\\bd-districts.json\" -UseBasicParsing; $f = Get-Item \"D:\\\\2_Projects_and_Codes_Github\\\\Github Portfolio\\\\souravbasakshuvo.github.io\\\\assets\\\\geojson\\\\bd-districts.json\"; Write-Host \"Size: $\\($f.Length\\) bytes\")",
+      "WebSearch",
+      "Bash(node -e \"const d=require\\('./assets/geojson/bd-districts.json'\\);const f=d.features.find\\(f=>f.properties.ADM2_EN&&f.properties.ADM2_EN.toLowerCase\\(\\).includes\\('khagr'\\)\\);console.log\\(f&&f.properties\\);\")",
+      "Bash(node -e ' *)",
+      "Bash(node split.js)",
+      "Bash(node -e \"var fs=require\\('fs'\\);var d=JSON.parse\\(fs.readFileSync\\('countries_raw.geo.json','utf8'\\)\\);console.log\\(JSON.stringify\\(d.features[0].properties\\)\\);\")",
+      "Bash(node *)"
     ]
   }
 }
