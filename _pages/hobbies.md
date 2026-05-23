@@ -683,7 +683,7 @@ nav: false
     return props.ADMIN || props.admin || props.name || props.NAME || props.NAME_LONG || props.sovereignt || props.ADM2_EN || props.st_nm || '';
   }
 
-  function renderSimpleMap(tabId, geojsonUrl, heightRatio, projType, strokeW, filterAnt, visitedColor, unvisitedColor, selectedColor) {
+  function renderSimpleMap(tabId, geojsonUrl, heightRatio, projType, strokeW, filterAnt, visitedColor, unvisitedColor, selectedColor, projFn) {
     var mapId       = tabId + '-map';
     var containerId = tabId + '-map-container';
     var infoPanelId = tabId + '-info-panel';
@@ -703,9 +703,11 @@ nav: false
           geojson.features = geojson.features.filter(function(f) { return getName(f.properties) !== 'Antarctica'; });
         }
         console.log(tabId + ' loaded', geojson.features.length, 'features');
-        var projection = projType === 'mercator'
-          ? d3.geoMercator().fitSize([W, H], geojson)
-          : d3.geoNaturalEarth1().fitExtent([[10, 10], [W - 10, H - 10]], geojson);
+        var projection = projFn
+          ? projFn(W, H)
+          : (projType === 'mercator'
+            ? d3.geoMercator().fitSize([W, H], geojson)
+            : d3.geoNaturalEarth1().fitExtent([[10, 10], [W - 10, H - 10]], geojson));
         pathGen.projection(projection);
         var paths = svg.selectAll('path')
           .data(geojson.features).enter().append('path')
@@ -783,10 +785,28 @@ nav: false
 
   function initAfricaMap()   { africaMapInited = true;   renderSimpleMap('africa',   '/assets/geojson/africa.geo.json',        0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
   function initAsiaMap()     { asiaMapInited = true;     renderSimpleMap('asia',     '/assets/geojson/asia.geo.json',          0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
-  function initNAmericaMap() { namericaMapInited = true; renderSimpleMap('namerica', '/assets/geojson/north_america.geo.json', 0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
+  function initNAmericaMap() {
+    namericaMapInited = true;
+    renderSimpleMap('namerica', '/assets/geojson/north_america.geo.json', 0.75, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b', function(W, H) {
+      return d3.geoAlbers()
+        .center([0, 52])
+        .rotate([100, 0])
+        .parallels([29.5, 45.5])
+        .scale(W * 0.9)
+        .translate([W / 2, H / 2]);
+    });
+  }
   function initSAmericaMap() { samericaMapInited = true; renderSimpleMap('samerica', '/assets/geojson/south_america.geo.json', 0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
   function initEuropeMap()   { europeMapInited = true;   renderSimpleMap('europe',   '/assets/geojson/europe.geo.json',        0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
-  function initOceaniaMap()  { oceaniaMapInited = true;  renderSimpleMap('oceania',  '/assets/geojson/oceania.geo.json',       0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b'); }
+  function initOceaniaMap() {
+    oceaniaMapInited = true;
+    renderSimpleMap('oceania', '/assets/geojson/oceania.geo.json', 0.65, 'mercator', 0.5, false, '#1b6ca8', '#eaf1f8', '#0d3d6b', function(W, H) {
+      return d3.geoMercator()
+        .center([155, -25])
+        .scale(W * 0.8)
+        .translate([W / 2, H / 2]);
+    });
+  }
 
   // ── Tab switcher ───────────────────────────────────────────────────────────
 
