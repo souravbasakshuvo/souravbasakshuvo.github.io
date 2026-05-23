@@ -683,9 +683,11 @@ nav: false
         var paths = svg.selectAll('path')
           .data(geojson.features).enter().append('path')
           .attr('d', pathGen)
-          .attr('fill', function (d) {
-            var n = d.properties.name || d.properties.ADMIN || d.properties.NAME || d.properties.NAME_LONG || '';
-            if (n === 'Antarctica') return '#dce9f5';
+          .attr('fill', function(d) {
+            var props = d.properties;
+            var allVals = Object.values(props).join('|').toLowerCase();
+            if (allVals.includes('antarct')) return '#dce9f5';
+            var n = props.name || props.ADMIN || props.NAME || props.NAME_LONG || '';
             return worldVisited[n] ? '#1b6ca8' : '#f5efe6';
           })
           .attr('stroke', '#ffffff').attr('stroke-width', 0.3)
@@ -705,18 +707,21 @@ nav: false
             if (sel) {
               var prevProps = d3.select(sel).datum().properties;
               var prevName = prevProps.ADMIN || prevProps.admin || prevProps.name || prevProps.NAME || prevProps.NAME_LONG || prevProps.sovereignt || '';
-              var prevFill = prevName === 'Antarctica' ? '#dce9f5' : (worldVisited[prevName] ? '#1b6ca8' : '#f5efe6');
+              var prevAllVals = Object.values(prevProps).join('|').toLowerCase();
+              var prevFill = prevAllVals.includes('antarct') ? '#dce9f5' : (worldVisited[prevName] ? '#1b6ca8' : '#f5efe6');
               d3.select(sel).attr('fill', prevFill).attr('stroke', '#ffffff').attr('stroke-width', 0.3);
             }
             sel = this;
-            d3.select(this).attr('fill', name === 'Antarctica' ? '#dce9f5' : '#0d3d6b').attr('stroke', '#ffffff').attr('stroke-width', 0.3);
+            var thisAllVals = Object.values(d.properties).join('|').toLowerCase();
+            d3.select(this).attr('fill', thisAllVals.includes('antarct') ? '#dce9f5' : '#0d3d6b').attr('stroke', '#ffffff').attr('stroke-width', 0.3);
             showWorldPanel(name);
           })
           .on('dblclick', function(event, d) {
             event.stopPropagation();
             if (sel === this) {
               var name = d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || '';
-              var fill = name === 'Antarctica' ? '#dce9f5' : (worldVisited[name] ? '#1b6ca8' : '#f5efe6');
+              var dblAllVals = Object.values(d.properties).join('|').toLowerCase();
+              var fill = dblAllVals.includes('antarct') ? '#dce9f5' : (worldVisited[name] ? '#1b6ca8' : '#f5efe6');
               d3.select(this).attr('fill', fill);
               sel = null;
               document.getElementById('world-panel').style.display = 'none';
@@ -724,7 +729,7 @@ nav: false
           });
         paths.append('title').text(function (d) { return d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || ''; });
         paths.filter(function(d) {
-          return (d.properties.name || '') === 'Antarctica';
+          return Object.values(d.properties).join('|').toLowerCase().includes('antarct');
         }).style('pointer-events', 'none').style('cursor', 'default');
         var zoom = d3.zoom()
           .scaleExtent([1, 8])
@@ -741,7 +746,8 @@ nav: false
           if (sel) {
             var prevProps = d3.select(sel).datum().properties;
             var prevName = prevProps.ADMIN || prevProps.admin || prevProps.name || prevProps.NAME || prevProps.NAME_LONG || prevProps.sovereignt || '';
-            var prevFill = prevName === 'Antarctica' ? '#dce9f5' : (worldVisited[prevName] ? '#1b6ca8' : '#f5efe6');
+            var prevAllVals2 = Object.values(prevProps).join('|').toLowerCase();
+            var prevFill = prevAllVals2.includes('antarct') ? '#dce9f5' : (worldVisited[prevName] ? '#1b6ca8' : '#f5efe6');
             d3.select(sel).attr('fill', prevFill);
             sel = null;
             document.getElementById('world-panel').style.display = 'none';
