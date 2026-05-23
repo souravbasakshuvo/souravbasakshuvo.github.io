@@ -61,7 +61,6 @@ nav: false
 
 <div style="margin-bottom:10px;">
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">5 / 28 states visited</span>
-  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">5 states visited</span>
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">3 trips</span>
 </div>
 
@@ -94,8 +93,8 @@ nav: false
 
 <div style="margin-bottom:10px;">
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">2 / 195 countries visited</span>
-  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">1 / 6 continents visited</span>
-  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">2 trips abroad</span>
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">1 / 7 continents visited</span>
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">3 trips abroad</span>
 </div>
 
 <div id="world-map-container" style="position:relative;margin-bottom:10px;max-width:90%;margin-left:auto;margin-right:auto;">
@@ -724,6 +723,10 @@ nav: false
             }
           });
         paths.append('title').text(function (d) { return d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || ''; });
+        svg.selectAll('path').filter(function(d) {
+          var n = d.properties.name || d.properties.ADMIN || d.properties.NAME || '';
+          return n === 'Antarctica';
+        }).attr('fill', '#dce9f5').style('pointer-events', 'none');
         var zoom = d3.zoom()
           .scaleExtent([1, 8])
           .filter(function(event) {
@@ -778,7 +781,7 @@ nav: false
     return props.ADMIN || props.admin || props.name || props.NAME || props.NAME_LONG || props.sovereignt || props.ADM2_EN || props.st_nm || '';
   }
 
-  function renderSimpleMap(tabId, geojsonUrl, heightRatio, projType, strokeW, filterAnt, visitedColor, unvisitedColor, selectedColor, projFn) {
+  function renderSimpleMap(tabId, geojsonUrl, heightRatio, projType, strokeW, filterAnt, visitedColor, unvisitedColor, selectedColor, projFn, fitPadding) {
     var mapId       = tabId + '-map';
     var containerId = tabId + '-map-container';
     var infoPanelId = tabId + '-info-panel';
@@ -798,11 +801,12 @@ nav: false
           geojson.features = geojson.features.filter(function(f) { return getName(f.properties) !== 'Antarctica'; });
         }
         console.log(tabId + ' loaded', geojson.features.length, 'features');
+        var pad = (fitPadding !== undefined && fitPadding !== null) ? fitPadding : 10;
         var projection = projFn
           ? projFn(W, H)
           : (projType === 'mercator'
             ? d3.geoMercator().fitSize([W, H], geojson)
-            : d3.geoNaturalEarth1().fitExtent([[10, 10], [W - 10, H - 10]], geojson));
+            : d3.geoNaturalEarth1().fitExtent([[pad, pad], [W - pad, H - pad]], geojson));
         pathGen.projection(projection);
         var paths = svg.selectAll('path')
           .data(geojson.features).enter().append('path')
@@ -894,16 +898,16 @@ nav: false
   var europeMapInited   = false;
   var oceaniaMapInited  = false;
 
-  function initAfricaMap()   { africaMapInited = true;   renderSimpleMap('africa',   '/assets/geojson/africa.geo.json',        0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#f5efe6', '#0d3d6b'); }
+  function initAfricaMap()   { africaMapInited = true;   renderSimpleMap('africa',   '/assets/geojson/africa.geo.json',        0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#f5efe6', '#0d3d6b', null, 0); }
   function initAsiaMap()     { asiaMapInited = true;     renderSimpleMap('asia',     '/assets/geojson/asia.geo.json',          0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#f5efe6', '#0d3d6b'); }
   function initNAmericaMap() {
     namericaMapInited = true;
     renderSimpleMap('namerica', '/assets/geojson/north_america.geo.json', 0.56, 'naturalearth', 0.5, false, '#1b6ca8', '#f5efe6', '#0d3d6b', function(W, H) {
       return d3.geoAlbers()
-        .center([0, 45])
+        .center([0, 40])
         .rotate([96, 0])
         .parallels([29.5, 45.5])
-        .scale(W * 0.55)
+        .scale(W * 0.42)
         .translate([W / 2, H / 2]);
     });
   }
