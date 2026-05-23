@@ -357,16 +357,18 @@ nav: false
 
   var container = document.getElementById('bd-map');
   var W = container.offsetWidth || 680;
-  var H = Math.round(W * 1.35);
+  var H = Math.round(W * 0.85);
   container.style.height = H + 'px';
   var bdSvg = d3.select('#bd-map').append('svg')
     .attr('width', '100%')
-    .attr('viewBox', '0 0 ' + W + ' ' + H);
+    .attr('height', H)
+    .attr('viewBox', '0 0 ' + W + ' ' + H)
+    .style('display', 'block');
   var bdSelected = null;
 
   d3.json('/assets/geojson/bd-districts.json')
     .then(function(geojson) {
-    var proj = d3.geoMercator().fitExtent([[10,10],[W-10,H-10]], geojson);
+    var proj = d3.geoMercator().fitExtent([[20,20],[W-20,H-20]], geojson);
     var path = d3.geoPath().projection(proj);
     var paths = bdSvg.selectAll('path')
       .data(geojson.features).enter().append('path')
