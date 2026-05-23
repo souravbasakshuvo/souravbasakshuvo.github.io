@@ -440,7 +440,7 @@ nav: false
     "Rajasthan":     {spots:["Amber Fort (Jaipur)","Hawa Mahal","City Palace","Jantar Mantar","Nahargarh Fort","Jaigarh Fort","Albert Hall Museum","Jal Mahal"]},
     "Uttar Pradesh": {spots:["Taj Mahal — Agra (UNESCO)","Agra Fort (UNESCO)","Fatehpur Sikri (UNESCO)","Itmad-ud-Daulah (Baby Taj)","Mehtab Bagh","Mathura — Krishna Janmabhoomi","Vrindavan — Banke Bihari Temple","Vrindavan — ISKCON Temple"]},
     "West Bengal":   {spots:["Victoria Memorial","Howrah Bridge","Dakshineswar Temple","Kalighat Temple","Park Street","Indian Museum","Marble Palace","Princep Ghat","Belur Math"]},
-    "Odisha":        {spots:["Puri — Jagannath Temple","Puri — Puri Beach","Konark Sun Temple (UNESCO)","Bhubaneswar — Lingaraj Temple"]}
+    "Orissa":        {spots:["Puri — Jagannath Temple","Puri — Puri Beach","Konark Sun Temple (UNESCO)","Bhubaneswar — Lingaraj Temple"]}
   };
 
   var indiaCities = {
@@ -448,7 +448,7 @@ nav: false
     "Rajasthan":     "Jaipur (Pink City)",
     "Uttar Pradesh": "Agra, Mathura, Vrindavan",
     "West Bengal":   "Kolkata (City of Joy)",
-    "Odisha":        "Puri, Konark, Bhubaneswar"
+    "Orissa":        "Puri, Konark, Bhubaneswar"
   };
 
   var indiaMapInited = false;
