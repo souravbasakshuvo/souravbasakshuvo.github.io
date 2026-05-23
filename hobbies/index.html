@@ -372,7 +372,7 @@
           .data(geojson.features).enter().append('path')
           .attr('d', pathGen)
           .attr('fill', function (d) {
-            var n = d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || '';
+            var n = d.properties.name || d.properties.ADMIN || d.properties.NAME || d.properties.NAME_LONG || '';
             if (n === 'Antarctica') return '#dce9f5';
             return worldVisited[n] ? '#1b6ca8' : '#f5efe6';
           })
@@ -412,9 +412,9 @@
           });
         paths.append('title').text(function (d) { return d.properties.ADMIN || d.properties.admin || d.properties.name || d.properties.NAME || d.properties.NAME_LONG || d.properties.sovereignt || ''; });
         svg.selectAll('path').filter(function(d) {
-          var n = d.properties.name || d.properties.ADMIN || d.properties.NAME || '';
+          var n = d.properties.name || d.properties.ADMIN || d.properties.NAME || d.properties.NAME_LONG || '';
           return n === 'Antarctica';
-        }).attr('fill', '#dce9f5').style('pointer-events', 'none');
+        }).style('pointer-events', 'none').style('cursor', 'default');
         var zoom = d3.zoom()
           .scaleExtent([1, 8])
           .filter(function(event) {
