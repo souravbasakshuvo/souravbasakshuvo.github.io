@@ -18,6 +18,7 @@ profile:
     <p>RA, Ulster University, UK</p>
     <p>Dhaka, Bangladesh</p>
     <p><a href="mailto:sourav.basak.kuet.bme@gmail.com">sourav.basak.kuet.bme@gmail.com</a></p>
+    <p><a href="mailto:sourav@bmpt.du.ac.bd">sourav@bmpt.du.ac.bd</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page

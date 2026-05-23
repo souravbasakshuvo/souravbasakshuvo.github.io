@@ -17,8 +17,8 @@ nav: false
   <div style="border:1px solid rgba(255,255,255,0.1); border-radius:10px; padding:16px 20px;">
     <h4 style="margin-top:0;">✉️ Email</h4>
     <p style="margin:0;">
-      <a href="mailto:sourav.basak.kuet.bme@gmail.com">sourav.basak.kuet.bme@gmail.com</a><br>
-      <a href="mailto:sbasak234@gmail.com">sbasak234@gmail.com</a>
+      Personal: <a href="mailto:sourav.basak.kuet.bme@gmail.com">sourav.basak.kuet.bme@gmail.com</a><br>
+      University: <a href="mailto:sourav@bmpt.du.ac.bd">sourav@bmpt.du.ac.bd</a>
     </p>
   </div>
 
