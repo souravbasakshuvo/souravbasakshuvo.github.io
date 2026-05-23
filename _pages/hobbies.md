@@ -60,7 +60,7 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">7 / 8 divisions covered</span>
 </div>
 
-<div id="bd-map-container" style="position:relative;margin-bottom:10px;">
+<div id="bd-map-container" style="position:relative;margin-bottom:10px;max-width:90%;margin-left:auto;margin-right:auto;">
   <div id="bd-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);width:100%;overflow:hidden;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
@@ -76,6 +76,7 @@ nav: false
 <div id="district-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
   <div id="dp-name" style="font-size:1.2em;font-weight:bold;"></div>
   <div id="dp-div" style="font-size:0.95em;font-style:italic;margin-bottom:8px;"></div>
+  <!-- upazila info can be added later -->
   <div id="dp-spots"></div>
 </div>
 
@@ -85,12 +86,12 @@ nav: false
 <div id="panel-india" style="display:none;">
 
 <div style="margin-bottom:10px;">
-  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">4 / 28 states visited</span>
-  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">4 cities visited</span>
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">5 / 28 states visited</span>
+  <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">5 states visited</span>
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">3 trips</span>
 </div>
 
-<div id="india-map-container" style="position:relative;margin-bottom:10px;">
+<div id="india-map-container" style="position:relative;margin-bottom:10px;max-width:90%;margin-left:auto;margin-right:auto;">
   <div id="india-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
@@ -104,7 +105,8 @@ nav: false
   </div>
 </div>
 <div id="india-panel" style="display:none;border:1px solid var(--global-divider-color);background:var(--global-card-bg-color);border-radius:10px;padding:14px 16px;margin-top:10px;">
-  <div id="ip-name" style="font-size:1.2em;font-weight:bold;margin-bottom:8px;"></div>
+  <div id="ip-name" style="font-size:1.2em;font-weight:bold;margin-bottom:4px;"></div>
+  <div id="ip-cities" style="font-size:0.88em;color:var(--global-text-color);margin-bottom:8px;"></div>
   <div id="ip-spots"></div>
 </div>
 
@@ -119,7 +121,7 @@ nav: false
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">2 trips abroad</span>
 </div>
 
-<div id="world-map-container" style="position:relative;margin-bottom:10px;">
+<div id="world-map-container" style="position:relative;margin-bottom:10px;max-width:90%;margin-left:auto;margin-right:auto;">
   <div id="world-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
   <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
     <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
@@ -145,7 +147,7 @@ nav: false
 <div style="margin-bottom:10px;">
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 54 Countries Visited</span>
 </div>
-  <div id="africa-map-container" style="position:relative;margin-bottom:10px;">
+  <div id="africa-map-container" style="position:relative;margin-bottom:10px;max-width:90%;margin-left:auto;margin-right:auto;">
     <div id="africa-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
@@ -168,7 +170,7 @@ nav: false
 <div style="margin-bottom:10px;">
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">2 / 49 Countries Visited</span>
 </div>
-  <div id="asia-map-container" style="position:relative;margin-bottom:10px;">
+  <div id="asia-map-container" style="position:relative;margin-bottom:10px;max-width:90%;margin-left:auto;margin-right:auto;">
     <div id="asia-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
@@ -191,7 +193,7 @@ nav: false
 <div style="margin-bottom:10px;">
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 23 Countries Visited</span>
 </div>
-  <div id="namerica-map-container" style="position:relative;margin-bottom:10px;">
+  <div id="namerica-map-container" style="position:relative;margin-bottom:10px;max-width:90%;margin-left:auto;margin-right:auto;">
     <div id="namerica-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
@@ -214,7 +216,7 @@ nav: false
 <div style="margin-bottom:10px;">
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 12 Countries Visited</span>
 </div>
-  <div id="samerica-map-container" style="position:relative;margin-bottom:10px;">
+  <div id="samerica-map-container" style="position:relative;margin-bottom:10px;max-width:90%;margin-left:auto;margin-right:auto;">
     <div id="samerica-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
@@ -237,7 +239,7 @@ nav: false
 <div style="margin-bottom:10px;">
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 44 Countries Visited</span>
 </div>
-  <div id="europe-map-container" style="position:relative;margin-bottom:10px;">
+  <div id="europe-map-container" style="position:relative;margin-bottom:10px;max-width:90%;margin-left:auto;margin-right:auto;">
     <div id="europe-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
@@ -260,7 +262,7 @@ nav: false
 <div style="margin-bottom:10px;">
   <span style="display:inline-block;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:5px 14px;font-size:0.95em;margin-right:8px;margin-bottom:8px;">0 / 14 Countries Visited</span>
 </div>
-  <div id="oceania-map-container" style="position:relative;margin-bottom:10px;">
+  <div id="oceania-map-container" style="position:relative;margin-bottom:10px;max-width:90%;margin-left:auto;margin-right:auto;">
     <div id="oceania-map" style="background:#b8d0e8;border-radius:10px;border:1px solid var(--global-divider-color);overflow:hidden;position:relative;width:100%;"></div>
     <div style="position:absolute;top:10px;right:10px;background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:8px;padding:6px 10px;font-size:0.88em;line-height:1.8;z-index:10;color:var(--global-text-color);">
       <span style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#1b6ca8;margin-right:5px;vertical-align:middle;"></span>Visited<br>
@@ -436,16 +438,29 @@ nav: false
   var indiaSpots = {
     "Delhi":         {spots:["Red Fort (Lal Qila)","India Gate","Qutub Minar","Humayun's Tomb","Lotus Temple","Jama Masjid","Chandni Chowk","Akshardham"]},
     "Rajasthan":     {spots:["Amber Fort (Jaipur)","Hawa Mahal","City Palace","Jantar Mantar","Nahargarh Fort","Jaigarh Fort","Albert Hall Museum","Jal Mahal"]},
-    "Uttar Pradesh": {spots:["Taj Mahal — Agra (UNESCO)","Agra Fort (UNESCO)","Fatehpur Sikri (UNESCO)","Itmad-ud-Daulah (Baby Taj)","Mehtab Bagh"]},
-    "West Bengal":   {spots:["Victoria Memorial","Howrah Bridge","Dakshineswar Temple","Kalighat Temple","Park Street","Indian Museum","Marble Palace","Princep Ghat","Belur Math"]}
+    "Uttar Pradesh": {spots:["Taj Mahal — Agra (UNESCO)","Agra Fort (UNESCO)","Fatehpur Sikri (UNESCO)","Itmad-ud-Daulah (Baby Taj)","Mehtab Bagh","Mathura — Krishna Janmabhoomi","Vrindavan — Banke Bihari Temple","Vrindavan — ISKCON Temple"]},
+    "West Bengal":   {spots:["Victoria Memorial","Howrah Bridge","Dakshineswar Temple","Kalighat Temple","Park Street","Indian Museum","Marble Palace","Princep Ghat","Belur Math"]},
+    "Odisha":        {spots:["Puri — Jagannath Temple","Puri — Puri Beach","Konark Sun Temple (UNESCO)","Bhubaneswar — Lingaraj Temple"]}
+  };
+
+  var indiaCities = {
+    "Delhi":         "New Delhi (Capital Territory)",
+    "Rajasthan":     "Jaipur (Pink City)",
+    "Uttar Pradesh": "Agra, Mathura, Vrindavan",
+    "West Bengal":   "Kolkata (City of Joy)",
+    "Odisha":        "Puri, Konark, Bhubaneswar"
   };
 
   var indiaMapInited = false;
 
   function showIndiaPanel(name) {
     document.getElementById('ip-name').textContent = name;
+    var cities = indiaCities[name];
+    document.getElementById('ip-cities').innerHTML = cities
+      ? '<em>Districts/Cities: ' + cities + '</em>'
+      : '';
     document.getElementById('ip-spots').innerHTML = indiaSpots[name]
-      ? indiaSpots[name].spots.map(function (s) {
+      ? '<strong style="font-size:0.88em;display:block;margin-bottom:4px;">Places visited:</strong>' + indiaSpots[name].spots.map(function (s) {
           return '<span style="background:var(--global-card-bg-color);border:1px solid var(--global-divider-color);border-radius:20px;padding:3px 10px;font-size:0.88em;margin:3px;display:inline-block;">' + s + '</span>';
         }).join('')
       : '<span style="font-size:0.92em;font-style:italic;color:var(--global-text-color);">Yet to be visited — no places logged.</span>';
