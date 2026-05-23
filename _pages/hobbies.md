@@ -804,10 +804,10 @@ nav: false
     namericaMapInited = true;
     renderSimpleMap('namerica', '/assets/geojson/north_america.geo.json', 0.75, 'naturalearth', 0.5, false, '#1b6ca8', '#f5efe6', '#0d3d6b', function(W, H) {
       return d3.geoAlbers()
-        .center([0, 52])
-        .rotate([100, 0])
+        .center([0, 45])
+        .rotate([96, 0])
         .parallels([29.5, 45.5])
-        .scale(W * 0.9)
+        .scale(W * 0.55)
         .translate([W / 2, H / 2]);
     });
   }
@@ -817,8 +817,8 @@ nav: false
     oceaniaMapInited = true;
     renderSimpleMap('oceania', '/assets/geojson/oceania.geo.json', 0.65, 'mercator', 0.5, false, '#1b6ca8', '#f5efe6', '#0d3d6b', function(W, H) {
       return d3.geoMercator()
-        .center([155, -25])
-        .scale(W * 0.8)
+        .center([150, -20])
+        .scale(W * 0.45)
         .translate([W / 2, H / 2]);
     });
   }
