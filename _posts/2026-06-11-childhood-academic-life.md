@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Childhood Academic Life
-date: 2026-06-11 00:00:00
+date: 2026-06-11 00:00:00 +0600
 description: Reflections on my formative school years and the experiences that shaped my academic journey.
 tags: [childhood, education, Bangladesh]
 categories: [childhood, life]
