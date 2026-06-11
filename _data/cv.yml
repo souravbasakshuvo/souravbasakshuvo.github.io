@@ -168,45 +168,26 @@ cv:
     Projects:
       - name: IoT Based Pilot Health Monitoring System
         url: ""
-        summary: >
-          Developed an IoT-Based Pilot Health Monitoring System using ESP8266 NodeMCU, Arduino IDE,
-          and sensors (MAX30100, DS18B20, BMP180), integrated with the Blynk IoT platform to monitor
-          pilot health and aircraft state, enhancing flight safety.
         highlights:
           - Developed real-time health dashboard via Blynk IoT cloud platform
 
       - name: MediConnect – A Video Conferencing App for Telemedicine
         url: ""
-        summary: >
-          Developed a secure video conferencing app for telemedicine using Java, Firebase, and ZEGOCLOUD.
-          Implemented features including medical image sharing, prescriptions, and real-time chat for
-          comprehensive virtual medical consultations.
         highlights:
           - Implemented medical image sharing, digital prescriptions, and real-time chat
 
       - name: VitaSync – A Smart Band for Telemedicine Applications
         url: ""
-        summary: >
-          Remodeled a wearable device integrating sensors to track heart rate, body temperature,
-          and blood oxygen levels. Developed real-time data transmission with a mobile app and alert
-          mechanism notifying users of health irregularities via email.
         highlights:
           - Real-time data transmission with alert mechanism for abnormal readings
 
       - name: Telechroma – A Smart Colorimetric Analyzer
         url: ""
-        summary: >
-          Developed a portable colorimetric analyzer for telemedicine enabling remote diagnostics
-          of glucose concentrations in urine samples. Integrated Arduino Nano and TCS3200 with a
-          mobile app for real-time data transmission and analysis.
         highlights:
           - Designed for low-cost point-of-care diagnostics
 
       - name: Sanitary Napkin Vending Machine
         url: ""
-        summary: >
-          Designed and built an automated vending machine using RFID, Arduino Mega, stepper motors,
-          and springs to promote menstrual hygiene through accessible and affordable technology.
         highlights:
           - RFID-authenticated dispensing with stepper motor control
 
@@ -400,6 +381,6 @@ cv:
 
     Standardized Tests:
       - label: "IELTS (Academic)"
-        details: "16 November 2024 · Overall Band Score 7.5 — Listening 8.5, Reading 7.0, Writing 7.5, Speaking 6.5"
+        details: "November 2024 · Overall Band Score 7.5 — Listening 8.5, Reading 7.0, Writing 7.5, Speaking 6.5"
       - label: "GRE (General Test)"
-        details: "1 October 2024 · Total Score 313 — Quantitative Reasoning 165, Verbal Reasoning 148, Analytical Writing (AWA) 3.5"
+        details: "October 2024 · Total Score 313 — Quantitative Reasoning 165, Verbal Reasoning 148, Analytical Writing (AWA) 3.5"

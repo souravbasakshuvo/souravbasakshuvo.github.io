@@ -13,10 +13,6 @@
         <h6 class="title font-weight-bold">{{ entry.name }}</h6>
       {% endif %}
 
-      {% if entry.summary %}
-        <p>{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-      {% endif %}
-
       {% if entry.highlights %}
         <ul class="items">
           {% for item in entry.highlights %}
