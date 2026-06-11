@@ -51,7 +51,10 @@
       "Bash(node -e ' *)",
       "Bash(node split.js)",
       "Bash(node -e \"var fs=require\\('fs'\\);var d=JSON.parse\\(fs.readFileSync\\('countries_raw.geo.json','utf8'\\)\\);console.log\\(JSON.stringify\\(d.features[0].properties\\)\\);\")",
-      "Bash(node *)"
+      "Bash(node *)",
+      "Bash(grep -rn \"sourav.basak.kuet.bme@gmail.com\\\\|email\" _config.yml _pages/about.md _data/cv.yml _data/socials.yml)",
+      "Bash(grep -n \"sourav.basak.kuet.bme@gmail.com\\\\|email\" _pages/contact.md)",
+      "Bash(gh run *)"
     ]
   }
 }
