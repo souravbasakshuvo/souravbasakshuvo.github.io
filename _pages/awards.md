@@ -25,7 +25,8 @@ images:
     <div style="font-size:0.9em; margin-bottom:8px;"><em>Khulna University of Engineering & Technology</em></div>
     <p style="margin:0;">
       Awarded a Bachelor of Science (B.Sc. Eng.) with Honors by Khulna University of Engineering & Technology (KUET) in recognition of excellent academic performance.<br>
-      <em>Criteria: Candidates for a Bachelor's degree are awarded with Honors if their CGPA is 3.75 or better.</em>
+      <em>Criteria: Candidates for a Bachelor's degree are awarded with Honors if their CGPA is 3.75 or better.</em><br>
+      This distinction is broadly equivalent to the Magna Cum Laude honor in the US academic system, with an ECE-evaluated U.S. grade equivalent of 3.91 / 4.00, evaluated by Educational Credential Evaluators (ECE), December 2024.
     </p>
   </div>
 </div>
