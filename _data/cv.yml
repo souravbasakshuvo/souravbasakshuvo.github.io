@@ -166,30 +166,38 @@ cv:
         releaseDate: 2026
 
     Projects:
-      - name: IoT Based Pilot Health Monitoring System
-        url: ""
+      - name: "IoT Based Pilot Health Monitoring System"
+        technologies: "ESP8266 NodeMCU, Arduino, Blynk IoT"
+        date: "May 2018 – May 2020"
         highlights:
-          - Developed real-time health dashboard via Blynk IoT cloud platform
+          - "Developed an IoT-Based Pilot Health Monitoring System using ESP8266 NodeMCU, programmed with Arduino IDE, and sensors like MAX30100, DS18B20, and BMP180, integrated with the Blynk IoT platform to monitor pilot health and aircraft state, enhancing flight safety."
 
-      - name: MediConnect – A Video Conferencing App for Telemedicine
-        url: ""
+      - name: "MediConnect – A Video Conferencing App for Telemedicine and Healthcare"
+        technologies: "Java, Firebase"
+        date: "2023"
         highlights:
-          - Implemented medical image sharing, digital prescriptions, and real-time chat
+          - "Developed a secure video conferencing app for telemedicine as part of the Telemedicine & Health Care Laboratory individual project, utilizing Java, Firebase, and ZEGOCLOUD for effective remote healthcare communication."
+          - "Implemented features like sharing medical images, prescriptions, and real-time chat to support comprehensive virtual medical consultations."
 
-      - name: VitaSync – A Smart Band for Telemedicine Applications
-        url: ""
+      - name: "VitaSync: A Smart Band for Telemedicine Applications"
+        technologies: "Sensors, Mobile App Development"
+        date: "2023"
         highlights:
-          - Real-time data transmission with alert mechanism for abnormal readings
+          - "Remodeled a wearable device for the Telemedicine & Health Care Laboratory group project, integrating sensors to track vital metrics such as heart rate, body temperature, and blood oxygen levels."
+          - "Developed a real-time data transmission system with a mobile app and an alert mechanism to notify users and contacts of health irregularities via email."
 
-      - name: Telechroma – A Smart Colorimetric Analyzer
-        url: ""
+      - name: "Telechroma: A Smart Colorimetric Analyzer for Telemedicine Applications"
+        technologies: "Arduino, MIT App"
+        date: "2022"
         highlights:
-          - Designed for low-cost point-of-care diagnostics
+          - "Developed Telechroma, a portable and affordable colorimetric analyzer for telemedicine applications, enabling remote diagnostics of glucose concentrations in urine samples."
+          - "Integrated hardware (Arduino Nano, TCS3200) with a mobile app for real-time data transmission and analysis."
 
-      - name: Sanitary Napkin Vending Machine
-        url: ""
+      - name: "Sanitary Napkin Vending Machine"
+        technologies: "RFID, Arduino Mega, Stepper Motors"
+        date: "2022"
         highlights:
-          - RFID-authenticated dispensing with stepper motor control
+          - "Designed and built an automated Sanitary Napkin Vending Machine using RFID, Arduino Mega, stepper motors, and springs to promote menstrual hygiene through accessible and affordable technology."
 
     Training:
       - company: Dawn of Bioinformatics Limited
