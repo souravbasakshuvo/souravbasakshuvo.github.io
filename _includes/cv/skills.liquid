@@ -1,32 +1,26 @@
 {% comment %}
-  Unified skills entry renderer for both formats
+  Skills renderer — two-column table: bold category left, items text right.
+  Supports new category/items format and legacy name/keywords format.
 {% endcomment %}
 
 <div class="card-text font-weight-light">
-  {% for entry in entries %}
-    <div class="skill-item">
-      {% if entry.icon %}
-        <i class="{{ entry.icon }}"></i>
+  <table style="width:100%; border-collapse:collapse;">
+    {% for entry in entries %}
+      {% if entry.category %}
+        <tr style="vertical-align:top;">
+          <td style="font-weight:600; white-space:nowrap; padding:3px 1.5em 3px 0; width:1%;">{{ entry.category }}</td>
+          <td style="padding:3px 0;">{{ entry.items }}</td>
+        </tr>
+      {% else %}
+        <tr style="vertical-align:top;">
+          <td style="font-weight:600; white-space:nowrap; padding:3px 1.5em 3px 0; width:1%;">
+            {% if entry.icon %}<i class="{{ entry.icon }}"></i> {% endif %}{{ entry.name }}
+          </td>
+          <td style="padding:3px 0;">
+            {% if entry.keywords %}{{ entry.keywords | join: ', ' }}{% endif %}
+          </td>
+        </tr>
       {% endif %}
-      <strong>
-        {{- entry.name -}}
-        {%- if entry.level %} ({{ entry.level }}){% endif %}:</strong
-      >
-      {% if entry.keywords %}
-        {% for keyword in entry.keywords %}
-          {% if forloop.last %}
-            {{ keyword }}
-          {% else %}
-            {{ keyword }},
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </table>
 </div>
-
-<style>
-  .skill-item {
-    padding: 0.5rem 0;
-  }
-</style>

@@ -200,60 +200,25 @@ cv:
           - "Designed and built an automated Sanitary Napkin Vending Machine using RFID, Arduino Mega, stepper motors, and springs to promote menstrual hygiene through accessible and affordable technology."
 
     Skills:
-      - name: Programming Languages
-        icon: fa-solid fa-code
-        keywords:
-          - MATLAB
-          - Python (PyTorch, TensorFlow, Keras)
-          - C/C++
-
-      - name: Simulation & Design
-        icon: fa-solid fa-diagram-project
-        keywords:
-          - NI Multisim
-          - Arduino
-          - Simulink
-          - SOLIDWORKS
-          - AutoCAD
-          - COMSOL Multiphysics
-
-      - name: Microsoft Office
-        icon: fa-solid fa-file-alt
-        keywords:
-          - MS PowerPoint
-          - MS Word
-          - MS Excel
-          - MS Visio
-
-      - name: Reference Management
-        icon: fa-solid fa-book
-        keywords:
-          - Mendeley
-          - Zotero
-          - EndNote
-
-      - name: Others
-        icon: fa-solid fa-toolbox
-        keywords:
-          - LaTeX
-          - Adobe Photoshop
-          - Adobe Illustrator
-          - Adobe Premiere Pro
-          - LabVIEW
-
-      - name: Fabrication & Equipment
-        icon: fa-solid fa-wrench
-        keywords:
-          - "Laser Cutter: Epilog Laser Mini"
-          - "3D Printers: Ultimaker 3 Extended, Prusa i3 MK3S, Creality CR-10 Mini"
-          - "CNC Machine: Roland Modela Pro II MDX 540"
+      - category: "Programming Languages"
+        items: "MATLAB, Python (PyTorch, TensorFlow, Keras), C/C++"
+      - category: "Simulation & Design"
+        items: "NI Multisim, Arduino, Simulink, SOLIDWORKS, AutoCAD, COMSOL Multiphysics"
+      - category: "Microsoft Office"
+        items: "MS PowerPoint, MS Word, MS Excel, MS Visio"
+      - category: "Reference Management"
+        items: "Mendeley, Zotero, EndNote"
+      - category: "Others"
+        items: "LaTeX, Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro, LabVIEW"
+      - category: "Fabrication & Equipment"
+        items: "Epilog Laser Mini (Laser Cutter), Ultimaker 3 Extended, Prusa i3 MK3S, Creality CR-10 Mini (3D Printers), Roland Modela Pro II MDX 540 (CNC Machine)"
 
     Languages:
       - name: Bengali
         summary: Native speaker
 
       - name: English
-        summary: "Professional working proficiency (IELTS: 7.5 | GRE: 313)"
+        summary: "Professional working proficiency"
 
     Standardized Tests:
       - name: "International English Language Testing System (IELTS)"
