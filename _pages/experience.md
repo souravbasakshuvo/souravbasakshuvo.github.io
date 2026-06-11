@@ -153,3 +153,11 @@ images:
 ## Peer Review Experiences
 
 ([Web of Science ResearcherID: MXM-4790-2025](https://www.webofscience.com/wos/author/record/MXM-4790-2025))
+
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline;">
+    <strong>IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI)</strong>
+    <em style="white-space:nowrap; margin-left:1rem; font-size:0.9em;">May 2026 – Present</em>
+  </div>
+  <div style="font-size:0.9em; margin-top:4px;">Reviewer</div>
+</div>
