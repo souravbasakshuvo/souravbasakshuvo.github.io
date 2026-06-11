@@ -142,10 +142,11 @@ images:
 
 ## Professional Affiliations
 
-<!-- Style 5 -->
-<div style="display: flex; justify-content: space-between; align-items: baseline; padding: 16px 0; margin-bottom: 8px;">
-  <strong>IEEE EMBS Chapter, University of Dhaka</strong>
-  <em style="white-space: nowrap; margin-left: 1rem;">May 2026 – Present</em>
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
+  <div style="display: flex; justify-content: space-between; align-items: baseline;">
+    <strong>IEEE EMBS Chapter, University of Dhaka</strong>
+    <em style="white-space: nowrap; margin-left: 1rem;">In Progress</em>
+  </div>
 </div>
 
 ---
@@ -159,5 +160,4 @@ images:
     <strong>IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI)</strong>
     <em style="white-space:nowrap; margin-left:1rem; font-size:0.9em;">May 2026 – Present</em>
   </div>
-  <div style="font-size:0.9em; margin-top:4px;">Reviewer</div>
 </div>
