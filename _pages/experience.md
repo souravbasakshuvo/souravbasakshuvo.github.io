@@ -4,6 +4,8 @@ permalink: /experience/
 title: Experience
 nav: true
 nav_order: 3
+images:
+  lightbox2: true
 ---
 
 ## Research Experience
@@ -116,17 +118,24 @@ nav_order: 3
 
 ## Industrial Experience
 
-<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
-  <div style="display:flex; justify-content:space-between; align-items:baseline;">
-    <strong style="font-size:1.1em;">Student Operator</strong>
-    <span style="font-style:italic; font-size:0.9em;">15 Mar 2022 – 1 Apr 2024</span>
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+  <div style="flex-shrink:0;">
+    <a href="/assets/img/experience/fablab_certificate.jpg" data-lightbox="fablab-cert" data-title="Fabrication Lab KUET — Certificate">
+      <img src="/assets/img/experience/fablab_certificate.jpg" alt="FabLab Certificate" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    </a>
   </div>
-  <div style="margin-bottom:8px;"><em><a href="https://www2.kuet.ac.bd/fablab/" target="_blank">Fabrication Lab KUET</a>, Khulna, Bangladesh</em></div>
-  <ul>
-    <li>Assisted in organizing workshops including <em>Hands-on Training Using Fabrication Tools</em> and <em>IQAC's Hands-on-Training Program</em> at FabLab KUET, covering 3D printing, laser cutting, and CNC milling</li>
-    <li>Helped over 50 students fabricate project and thesis models, guiding them in transforming innovative ideas into real products</li>
-  </ul>
-  <div style="margin-top:8px;"><a href="/assets/pdf/experience/fablab_certificate.pdf" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-file-pdf"></i> Certificate</a></div>
+  <div style="flex:1;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline;">
+      <strong style="font-size:1.1em;">Student Operator</strong>
+      <span style="font-style:italic; font-size:0.9em;">15 Mar 2022 – 1 Apr 2024</span>
+    </div>
+    <div style="margin-bottom:8px;"><em><a href="https://www2.kuet.ac.bd/fablab/" target="_blank">Fabrication Lab KUET</a>, Khulna, Bangladesh</em></div>
+    <ul>
+      <li>Assisted in organizing workshops including <em>Hands-on Training Using Fabrication Tools</em> and <em>IQAC's Hands-on-Training Program</em> at FabLab KUET, covering 3D printing, laser cutting, and CNC milling</li>
+      <li>Helped over 50 students fabricate project and thesis models, guiding them in transforming innovative ideas into real products</li>
+    </ul>
+    <div style="margin-top:8px;"><a href="/assets/pdf/experience/fablab_certificate.pdf" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-file-pdf"></i> Certificate</a></div>
+  </div>
 </div>
 
 ---
