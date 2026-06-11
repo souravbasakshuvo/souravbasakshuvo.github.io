@@ -39,20 +39,8 @@ cv:
       url: https://codeforces.com/profile/Sourav_Basak
 
   sections:
-    Interests:
-      - name: Research Interests
-        icon: fa-solid fa-brain
-        keywords:
-          - Deep Learning
-          - Machine Learning
-          - Medical Image Processing
-          - Biomedical Signal Processing
-          - Generative AI
-          - Large Language Models (LLMs)
-          - Domain Adaptation
-          - Disease Detection
-          - Health Informatics
-          - Neuroengineering
+    Research Interests:
+      - summary: "Neuro-engineering & Brain-Computer Interfaces, Neural Dynamics, Medical Image Processing, Biomedical Signal Processing, Generative AI, Large Language Models (LLMs), Domain Adaptation, Disease Detection, Bioimpedance & Biosensing, Health Informatics."
 
     Education:
       - institution: University of Dhaka
@@ -88,7 +76,7 @@ cv:
 
       - company: Ulster University
         position: Research Assistant Intern
-        location: Derry, UK
+        location: Londonderry, UK
         start_date: 2024-10
         end_date: present
         highlights:
@@ -181,40 +169,44 @@ cv:
       - name: IoT Based Pilot Health Monitoring System
         url: ""
         summary: >
-          ESP8266 NodeMCU system monitoring pilot vitals and aircraft state via Blynk IoT,
-          using MAX30100, DS18B20, and BMP180 sensors.
+          Developed an IoT-Based Pilot Health Monitoring System using ESP8266 NodeMCU, Arduino IDE,
+          and sensors (MAX30100, DS18B20, BMP180), integrated with the Blynk IoT platform to monitor
+          pilot health and aircraft state, enhancing flight safety.
         highlights:
           - Developed real-time health dashboard via Blynk IoT cloud platform
 
       - name: MediConnect – A Video Conferencing App for Telemedicine
         url: ""
         summary: >
-          A cross-platform telemedicine app enabling secure real-time video consultations,
-          messaging, and medical data sharing between patients and healthcare professionals.
+          Developed a secure video conferencing app for telemedicine using Java, Firebase, and ZEGOCLOUD.
+          Implemented features including medical image sharing, prescriptions, and real-time chat for
+          comprehensive virtual medical consultations.
         highlights:
           - Implemented medical image sharing, digital prescriptions, and real-time chat
 
       - name: VitaSync – A Smart Band for Telemedicine Applications
         url: ""
         summary: >
-          Wearable smart band tracking heart rate, temperature, and SpO₂ with real-time
-          mobile app and email alert mechanism for health irregularities.
+          Remodeled a wearable device integrating sensors to track heart rate, body temperature,
+          and blood oxygen levels. Developed real-time data transmission with a mobile app and alert
+          mechanism notifying users of health irregularities via email.
         highlights:
           - Real-time data transmission with alert mechanism for abnormal readings
 
       - name: Telechroma – A Smart Colorimetric Analyzer
         url: ""
         summary: >
-          Portable Arduino-based colorimetric analyzer that quantifies biological analytes
-          from urine samples via color sensing, with wireless Bluetooth transmission to a mobile app.
+          Developed a portable colorimetric analyzer for telemedicine enabling remote diagnostics
+          of glucose concentrations in urine samples. Integrated Arduino Nano and TCS3200 with a
+          mobile app for real-time data transmission and analysis.
         highlights:
           - Designed for low-cost point-of-care diagnostics
 
       - name: Sanitary Napkin Vending Machine
         url: ""
         summary: >
-          RFID-enabled automated vending machine for menstrual hygiene products,
-          2nd Runner-Up at KUET Intra-University Innovation Competition 2022.
+          Designed and built an automated vending machine using RFID, Arduino Mega, stepper motors,
+          and springs to promote menstrual hygiene through accessible and affordable technology.
         highlights:
           - RFID-authenticated dispensing with stepper motor control
 
