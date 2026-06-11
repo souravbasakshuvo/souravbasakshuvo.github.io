@@ -64,19 +64,29 @@ Outside the lab, I served as **President of the Advanced Bioengineering Club (AB
     </div>
     <div class="carousel-inner rounded z-depth-1">
       <div class="carousel-item active">
-        <img src="{{ 'assets/img/about/about_1.JPG' | relative_url }}" class="d-block w-100" alt="Photo 1" style="max-height: 400px; object-fit: cover;">
+        <a href="{{ 'assets/img/about/about_1.JPG' | relative_url }}" data-lightbox="about-carousel" data-title="Photo 1">
+          <img src="{{ 'assets/img/about/about_1.JPG' | relative_url }}" class="d-block w-100" alt="Photo 1" style="max-height: 400px; object-fit: cover;">
+        </a>
       </div>
       <div class="carousel-item">
-        <img src="{{ 'assets/img/about/about_2.JPG' | relative_url }}" class="d-block w-100" alt="Photo 2" style="max-height: 400px; object-fit: cover;">
+        <a href="{{ 'assets/img/about/about_2.JPG' | relative_url }}" data-lightbox="about-carousel" data-title="Photo 2">
+          <img src="{{ 'assets/img/about/about_2.JPG' | relative_url }}" class="d-block w-100" alt="Photo 2" style="max-height: 400px; object-fit: cover;">
+        </a>
       </div>
       <div class="carousel-item">
-        <img src="{{ 'assets/img/about/about_3.jpeg' | relative_url }}" class="d-block w-100" alt="Photo 3" style="max-height: 400px; object-fit: cover;">
+        <a href="{{ 'assets/img/about/about_3.jpeg' | relative_url }}" data-lightbox="about-carousel" data-title="Photo 3">
+          <img src="{{ 'assets/img/about/about_3.jpeg' | relative_url }}" class="d-block w-100" alt="Photo 3" style="max-height: 400px; object-fit: cover;">
+        </a>
       </div>
       <div class="carousel-item">
-        <img src="{{ 'assets/img/about/about_4.jpg' | relative_url }}" class="d-block w-100" alt="Photo 4" style="max-height: 400px; object-fit: cover;">
+        <a href="{{ 'assets/img/about/about_4.jpg' | relative_url }}" data-lightbox="about-carousel" data-title="Photo 4">
+          <img src="{{ 'assets/img/about/about_4.jpg' | relative_url }}" class="d-block w-100" alt="Photo 4" style="max-height: 400px; object-fit: cover;">
+        </a>
       </div>
       <div class="carousel-item">
-        <img src="{{ 'assets/img/about/about_5.JPG' | relative_url }}" class="d-block w-100" alt="Photo 5" style="max-height: 400px; object-fit: cover;">
+        <a href="{{ 'assets/img/about/about_5.JPG' | relative_url }}" data-lightbox="about-carousel" data-title="Photo 5">
+          <img src="{{ 'assets/img/about/about_5.JPG' | relative_url }}" class="d-block w-100" alt="Photo 5" style="max-height: 400px; object-fit: cover;">
+        </a>
       </div>
     </div>
     <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
