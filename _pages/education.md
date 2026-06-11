@@ -22,17 +22,17 @@ images:
       <div><strong>CGPA:</strong> In Progress</div>
       <details style="margin-top:10px;">
         <summary><strong>MSc Core Courses</strong> (Currently enrolled — in progress)</summary>
-        <div style="display:grid; grid-template-columns: 1fr; gap:4px 20px; font-size:0.9em; margin-top:8px;">
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BMPT 501 Introduction to Human Anatomy and Physiology</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BMPT 502 Biophysics</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BMPT 503 Biomedical Measurement and Instrumentation</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BMPT 504 Medical Imaging Methods</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BMPT 505 Research Methodology in Biomedical Physics</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BMPT 512 Biomedical Measurement Laboratory</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BMPT 514 Biomedical Instrumentation Laboratory</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BMPT 521 Bioelectromagnetism and Bio Photonics</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BMPT 522 Biomedical Signal &amp; Image Processing</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BMPT 531 Medical Radiation Physics</div>
+        <div style="column-count:2; column-gap:2em; font-size:0.9em; margin-top:8px;">
+<p style="margin:2px 0;">BMPT 501 Introduction to Human Anatomy and Physiology</p>
+<p style="margin:2px 0;">BMPT 502 Biophysics</p>
+<p style="margin:2px 0;">BMPT 503 Biomedical Measurement and Instrumentation</p>
+<p style="margin:2px 0;">BMPT 504 Medical Imaging Methods</p>
+<p style="margin:2px 0;">BMPT 505 Research Methodology in Biomedical Physics</p>
+<p style="margin:2px 0;">BMPT 512 Biomedical Measurement Laboratory</p>
+<p style="margin:2px 0;">BMPT 514 Biomedical Instrumentation Laboratory</p>
+<p style="margin:2px 0;">BMPT 521 Bioelectromagnetism and Bio Photonics</p>
+<p style="margin:2px 0;">BMPT 522 Biomedical Signal &amp; Image Processing</p>
+<p style="margin:2px 0;">BMPT 531 Medical Radiation Physics</p>
         </div>
       </details>
     </div>
@@ -59,30 +59,30 @@ images:
       </div>
       <details style="margin-top:10px;">
         <summary><strong>BSc Core Courses</strong></summary>
-        <div style="display:grid; grid-template-columns: repeat(2, 1fr); gap:4px 20px; font-size:0.9em; margin-top:8px;">
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 1201 Biochemistry</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 2101 Human Anatomy</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 2151 Numerical Methods and Statistics</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 2201 Human Physiology</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 2211 Signals and Systems</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 2231 Biomedical Instrumentation</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 3101 Cell Biology</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 3103 Bioelectricity</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 3111 Biomedical Signal Processing</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 3141 X-ray and Ultrasound Imaging</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 3211 Biomaterials and Prosthetics</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 3231 Biomedical Devices and Control</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 3241 Magnetic and Nuclear Imaging</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 4111 Biomedical Image Processing</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 4131 Bio-optics</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 4133 Biosensors and Biochips</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 4141 Brain and Neuro-engineering</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 4131 Telemedicine and Health Care</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 4251 Biomedical Ethics and Safety</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 4221 Bioinformatics</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 4215 Bio-Nanotechnology</div>
-<div style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">BME 4217 Rehabilitation Engineering</div>
-<div style="white-space:normal;">BME 4151 Clinical Engineering & Hospital Management</div>
+        <div style="column-count:2; column-gap:2em; font-size:0.9em; margin-top:8px;">
+<p style="margin:2px 0;">BME 1201 Biochemistry</p>
+<p style="margin:2px 0;">BME 2101 Human Anatomy</p>
+<p style="margin:2px 0;">BME 2151 Numerical Methods and Statistics</p>
+<p style="margin:2px 0;">BME 2201 Human Physiology</p>
+<p style="margin:2px 0;">BME 2211 Signals and Systems</p>
+<p style="margin:2px 0;">BME 2231 Biomedical Instrumentation</p>
+<p style="margin:2px 0;">BME 3101 Cell Biology</p>
+<p style="margin:2px 0;">BME 3103 Bioelectricity</p>
+<p style="margin:2px 0;">BME 3111 Biomedical Signal Processing</p>
+<p style="margin:2px 0;">BME 3141 X-ray and Ultrasound Imaging</p>
+<p style="margin:2px 0;">BME 3211 Biomaterials and Prosthetics</p>
+<p style="margin:2px 0;">BME 3231 Biomedical Devices and Control</p>
+<p style="margin:2px 0;">BME 3241 Magnetic and Nuclear Imaging</p>
+<p style="margin:2px 0;">BME 4111 Biomedical Image Processing</p>
+<p style="margin:2px 0;">BME 4131 Bio-optics</p>
+<p style="margin:2px 0;">BME 4133 Biosensors and Biochips</p>
+<p style="margin:2px 0;">BME 4141 Brain and Neuro-engineering</p>
+<p style="margin:2px 0;">BME 4131 Telemedicine and Health Care</p>
+<p style="margin:2px 0;">BME 4251 Biomedical Ethics and Safety</p>
+<p style="margin:2px 0;">BME 4221 Bioinformatics</p>
+<p style="margin:2px 0;">BME 4215 Bio-Nanotechnology</p>
+<p style="margin:2px 0;">BME 4217 Rehabilitation Engineering</p>
+<p style="margin:2px 0;">BME 4151 Clinical Engineering &amp; Hospital Management</p>
         </div>
       </details>
     </div>
