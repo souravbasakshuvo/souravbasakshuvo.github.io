@@ -130,7 +130,7 @@ images:
       <span style="font-style:italic; font-size:0.9em;">15 Mar 2022 – 1 Apr 2024</span>
     </div>
     <div style="margin-bottom:8px;"><em><a href="https://www2.kuet.ac.bd/fablab/" target="_blank">Fabrication Lab KUET</a>, Khulna, Bangladesh</em></div>
-    <ul>
+    <ul style="margin-bottom:0;">
       <li>Assisted in organizing workshops including <em>Hands-on Training Using Fabrication Tools</em> and <em>IQAC's Hands-on-Training Program</em> at FabLab KUET, covering 3D printing, laser cutting, and CNC milling</li>
       <li>Helped over 50 students fabricate project and thesis models, guiding them in transforming innovative ideas into real products</li>
     </ul>
