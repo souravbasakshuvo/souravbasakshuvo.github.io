@@ -130,6 +130,24 @@ images:
 
 ## Extracurricular Achievements
 
+<!-- BME Farewell Crest (2024) -->
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+  <div style="flex-shrink:0;">
+    <a href="/assets/img/education/sourav_bme_dept_crest.jpg" data-lightbox="bme-farewell-2024" data-title="Departmental Farewell Crest — Department of Biomedical Engineering, KUET, 2024">
+      <img src="/assets/img/education/sourav_bme_dept_crest.jpg" alt="BME Departmental Farewell Crest"
+        style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    </a>
+  </div>
+  <div style="flex:1;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:4px;">
+      <strong style="font-size:1.1em;">Departmental Farewell Crest, BME KUET</strong>
+      <span style="font-size:0.9em; white-space:nowrap; margin-left:16px;">2024</span>
+    </div>
+    <div style="font-size:0.9em; margin-bottom:8px;"><em>Department of Biomedical Engineering, Khulna University of Engineering &amp; Technology</em></div>
+    <p style="margin:0;">Received the Departmental Farewell Crest from the Department of Biomedical Engineering, KUET, at the farewell ceremony for the graduating batch of 2024.</p>
+  </div>
+</div>
+
 <!-- IEEE YESIST12 (2023) -->
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
   <div style="flex-shrink:0;">
@@ -204,7 +222,7 @@ images:
       <strong>🏆 BME Indoor 2022</strong>
       <span style="font-style:italic; font-size:0.9em;">2022</span>
     </div>
-    <p style="margin:6px 0 0 0;">Champion in Chess</p>
+    <p style="margin:6px 0 0 0;">Won the Chess Championship at the BME Departmental Indoor Games 2022 held at KUET.</p>
   </div>
 </div>
 
