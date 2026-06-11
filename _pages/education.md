@@ -50,7 +50,7 @@ images:
       <div style="font-style:italic; margin-bottom:6px;">Khulna, Bangladesh</div>
       <div><strong>Bachelor of Science in Biomedical Engineering</strong></div>
       <div><strong>CGPA:</strong> 3.77 out of 4.00 (with Honors)</div>
-      <div>Ranked 4th in overall merit position</div>
+      <div>Ranked 4th out of 34 in overall merit position</div>
       <div style="margin-top:6px;">
         Evaluated by <strong>Educational Credential Evaluators (ECE)</strong> (30 December, 2024)<br>
         U.S. Equivalence: Bachelor Degree · Major area of study: Biomedical Engineering<br>
