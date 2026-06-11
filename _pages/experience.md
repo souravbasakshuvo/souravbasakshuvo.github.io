@@ -126,6 +126,7 @@ nav_order: 3
     <li>Assisted in organizing workshops including <em>Hands-on Training Using Fabrication Tools</em> and <em>IQAC's Hands-on-Training Program</em> at FabLab KUET, covering 3D printing, laser cutting, and CNC milling</li>
     <li>Helped over 50 students fabricate project and thesis models, guiding them in transforming innovative ideas into real products</li>
   </ul>
+  <div style="margin-top:8px;"><a href="/assets/pdf/experience/fablab_certificate.pdf" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-file-pdf"></i> Certificate</a></div>
 </div>
 
 ---

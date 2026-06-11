@@ -97,9 +97,9 @@ images:
     <p style="margin:0 0 8px 0;">
       Earned the <strong>General Grade Scholarship</strong> in the Junior School Certificate (JSC) Examination. The scholarship included full free studentship along with a monthly stipend of <strong>200 BDT</strong>, awarded from January 2014 to December 2015 (2 years).
     </p>
-    <a href="/assets/pdf/awards/dhaka_jsc_scholarship_2013_web.pdf" target="_blank"
+    <a href="/assets/pdf/awards/sourav_jsc_scholarship_page.pdf" target="_blank"
       style="color:var(--global-theme-color); font-size:0.9em;">
-      <i class="fas fa-file-pdf"></i> Scholarship PDF
+      <i class="fas fa-file-pdf"></i> Scholarship Certificate
     </a>
   </div>
 </div>
