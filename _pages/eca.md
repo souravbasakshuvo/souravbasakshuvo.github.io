@@ -10,27 +10,34 @@ images:
 
 ## Leadership & Management
 
-<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
-  <div style="display:flex; justify-content:space-between; align-items:baseline;">
-    <strong>Head of Human Resources</strong>
-    <span style="font-style:italic; font-size:0.9em;">March 2020 – March 2024</span>
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+  <div style="flex-shrink:0;">
+    <a href="/assets/img/eca/spectrum_certificate.jpg" data-lightbox="spectrum-cert" data-title="Spectrum – Professional Skill Development Club — Certificate">
+      <img src="/assets/img/eca/spectrum_certificate.jpg" alt="Spectrum Certificate" style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    </a>
   </div>
-  <div style="margin-bottom:8px;"><em>Spectrum – Professional Skill Development Club, KUET</em></div>
-  <ul style="margin:0; padding-left:20px;">
-    <li>Managed team operations, organized skill development events, and facilitated member engagement.</li>
-    <li>Directed the Inter-University Case Study Competition, engaging 240 teams from 45 universities, securing sponsors like Bank Asia PLC, Abul Khair Group, Coca-Cola, and 10 Minute School, and distributing a prize pool of over BDT 100,000 while driving 300,000+ audience interactions.</li>
-  </ul>
-  <div style="margin-top:8px;"><a href="/assets/pdf/eca/spectrum_certificate.pdf" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-file-pdf"></i> Certificate</a></div>
-  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:12px;">
-    <a href="/assets/img/eca/spectrum_certificate.jpg" data-lightbox="spectrum" data-title="Spectrum – Professional Skill Development Club — Certificate">
-      <img src="/assets/img/eca/spectrum_certificate.jpg" alt="Spectrum Certificate" style="width:100%; border-radius:8px;">
-    </a>
-    <a href="/assets/img/eca/spectrum_casepecs_crest.jpg" data-lightbox="spectrum" data-title="Spectrum CaseSpecs 1.0 — Crest">
-      <img src="/assets/img/eca/spectrum_casepecs_crest.jpg" alt="Spectrum CaseSpecs Crest" style="width:100%; border-radius:8px;">
-    </a>
-    <a href="/assets/img/eca/spectrum_farewell_crest_1.jpg" data-lightbox="spectrum" data-title="Spectrum Farewell — Crest">
-      <img src="/assets/img/eca/spectrum_farewell_crest_1.jpg" alt="Spectrum Farewell Crest" style="width:100%; border-radius:8px;">
-    </a>
+  <div style="flex:1;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline;">
+      <strong>Head of Human Resources</strong>
+      <span style="font-style:italic; font-size:0.9em;">March 2020 – March 2024</span>
+    </div>
+    <div style="margin-bottom:8px;"><em>Spectrum – Professional Skill Development Club, KUET</em></div>
+    <ul style="margin:0; padding-left:20px;">
+      <li>Managed team operations, organized skill development events, and facilitated member engagement.</li>
+      <li>Directed the Inter-University Case Study Competition, engaging 240 teams from 45 universities, securing sponsors like Bank Asia PLC, Abul Khair Group, Coca-Cola, and 10 Minute School, and distributing a prize pool of over BDT 100,000 while driving 300,000+ audience interactions.</li>
+    </ul>
+    <div style="margin-top:8px;"><a href="/assets/pdf/eca/spectrum_certificate.pdf" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-file-pdf"></i> Certificate</a></div>
+    <div style="display:flex; gap:10px; margin-top:12px; flex-wrap:wrap;">
+      <a href="/assets/img/eca/spectrum_casespecs_1.jpg" data-lightbox="spectrum-gallery" data-title="Spectrum CaseSpecs Competition">
+        <img src="/assets/img/eca/spectrum_casespecs_1.jpg" alt="Spectrum CaseSpecs Competition" style="height:160px; width:auto; border-radius:8px;">
+      </a>
+      <a href="/assets/img/eca/spectrum_casepecs_crest.jpg" data-lightbox="spectrum-gallery" data-title="Spectrum CaseSpecs 1.0 — Crest">
+        <img src="/assets/img/eca/spectrum_casepecs_crest.jpg" alt="Spectrum CaseSpecs Crest" style="height:160px; width:auto; border-radius:8px;">
+      </a>
+      <a href="/assets/img/eca/spectrum_farewell_crest_1.jpg" data-lightbox="spectrum-gallery" data-title="Spectrum Farewell — Crest">
+        <img src="/assets/img/eca/spectrum_farewell_crest_1.jpg" alt="Spectrum Farewell Crest" style="height:160px; width:auto; border-radius:8px;">
+      </a>
+    </div>
   </div>
 </div>
 
