@@ -199,6 +199,75 @@ cv:
         highlights:
           - "Designed and built an automated Sanitary Napkin Vending Machine using RFID, Arduino Mega, stepper motors, and springs to promote menstrual hygiene through accessible and affordable technology."
 
+    Skills:
+      - name: Programming Languages
+        icon: fa-solid fa-code
+        keywords:
+          - MATLAB
+          - Python (PyTorch, TensorFlow, Keras)
+          - C/C++
+
+      - name: Simulation & Design
+        icon: fa-solid fa-diagram-project
+        keywords:
+          - NI Multisim
+          - Arduino
+          - Simulink
+          - SOLIDWORKS
+          - AutoCAD
+          - COMSOL Multiphysics
+
+      - name: Microsoft Office
+        icon: fa-solid fa-file-alt
+        keywords:
+          - MS PowerPoint
+          - MS Word
+          - MS Excel
+          - MS Visio
+
+      - name: Reference Management
+        icon: fa-solid fa-book
+        keywords:
+          - Mendeley
+          - Zotero
+          - EndNote
+
+      - name: Others
+        icon: fa-solid fa-toolbox
+        keywords:
+          - LaTeX
+          - Adobe Photoshop
+          - Adobe Illustrator
+          - Adobe Premiere Pro
+          - LabVIEW
+
+      - name: Fabrication & Equipment
+        icon: fa-solid fa-wrench
+        keywords:
+          - "Laser Cutter: Epilog Laser Mini"
+          - "3D Printers: Ultimaker 3 Extended, Prusa i3 MK3S, Creality CR-10 Mini"
+          - "CNC Machine: Roland Modela Pro II MDX 540"
+
+    Languages:
+      - name: Bengali
+        summary: Native speaker
+
+      - name: English
+        summary: "Professional working proficiency (IELTS: 7.5 | GRE: 313)"
+
+    Standardized Tests:
+      - name: "International English Language Testing System (IELTS)"
+        date: "November 2024"
+        highlights:
+          - "Overall: 7.5"
+          - "Listening: 8.5 | Reading: 7.0 | Writing: 7.5 | Speaking: 6.5"
+
+      - name: "Graduate Record Examination (GRE)"
+        date: "October 2024"
+        highlights:
+          - "Score: 313 (Quantitative: 165, Verbal: 148)"
+          - "AWA: 3.5"
+
     Training:
       - company: Dawn of Bioinformatics Limited
         position: "4-Day Training on Computer-Aided Drug Design: A to Z with Project"
@@ -330,65 +399,3 @@ cv:
         issuer: Moscow Institute of Physics and Technology · Coursera
         date: 2020
         url: https://coursera.org/verify/SP9BJWZ6D83G
-
-    Skills:
-      - name: Programming Languages
-        icon: fa-solid fa-code
-        keywords:
-          - MATLAB
-          - Python (PyTorch, TensorFlow, Keras)
-          - C/C++
-
-      - name: Simulation & Design
-        icon: fa-solid fa-diagram-project
-        keywords:
-          - NI Multisim
-          - Arduino
-          - Simulink
-          - SOLIDWORKS
-          - AutoCAD
-          - COMSOL Multiphysics
-
-      - name: Microsoft Office
-        icon: fa-solid fa-file-alt
-        keywords:
-          - MS PowerPoint
-          - MS Word
-          - MS Excel
-          - MS Visio
-
-      - name: Reference Management
-        icon: fa-solid fa-book
-        keywords:
-          - Mendeley
-          - Zotero
-          - EndNote
-
-      - name: Others
-        icon: fa-solid fa-toolbox
-        keywords:
-          - LaTeX
-          - Adobe Photoshop
-          - Adobe Illustrator
-          - Adobe Premiere Pro
-          - LabVIEW
-
-      - name: Fabrication & Equipment
-        icon: fa-solid fa-wrench
-        keywords:
-          - "Laser Cutter: Epilog Laser Mini"
-          - "3D Printers: Ultimaker 3 Extended, Prusa i3 MK3S, Creality CR-10 Mini"
-          - "CNC Machine: Roland Modela Pro II MDX 540"
-
-    Languages:
-      - name: Bengali
-        summary: Native speaker
-
-      - name: English
-        summary: "Professional working proficiency (IELTS: 7.5 | GRE: 313)"
-
-    Standardized Tests:
-      - label: "IELTS (Academic)"
-        details: "November 2024 · Overall Band Score 7.5 — Listening 8.5, Reading 7.0, Writing 7.5, Speaking 6.5"
-      - label: "GRE (General Test)"
-        details: "October 2024 · Total Score 313 — Quantitative Reasoning 165, Verbal Reasoning 148, Analytical Writing (AWA) 3.5"

@@ -214,6 +214,9 @@ layout: default
               {% elsif section_title == 'References' %}
                 {% assign entries = section_entries %}
                 {% include cv/references.liquid %}
+              {% elsif section_title == 'Standardized Tests' %}
+                {% assign entries = section_entries %}
+                {% include cv/standardized_tests.liquid %}
               {% elsif section_title == 'Research Experience' or section_title == 'Training' or section_title == 'Leadership & ECA' %}
                 {% assign entries = section_entries %}
                 {% include cv/experience.liquid %}
