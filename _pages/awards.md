@@ -13,8 +13,8 @@ images:
 <!-- Honors BSc (2024) -->
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
   <div style="flex-shrink:0;">
-    <a href="/assets/img/awards/honors_bsc_kuet.png" data-lightbox="honors-kuet" data-title="Honors in Bachelor of Science (B.Sc. Eng.) — KUET">
-      <img src="/assets/img/awards/honors_bsc_kuet.png" alt="Honors B.Sc. Eng. KUET" style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    <a href="/assets/img/awards/honors_bsc_kuet.jpg" data-lightbox="honors-kuet" data-title="Honors in Bachelor of Science (B.Sc. Eng.) — KUET">
+      <img src="/assets/img/awards/honors_bsc_kuet.jpg" alt="Honors B.Sc. Eng. KUET" style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
     </a>
   </div>
   <div style="flex:1;">
@@ -263,8 +263,8 @@ images:
 <!-- HSBC Language Competition (2017) -->
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
   <div style="flex-shrink:0;">
-    <a href="/assets/img/awards/hsbc_language_2017_Cert.png" data-lightbox="hsbc-2017" data-title="HSBC Prothom Alo Language Competition 2017 — Certificate">
-      <img src="/assets/img/awards/hsbc_language_2017_Cert.png" alt="HSBC Language Competition 2017 Certificate" style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block; margin-bottom:8px;">
+    <a href="/assets/img/awards/hsbc_language_2017_Cert.jpg" data-lightbox="hsbc-2017" data-title="HSBC Prothom Alo Language Competition 2017 — Certificate">
+      <img src="/assets/img/awards/hsbc_language_2017_Cert.jpg" alt="HSBC Language Competition 2017 Certificate" style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block; margin-bottom:8px;">
     </a>
     <a href="/assets/img/awards/hsbc_language_2017_campion.jpg" data-lightbox="hsbc-2017" data-title="HSBC Prothom Alo Language Competition 2017 — Regional Champion">
       <img src="/assets/img/awards/hsbc_language_2017_campion.jpg" alt="HSBC Language Competition 2017 Champion" style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block; margin-bottom:8px;">
@@ -288,8 +288,8 @@ images:
 <!-- Chess (2015) -->
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
   <div style="flex-shrink:0;">
-    <a href="/assets/img/awards/sports_chess_2015.png" data-lightbox="chess-2015" data-title="Intramural Sports Competition 2015 — Chess Runner-up">
-      <img src="/assets/img/awards/sports_chess_2015.png" alt="Intramural Sports Competition 2015 Chess" style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    <a href="/assets/img/awards/sports_chess_2015.jpg" data-lightbox="chess-2015" data-title="Intramural Sports Competition 2015 — Chess Runner-up">
+      <img src="/assets/img/awards/sports_chess_2015.jpg" alt="Intramural Sports Competition 2015 Chess" style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
     </a>
   </div>
   <div style="flex:1;">
