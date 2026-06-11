@@ -212,20 +212,22 @@ cv:
 
     Training:
       - company: Dawn of Bioinformatics Limited
-        position: "4-Day Training on Computer-Aided Drug Design"
+        position: "4-Day Training on Computer-Aided Drug Design: A to Z with Project"
         location: Dhaka, Bangladesh
         start_date: 2025-05
         end_date: 2025-05
         highlights:
-          - Covered molecular docking, virtual screening, and ADMET profiling
+          - "Prepared proteins and ligands (BIOVIA Discovery Studio, OpenBabel, Swiss-PdbViewer), executed docking in PyRx, interpreted binding poses and scores, and evaluated drug-likeness while assessing ADME/Toxicity."
+          - "Ran molecular dynamics in YASARA and GROMACS (including protein–ligand simulations), processed trajectories and performed PCA to characterize conformational changes, analyzed results in Minitab, visualized structures in PyMOL, and applied the full CADD pipeline in a capstone mini-project."
 
-      - company: Bangladesh University of Engineering and Technology (BUET)
+      - company: Bangladesh University of Engineering and Technology
         position: "Full Day Technical Workshop on Biomaterials Based Wet Lab"
         location: Dhaka, Bangladesh
         start_date: 2022-08
         end_date: 2022-08
         highlights:
-          - Hands-on training in biomaterial characterization and wet lab techniques
+          - "Explored the work from the paper 'Preparation of Different Polymorphs of Cellulose from Different Acid Hydrolysis Medium' (International Journal of Biological Macromolecules, 2019) and gained hands-on experience in preparing cellulose nanocrystals (CNC) using acid hydrolysis under expert guidance."
+          - "Learned to operate lab equipment such as magnetic stir plates, centrifuges, ovens, autoclaves, FTIR, X-ray diffractometers, and thermogravimetric analyzers used for analyzing the morphology and properties of CNCs."
 
     Leadership & ECA:
       - company: Advanced Bioengineering Club of KUET (ABC-KUET)
