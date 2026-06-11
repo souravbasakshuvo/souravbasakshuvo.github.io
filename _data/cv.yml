@@ -1,7 +1,7 @@
 cv:
   name: Sourav Basak Shuvo
-  label: Biomedical Engineering Researcher
   email: sourav.basak.kuet.bme@gmail.com | sourav@bmpt.du.ac.bd
+  pronouns: "He/Him"
   location: Dhaka, Bangladesh
   website: https://souravbasakshuvo.github.io
   image: ""
@@ -13,12 +13,47 @@ cv:
     Three-time Dean's Award recipient. Actively seeking Ph.D. opportunities.
 
   social_networks:
-    - network: GitHub
-      username: souravbasakshuvo
     - network: LinkedIn
       username: sourav-basak-shuvo
+      url: https://www.linkedin.com/in/sourav-basak-shuvo
+    - network: Scholar
+      username: BisFVWsAAAAJ
+      url: https://scholar.google.com/citations?user=BisFVWsAAAAJ
+    - network: GitHub
+      username: souravbasakshuvo
+      url: https://github.com/souravbasakshuvo
+    - network: ResearchGate
+      username: Sourav-Shuvo-2
+      url: https://www.researchgate.net/profile/Sourav-Shuvo-2
+    - network: ORCID
+      username: 0009-0004-7931-2185
+      url: https://orcid.org/0009-0004-7931-2185
+    - network: Facebook
+      username: sourav.basak.37051
+      url: https://www.facebook.com/sourav.basak.37051
+    - network: Kaggle
+      username: souravbasakshuvo
+      url: https://www.kaggle.com/souravbasakshuvo
+    - network: Codeforces
+      username: Sourav_Basak
+      url: https://codeforces.com/profile/Sourav_Basak
 
   sections:
+    Interests:
+      - name: Research Interests
+        icon: fa-solid fa-brain
+        keywords:
+          - Deep Learning
+          - Machine Learning
+          - Medical Image Processing
+          - Biomedical Signal Processing
+          - Generative AI
+          - Large Language Models (LLMs)
+          - Domain Adaptation
+          - Disease Detection
+          - Health Informatics
+          - Neuroengineering
+
     Education:
       - institution: University of Dhaka
         location: Dhaka, Bangladesh
@@ -53,7 +88,7 @@ cv:
 
       - company: Ulster University
         position: Research Assistant Intern
-        location: Londonderry, Northern Ireland, UK
+        location: Derry, UK
         start_date: 2024-10
         end_date: present
         highlights:
@@ -146,45 +181,47 @@ cv:
       - name: IoT Based Pilot Health Monitoring System
         url: ""
         summary: >
-          IoT-based system using ESP8266 NodeMCU, MAX30100, DS18B20, and BMP180 sensors
-          with the Blynk IoT platform for real-time pilot health monitoring.
+          ESP8266 NodeMCU system monitoring pilot vitals and aircraft state via Blynk IoT,
+          using MAX30100, DS18B20, and BMP180 sensors.
         highlights:
           - Developed real-time health dashboard via Blynk IoT cloud platform
 
       - name: MediConnect – A Video Conferencing App for Telemedicine
         url: ""
         summary: >
-          Secure telemedicine application built with Java, Firebase, and ZEGOCLOUD.
+          A cross-platform telemedicine app enabling secure real-time video consultations,
+          messaging, and medical data sharing between patients and healthcare professionals.
         highlights:
           - Implemented medical image sharing, digital prescriptions, and real-time chat
 
       - name: VitaSync – A Smart Band for Telemedicine Applications
         url: ""
         summary: >
-          Wearable device integrating sensors for heart rate, body temperature, and blood oxygen levels
-          with real-time mobile app integration.
+          Wearable smart band tracking heart rate, temperature, and SpO₂ with real-time
+          mobile app and email alert mechanism for health irregularities.
         highlights:
           - Real-time data transmission with alert mechanism for abnormal readings
 
       - name: Telechroma – A Smart Colorimetric Analyzer
         url: ""
         summary: >
-          Portable colorimetric analyzer for remote diagnostics of glucose in urine samples
-          using Arduino Nano, TCS3200, and MIT App Inventor.
+          Portable Arduino-based colorimetric analyzer that quantifies biological analytes
+          from urine samples via color sensing, with wireless Bluetooth transmission to a mobile app.
         highlights:
           - Designed for low-cost point-of-care diagnostics
 
       - name: Sanitary Napkin Vending Machine
         url: ""
         summary: >
-          Automated vending machine using RFID, Arduino Mega, and stepper motors for
-          on-campus dispensing.
+          RFID-enabled automated vending machine for menstrual hygiene products,
+          2nd Runner-Up at KUET Intra-University Innovation Competition 2022.
         highlights:
           - RFID-authenticated dispensing with stepper motor control
 
     Training:
       - company: Dawn of Bioinformatics Limited
         position: "4-Day Training on Computer-Aided Drug Design"
+        location: Dhaka, Bangladesh
         start_date: 2025-05
         end_date: 2025-05
         highlights:
@@ -232,7 +269,7 @@ cv:
         summary: Awarded to students achieving CGPA 3.75 or above.
 
       - title: "Dean's Award (3 Times)"
-        date: "2018–19, 2020–21, 2021–22"
+        date: "2018–19, 20–21, 21–22"
         awarder: KUET
         summary: Awarded for achieving CGPA 3.75 or above in an academic year.
 
@@ -350,18 +387,3 @@ cv:
 
       - name: English
         summary: "Professional working proficiency (IELTS: 7.5 | GRE: 313)"
-
-    Interests:
-      - name: Research Interests
-        icon: fa-solid fa-brain
-        keywords:
-          - Deep Learning
-          - Machine Learning
-          - Medical Image Processing
-          - Biomedical Signal Processing
-          - Generative AI
-          - Large Language Models (LLMs)
-          - Domain Adaptation
-          - Disease Detection
-          - Health Informatics
-          - Neuroengineering

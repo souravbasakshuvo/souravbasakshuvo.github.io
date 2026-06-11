@@ -83,6 +83,12 @@ layout: default
                   <td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td>
                 </tr>
               {% endif %}
+              {% if cv.pronouns %}
+                <tr>
+                  <td class="p-1 pr-2 font-weight-bold"><b>Pronouns</b></td>
+                  <td class="p-1 pl-2 font-weight-light">{{ cv.pronouns }}</td>
+                </tr>
+              {% endif %}
               {% if cv.phone %}
                 <tr>
                   <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
@@ -109,6 +115,36 @@ layout: default
                 </tr>
               {% endif %}
             </table>
+            {% if cv.social_networks %}
+              <div style="margin-top:10px; display:flex; flex-wrap:wrap; gap:4px;">
+                {% for sn in cv.social_networks %}
+                  {% assign network_lower = sn.network | downcase %}
+                  {% if network_lower == 'linkedin' %}
+                    {% assign sn_icon = 'fa-brands fa-linkedin' %}
+                  {% elsif network_lower == 'github' %}
+                    {% assign sn_icon = 'fa-brands fa-github' %}
+                  {% elsif network_lower == 'scholar' or network_lower == 'google scholar' %}
+                    {% assign sn_icon = 'ai ai-google-scholar' %}
+                  {% elsif network_lower == 'researchgate' %}
+                    {% assign sn_icon = 'ai ai-researchgate' %}
+                  {% elsif network_lower == 'orcid' %}
+                    {% assign sn_icon = 'ai ai-orcid' %}
+                  {% elsif network_lower == 'facebook' %}
+                    {% assign sn_icon = 'fa-brands fa-facebook' %}
+                  {% elsif network_lower == 'kaggle' %}
+                    {% assign sn_icon = 'fa-brands fa-kaggle' %}
+                  {% elsif network_lower == 'codeforces' %}
+                    {% assign sn_icon = 'fa-solid fa-code' %}
+                  {% else %}
+                    {% assign sn_icon = 'fa-solid fa-link' %}
+                  {% endif %}
+                  <a href="{{ sn.url }}" target="_blank" rel="noopener noreferrer"
+                     style="display:inline-flex; align-items:center; gap:5px; padding:4px 12px; border:1px solid var(--global-divider-color); border-radius:20px; text-decoration:none; font-size:0.82em; color:var(--global-text-color); white-space:nowrap;">
+                    <i class="{{ sn_icon }}"></i> {{ sn.network }}
+                  </a>
+                {% endfor %}
+              </div>
+            {% endif %}
           </div>
         {% endif %}
 
