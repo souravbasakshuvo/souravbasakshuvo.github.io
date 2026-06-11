@@ -4,6 +4,8 @@ permalink: /education/
 title: Education
 nav: true
 nav_order: 2
+images:
+  lightbox2: true
 ---
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
@@ -39,7 +41,12 @@ nav_order: 2
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
   <div style="display:flex; gap:20px; align-items:flex-start; margin-bottom:0;">
-    <img src="/assets/img/education/kuet_logo.png" alt="KUET" style="height:120px; width:120px; object-fit:contain; flex-shrink:0;">
+    <div style="flex-shrink:0; display:flex; flex-direction:column; align-items:center; gap:8px;">
+      <img src="/assets/img/education/kuet_logo.png" alt="KUET" style="height:120px; width:120px; object-fit:contain;">
+      <a href="/assets/img/education/sourav_bme_dept_crest.jpg" data-lightbox="kuet-bme" data-title="Department of Biomedical Engineering, KUET — Crest">
+        <img src="/assets/img/education/sourav_bme_dept_crest.jpg" alt="BME Department Crest" style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+      </a>
+    </div>
     <div style="flex:1;">
       <div style="display:flex; justify-content:space-between; align-items:baseline;">
         <strong style="font-size:1.1em;"><a href="https://www.kuet.ac.bd/" target="_blank" style="color:var(--global-theme-color);">Khulna University of Engineering &amp; Technology (KUET)</a></strong>

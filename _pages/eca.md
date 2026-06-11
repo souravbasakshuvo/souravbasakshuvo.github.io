@@ -21,9 +21,17 @@ images:
     <li>Directed the Inter-University Case Study Competition, engaging 240 teams from 45 universities, securing sponsors like Bank Asia PLC, Abul Khair Group, Coca-Cola, and 10 Minute School, and distributing a prize pool of over BDT 100,000 while driving 300,000+ audience interactions.</li>
   </ul>
   <div style="margin-top:8px;"><a href="/assets/pdf/eca/spectrum_certificate.pdf" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-file-pdf"></i> Certificate</a></div>
-  <div style="display:flex; justify-content:center; margin-top:12px;">
+  <div style="display:flex; justify-content:center; gap:10px; margin-top:12px;">
     <a href="/assets/img/eca/spectrum_casespecs_1.jpg" data-lightbox="spectrum-casespecs" data-title="Spectrum CaseSpecs Competition" style="width:33.33%;">
       <img src="/assets/img/eca/spectrum_casespecs_1.jpg" alt="Spectrum CaseSpecs Competition" style="width:100%; border-radius:8px;">
+    </a>
+    <a href="/assets/img/eca/spectrum_casepecs_crest.jpg" data-lightbox="spectrum-casespecs" data-title="Spectrum CaseSpecs 1.0 — Crest" style="width:33.33%;">
+      <img src="/assets/img/eca/spectrum_casepecs_crest.jpg" alt="Spectrum CaseSpecs Crest" style="width:100%; border-radius:8px;">
+    </a>
+  </div>
+  <div style="display:flex; justify-content:center; margin-top:10px;">
+    <a href="/assets/img/eca/spectrum_farewell_crest_1.jpg" data-lightbox="spectrum-farewell" data-title="Spectrum Farewell — Crest" style="width:33.33%;">
+      <img src="/assets/img/eca/spectrum_farewell_crest_1.jpg" alt="Spectrum Farewell Crest" style="width:100%; border-radius:8px;">
     </a>
   </div>
 </div>

@@ -109,7 +109,11 @@ images:
   <div style="flex-shrink:0;">
     <a href="/assets/img/awards/psc_certificate.jpeg" data-lightbox="psc-cert" data-title="PSC Scholarship Certificate — Dhaka Education Board, 2010">
       <img src="/assets/img/awards/psc_certificate.jpeg" alt="PSC Certificate"
-        style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color);">
+        style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block; margin-bottom:8px;">
+    </a>
+    <a href="/assets/img/awards/psc_crest_jzs.jpg" data-lightbox="psc-cert" data-title="Jamalpur Zilla School — Crest">
+      <img src="/assets/img/awards/psc_crest_jzs.jpg" alt="Jamalpur Zilla School Crest"
+        style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
     </a>
   </div>
   <div style="flex:1;">
@@ -188,12 +192,20 @@ images:
 </div>
 
 <!-- BME Indoor (2022) -->
-<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
-  <div style="display:flex; justify-content:space-between; align-items:baseline;">
-    <strong>🏆 BME Indoor 2022</strong>
-    <span style="font-style:italic; font-size:0.9em;">2022</span>
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+  <div style="flex-shrink:0;">
+    <a href="/assets/img/awards/sourav_bme_indoor_2022_chess_champion_1.jpg" data-lightbox="bme-indoor-2022" data-title="BME Indoor 2022 — Chess Champion">
+      <img src="/assets/img/awards/sourav_bme_indoor_2022_chess_champion_1.jpg" alt="BME Indoor 2022 Chess Champion"
+        style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    </a>
   </div>
-  <p style="margin:6px 0 0 0;">Champion in Chess</p>
+  <div style="flex:1;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline;">
+      <strong>🏆 BME Indoor 2022</strong>
+      <span style="font-style:italic; font-size:0.9em;">2022</span>
+    </div>
+    <p style="margin:6px 0 0 0;">Champion in Chess</p>
+  </div>
 </div>
 
 <!-- bdSTEM (2021) -->

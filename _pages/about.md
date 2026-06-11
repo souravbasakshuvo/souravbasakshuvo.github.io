@@ -58,6 +58,7 @@ Outside the lab, I served as **President of the Advanced Bioengineering Club (AB
       <li data-target="#aboutCarousel" data-slide-to="2"></li>
       <li data-target="#aboutCarousel" data-slide-to="3"></li>
       <li data-target="#aboutCarousel" data-slide-to="4"></li>
+      <li data-target="#aboutCarousel" data-slide-to="5"></li>
     </div>
     <div class="carousel-inner rounded z-depth-1">
       <div class="carousel-item active">
@@ -74,6 +75,9 @@ Outside the lab, I served as **President of the Advanced Bioengineering Club (AB
       </div>
       <div class="carousel-item">
         <img src="{{ 'assets/img/about/about_5.JPG' | relative_url }}" class="d-block w-100" alt="Photo 5" style="max-height: 400px; object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ 'assets/img/about/about_6_sourav_bme_dept_crest.jpg' | relative_url }}" class="d-block w-100" alt="Photo 6" style="max-height: 400px; object-fit: cover;">
       </div>
     </div>
     <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
