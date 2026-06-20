@@ -199,7 +199,7 @@ images:
 
 </div>
 
-<h2 class="projects-section-header">Biomedical Engineering</h2>
+<h2 class="projects-section-header">Undergraduate Projects</h2>
 
 <div class="projects-list">
 
@@ -253,12 +253,6 @@ images:
       </div>
     </div>
   </div>
-
-</div>
-
-<h2 class="projects-section-header">IoT &amp; Embedded Systems</h2>
-
-<div class="projects-list">
 
   <div class="project-card">
     <div class="project-card-body">
@@ -375,12 +369,6 @@ images:
     </div>
   </div>
 
-</div>
-
-<h2 class="projects-section-header">Web &amp; App Development</h2>
-
-<div class="projects-list">
-
   <div class="project-card">
     <div class="project-card-body">
       <div class="project-card-header">
@@ -409,12 +397,6 @@ images:
       </div>
     </div>
   </div>
-
-</div>
-
-<h2 class="projects-section-header">Robotics</h2>
-
-<div class="projects-list">
 
   <div class="project-card">
     <div class="project-card-body">
