@@ -169,6 +169,9 @@ images:
 <div class="projects-list">
 
   <div class="project-card">
+    <a class="project-card-img" href="/assets/img/projects/undergraduate-thesis/model_architecture.jpg" data-lightbox="thesis" data-title="Gallbladder Cancer Classification – Model Architecture">
+      <img src="/assets/img/projects/undergraduate-thesis/model_architecture.jpg" alt="Model Architecture">
+    </a>
     <div class="project-card-body">
       <div class="project-card-header">
         <div class="project-card-title">
@@ -284,6 +287,9 @@ images:
   </div>
 
   <div class="project-card">
+    <a class="project-card-img" href="/assets/img/projects/vitasync/hardware_final.jpg" data-lightbox="vitasync" data-title="VitaSync: A Smart Band for Telemedicine Applications">
+      <img src="/assets/img/projects/vitasync/hardware_final.jpg" alt="VitaSync Hardware">
+    </a>
     <div class="project-card-body">
       <div class="project-card-header">
         <div class="project-card-title">
