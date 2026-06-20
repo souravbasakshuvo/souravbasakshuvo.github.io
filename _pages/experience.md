@@ -40,7 +40,7 @@ images:
     <a href="https://pure.ulster.ac.uk/en/persons/nazmul-siddique" target="_blank" title="Portfolio"><i class="fas fa-globe"></i></a>
   </div>
   <ul>
-    <li>Developed TransfusionNet, a hybrid architecture augmented with a specialized preprocessing pipeline and an early-layer feature fusion paradigm for cervical cancer detection. This work has been published in the Q1 journal <em>Results in Engineering</em> (Elsevier, Impact Factor: 7.9).</li>
+    <li>Developed TransfusionNet, a hybrid architecture augmented with a specialized preprocessing pipeline and an early-layer feature fusion paradigm for cervical cancer detection. This work has been published in the Q1 journal <em>Results in Engineering</em> (Elsevier, Impact Factor: 9.4).</li>
     <li>Created a benchmark to evaluate the performance of large language models (LLMs) in identifying disease classes, comparing results against our proposed architecture MobileCoAtNet for stomach infection classification.</li>
     <li>Investigated the adaptability of foundational AI models for multi-cancer classification, implementing Model-Agnostic Meta-Learning (MAML) for domain adaptation to enhance generalizability.</li>
     <li>Actively researching the feasibility of large language models (LLMs) for disease diagnosis, reasoning, and treatment follow-up in medical applications.</li>
