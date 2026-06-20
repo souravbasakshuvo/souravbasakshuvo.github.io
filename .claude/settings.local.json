@@ -54,7 +54,10 @@
       "Bash(node *)",
       "Bash(grep -rn \"sourav.basak.kuet.bme@gmail.com\\\\|email\" _config.yml _pages/about.md _data/cv.yml _data/socials.yml)",
       "Bash(grep -n \"sourav.basak.kuet.bme@gmail.com\\\\|email\" _pages/contact.md)",
-      "Bash(gh run *)"
+      "Bash(gh run *)",
+      "PowerShell(gh api *)",
+      "WebFetch(domain:api.github.com)",
+      "PowerShell(git *)"
     ]
   }
 }
