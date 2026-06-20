@@ -5,6 +5,7 @@ description: "Hybrid parallel transfer learning + LSTM framework for gallbladder
 img:
 importance: 1
 category: "Biomedical Engineering"
+lightbox2: true
 ---
 
 This thesis presents a deep learning model for gallbladder cancer classification from ultrasound images, developed at KUET under the supervision of **Dr. Mostafa Zaman Chowdhury**, Professor, Dept. of EEE, KUET (February 2024).
@@ -22,6 +23,13 @@ A custom preprocessing pipeline was developed to enhance ultrasound image qualit
 1. **Image Resizing** — standardized to 512×512 pixels
 2. **CLAHE** (Contrast Limited Adaptive Histogram Equalization) — enhances local contrast, improving visibility of tissue boundaries concealed by speckle noise
 3. **Laplacian Sharpening** — emphasizes edges and fine structural detail critical for differentiating benign from malignant tissue
+
+<div style="text-align:center; margin:16px 0;">
+<a href="/assets/img/projects/undergraduate-thesis/preprocessing_pipeline.jpg" data-lightbox="ug-thesis" data-title="Image preprocessing pipeline: Resizing → CLAHE → Laplacian Sharpening">
+<img src="/assets/img/projects/undergraduate-thesis/preprocessing_pipeline.jpg" alt="Preprocessing pipeline" style="max-width:90%; border-radius:8px;">
+</a>
+<p style="font-size:0.88em; color:var(--global-text-color); margin-top:6px;"><em>Fig. 1 — Image preprocessing pipeline</em></p>
+</div>
 
 ## Model Architecture
 
@@ -47,6 +55,13 @@ Flattened features from VGG16+XceptionNet and VGG19+ResNet50 are concatenated in
 
 **Hyperparameters:** Input 128×128×3 · Optimizer: Adamax · Loss: Sparse Categorical Cross-Entropy · Batch size 32 · Early stopping (patience 10) · 50 epochs
 
+<div style="text-align:center; margin:16px 0;">
+<a href="/assets/img/projects/undergraduate-thesis/model_architecture.jpg" data-lightbox="ug-thesis" data-title="Proposed parallel transfer learning model architecture with dual LSTM streams">
+<img src="/assets/img/projects/undergraduate-thesis/model_architecture.jpg" alt="Model architecture" style="max-width:75%; border-radius:8px;">
+</a>
+<p style="font-size:0.88em; color:var(--global-text-color); margin-top:6px;"><em>Fig. 2 — Proposed model architecture</em></p>
+</div>
+
 ## Results
 
 5-fold cross-validation was used for robust evaluation on the GBCU dataset:
@@ -69,6 +84,13 @@ Flattened features from VGG16+XceptionNet and VGG19+ResNet50 are concatenated in
 </table>
 </div>
 
+<div style="text-align:center; margin:16px 0;">
+<a href="/assets/img/projects/undergraduate-thesis/flow_diagram.jpg" data-lightbox="ug-thesis" data-title="Main flow diagram: dataset → preprocessing → model → evaluation">
+<img src="/assets/img/projects/undergraduate-thesis/flow_diagram.jpg" alt="Flow diagram" style="max-width:90%; border-radius:8px;">
+</a>
+<p style="font-size:0.88em; color:var(--global-text-color); margin-top:6px;"><em>Fig. 3 — Overall methodology flow diagram</em></p>
+</div>
+
 ### Comparison with State-of-the-Art (GBCU Dataset)
 
 <div style="overflow-x:auto;">
@@ -87,6 +109,13 @@ Flattened features from VGG16+XceptionNet and VGG19+ResNet50 are concatenated in
 <tr style="background:var(--global-card-bg-color);"><td style="padding:8px 12px;"><strong>This Work</strong></td><td style="padding:8px 12px; text-align:center;"><strong>99.37%</strong></td><td style="padding:8px 12px; text-align:center;"><strong>99.64%</strong></td><td style="padding:8px 12px; text-align:center;"><strong>99.69%</strong></td></tr>
 </tbody>
 </table>
+</div>
+
+<div style="text-align:center; margin:16px 0;">
+<a href="/assets/img/projects/undergraduate-thesis/performance_comparison.jpg" data-lightbox="ug-thesis" data-title="Performance comparison with state-of-the-art methods on GBCU dataset">
+<img src="/assets/img/projects/undergraduate-thesis/performance_comparison.jpg" alt="Performance comparison" style="max-width:90%; border-radius:8px;">
+</a>
+<p style="font-size:0.88em; color:var(--global-text-color); margin-top:6px;"><em>Fig. 4 — Performance comparison with existing methods</em></p>
 </div>
 
 ## Related Publication
