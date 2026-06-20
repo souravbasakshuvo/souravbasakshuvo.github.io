@@ -93,6 +93,12 @@ Flattened features from VGG16+XceptionNet and VGG19+ResNet50 are concatenated in
 
 As part of this thesis, an ensemble study exploring average combinations of VGG16, VGG19, XceptionNet, and ResNet50 was published at ICEEICT 2024 (best result: VGG19+XceptionNet, 85.44%). This motivated the full LSTM-based architecture presented in the thesis.
 
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:14px 18px; margin-bottom:12px; font-size:0.95em;">
+<i class="fa-solid fa-file-pdf" style="color:var(--global-theme-color);"></i>&nbsp;
+<strong>Thesis Report:</strong> Gallbladder Cancer Classification using Parallel Transfer Learning with Multi-model Feature Fusion and LSTM &nbsp;·&nbsp;
+<a href="https://drive.google.com/file/d/15im_P7EYahjMxCIOWzzpfx9cCPGA-V04/view?usp=sharing" target="_blank" style="color:var(--global-theme-color);">Request Access (Google Drive)</a>
+</div>
+
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:14px 18px; margin-top:8px; font-size:0.95em;">
 S. B. Shuvo and M. Z. Chowdhury, "Classification of Gallbladder Cancer using Average Ensemble Learning," in <em>Proc. 6th Int. Conf. on Electrical Engineering and Information &amp; Communication Technology (ICEEICT)</em>, Dhaka, Bangladesh, 2024.
 <a href="https://doi.org/10.1109/ICEEICT62016.2024.10534480" target="_blank" style="color:var(--global-theme-color);"> DOI: 10.1109/ICEEICT62016.2024.10534480</a>
