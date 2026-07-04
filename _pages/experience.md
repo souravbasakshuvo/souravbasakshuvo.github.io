@@ -153,7 +153,7 @@ images:
 
 ## Peer Review Experiences
 
-([Web of Science ResearcherID: MXM-4790-2025](https://www.webofscience.com/wos/author/record/MXM-4790-2025))
+([Web of Science ResearcherID: MXM-4790-2025](https://www.webofscience.com/wos/author/record/MXM-4790-2025) · [Scopus Author ID: 59157569900](http://www.scopus.com/inward/authorDetails.url?authorID=59157569900&partnerID=MN8TOARS))
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
   <div style="display:flex; justify-content:space-between; align-items:baseline;">

@@ -37,6 +37,15 @@ cv:
     - network: Codeforces
       username: Sourav_Basak
       url: https://codeforces.com/profile/Sourav_Basak
+    - network: OpenReview
+      username: Sourav_Basak_Shuvo1
+      url: https://openreview.net/profile?id=~Sourav_Basak_Shuvo1
+    - network: Semantic Scholar
+      username: S.-Shuvo/2302868188
+      url: https://www.semanticscholar.org/author/S.-Shuvo/2302868188
+    - network: Scopus
+      username: 59157569900
+      url: https://www.scopus.com/authid/detail.uri?authorId=59157569900
 
   sections:
     Research Interests:

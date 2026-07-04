@@ -135,6 +135,12 @@ layout: default
                     {% assign sn_icon = 'fa-brands fa-kaggle' %}
                   {% elsif network_lower == 'codeforces' %}
                     {% assign sn_icon = 'fa-solid fa-code' %}
+                  {% elsif network_lower == 'semantic scholar' %}
+                    {% assign sn_icon = 'ai ai-semantic-scholar' %}
+                  {% elsif network_lower == 'scopus' %}
+                    {% assign sn_icon = 'ai ai-scopus' %}
+                  {% elsif network_lower == 'openreview' %}
+                    {% assign sn_icon = 'fa-solid fa-link' %}
                   {% else %}
                     {% assign sn_icon = 'fa-solid fa-link' %}
                   {% endif %}

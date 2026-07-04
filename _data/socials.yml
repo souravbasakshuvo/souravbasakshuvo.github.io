@@ -10,4 +10,10 @@ research_gate_profile: https://www.researchgate.net/profile/Sourav-Shuvo-2 # you
 scholar_userid: BisFVWsAAAAJ # your Google Scholar ID
 facebook_id: sourav.basak.37051 # your Facebook username/profile ID
 kaggle_id: souravbasakshuvo # your Kaggle username
+semanticscholar_id: S.-Shuvo/2302868188 # your Semantic Scholar author path (after /author/)
+scopus_id: "59157569900" # your Scopus Author ID
+openreview: # OpenReview isn't a native jekyll-socials key, so a custom icon/url/title is provided
+  url: https://openreview.net/profile?id=~Sourav_Basak_Shuvo1
+  title: OpenReview
+  logo: fa-solid fa-link
 # rss_icon: true # comment this line to hide the RSS icon

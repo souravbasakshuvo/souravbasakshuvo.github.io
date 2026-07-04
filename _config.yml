@@ -10,7 +10,7 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Biomedical Engineering graduate from KUET, Bangladesh. Researcher with three Dean's Awards and a technical scholarship.
 footer_text: >
-  Last updated: June 12, 2026.
+  Last updated: July 4, 2026.
 keywords: biomedical engineering, biomedical research, KUET, Bangladesh, academic portfolio # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.svg # the emoji used as the favicon (alternatively, provide image name in /assets/img/)

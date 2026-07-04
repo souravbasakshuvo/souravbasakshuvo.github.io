@@ -32,7 +32,10 @@ nav: false
     <a href="https://orcid.org/0009-0004-7931-2185" target="_blank">ORCID</a> &nbsp;·&nbsp;
     <a href="https://www.facebook.com/sourav.basak.37051" target="_blank">Facebook</a> &nbsp;·&nbsp;
     <a href="https://www.kaggle.com/souravbasakshuvo" target="_blank">Kaggle</a> &nbsp;·&nbsp;
-    <a href="https://codeforces.com/profile/Sourav_Basak" target="_blank">Codeforces</a>
+    <a href="https://codeforces.com/profile/Sourav_Basak" target="_blank">Codeforces</a> &nbsp;·&nbsp;
+    <a href="https://openreview.net/profile?id=~Sourav_Basak_Shuvo1" target="_blank">OpenReview</a> &nbsp;·&nbsp;
+    <a href="https://www.semanticscholar.org/author/S.-Shuvo/2302868188" target="_blank">Semantic Scholar</a> &nbsp;·&nbsp;
+    <a href="https://www.scopus.com/authid/detail.uri?authorId=59157569900" target="_blank">Scopus</a>
   </p>
 </div>
 
