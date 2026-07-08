@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-08'
+  last_updated: '2026-07-08'
 papers:
   BisFVWsAAAAJ:9yKSN-GCB0IC:
     citations: 0
@@ -10,7 +10,7 @@ papers:
     title: 'DLM: A Vision-to-Language Framework for Expert-Level Medical Reasoning through Deep Learning and Large Language Models'
     year: '2025'
   BisFVWsAAAAJ:u-x6o8ySG0sC:
-    citations: 3
+    citations: 4
     title: 'TransfusionNet: Framework for Cervical Cancer Detection using Deep Learning with Multi-level Fusion'
     year: '2025'
   BisFVWsAAAAJ:u5HHmVD_uO8C:
