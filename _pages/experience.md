@@ -81,14 +81,24 @@ images:
     </a>
   </div>
   <div style="flex:1;">
-    <p style="font-weight:bold; margin:0 0 4px 0;">Automated PET to Fused PET-CT Mapping Using PCGAN for Lung Cancer Diagnosis</p>
-    <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Oral Presentation · RAAICON 2026</p>
+    <p style="font-weight:bold; margin:0 0 4px 0;">RAAICON 2026</p>
     <p style="margin-bottom:4px;"><em>2026 5th IEEE International Conference in Robotics, Automation, Artificial-Intelligence and Internet-of-things (RAAICON)</em></p>
     <p style="margin-bottom:4px;">Jashore University of Science and Technology (JUST), Jashore, Bangladesh</p>
+    <p style="margin-bottom:4px;"><strong>Presented Paper:</strong> Automated PET to Fused PET-CT Mapping Using PCGAN for Lung Cancer Diagnosis</p>
+    <p style="margin-bottom:4px; font-size:0.9em;"><strong>Type:</strong> Oral Presentation</p>
     <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
     <a href="/assets/pdf/experience/raaicon2026_certificate.pdf" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-file-pdf"></i> Certificate</a>
     <!-- Presentation Slide link: add later -->
   </div>
+</div>
+
+<div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:10px; margin-bottom:16px;">
+  <a href="/assets/img/experience/raaicon2026_ts.jpeg" data-lightbox="raaicon-gallery" data-title="RAAICON 2026">
+    <img src="/assets/img/experience/raaicon2026_ts.jpeg" alt="RAAICON 2026" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+  </a>
+  <a href="/assets/img/experience/raaicon2026_certificate_giving.jpg" data-lightbox="raaicon-gallery" data-title="RAAICON 2026">
+    <img src="/assets/img/experience/raaicon2026_certificate_giving.jpg" alt="RAAICON 2026" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+  </a>
 </div>
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
@@ -107,42 +117,42 @@ images:
   </div>
 </div>
 
-<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; margin-bottom:16px;">
+<div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:10px; margin-bottom:16px;">
   <a href="/assets/img/experience/icath_lmic_2026_stage_pic.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026">
     <img src="/assets/img/experience/icath_lmic_2026_stage_pic.jpg" alt="ICATH-LMIC 2026" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
   </a>
   <a href="/assets/img/experience/icath_lmic_2026_group_pic.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026">
     <img src="/assets/img/experience/icath_lmic_2026_group_pic.jpg" alt="ICATH-LMIC 2026" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
   </a>
-  <a href="/assets/img/experience/icath_lmic_2026_participation_certificate.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026 — Certificate">
-    <img src="/assets/img/experience/icath_lmic_2026_participation_certificate.jpg" alt="ICATH-LMIC 2026 Certificate" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
-  </a>
 </div>
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
-  <p style="font-weight:bold; margin:0 0 4px 0;">Exploring Common Molecular Interactions across Multiple Cancers to Identify Potential Therapeutic Targets and Drug Candidates</p>
-  <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Oral Presentation · EICT 2025</p>
+  <p style="font-weight:bold; margin:0 0 4px 0;">EICT 2025</p>
   <p style="margin-bottom:4px;"><em>International Conference on Electrical Information and Communication Technology</em></p>
   <p style="margin-bottom:4px;">Khulna, Bangladesh</p>
+  <p style="margin-bottom:4px;"><strong>Presented Paper:</strong> Exploring Common Molecular Interactions across Multiple Cancers to Identify Potential Therapeutic Targets and Drug Candidates</p>
+  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Type:</strong> Oral Presentation</p>
   <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
   <!-- Presentation Slide link: add later -->
 </div>
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
-  <p style="font-weight:bold; margin:0 0 4px 0;">Exploring Gene Network Interactions and Pathways in Three Cancers: Identifying Potential Therapeutic Targets and Drug Candidates</p>
-  <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Poster Presentation · June 22, 2025</p>
-  <p style="margin-bottom:4px;"><em>1st National Conference of Research, Industry and Collaboration in Biomedical Engineering</em></p>
+  <p style="font-weight:bold; margin:0 0 4px 0;">1st National Conference of Research, Industry and Collaboration in Biomedical Engineering</p>
   <p style="margin-bottom:4px;">Department of Biomedical Engineering, Jashore University of Science &amp; Technology, Jashore, Bangladesh</p>
+  <p style="margin-bottom:4px;"><strong>Presented Poster:</strong> Exploring Gene Network Interactions and Pathways in Three Cancers: Identifying Potential Therapeutic Targets and Drug Candidates</p>
+  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Type:</strong> Poster Presentation</p>
+  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Date:</strong> June 22, 2025</p>
   <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
   <a href="https://drive.google.com/file/d/1LczamUcxucTM-x3kg3WqOl_8sLzgPDdI/view?usp=sharing" target="_blank" style="color:var(--global-theme-color);"><i class="fas fa-image"></i> Poster</a>
   <!-- Certification link: add later -->
 </div>
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
-  <p style="font-weight:bold; margin:0 0 4px 0;">Classification of Gallbladder Cancer Using Average Ensemble Learning</p>
-  <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Oral Presentation · ICEEICT 2024</p>
+  <p style="font-weight:bold; margin:0 0 4px 0;">ICEEICT 2024</p>
   <p style="margin-bottom:4px;"><em>International Conference on Electrical, Electronic, and Information & Communication Technology</em></p>
   <p style="margin-bottom:4px;">Dhaka, Bangladesh</p>
+  <p style="margin-bottom:4px;"><strong>Presented Paper:</strong> Classification of Gallbladder Cancer Using Average Ensemble Learning</p>
+  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Type:</strong> Oral Presentation</p>
   <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
   <!-- Presentation Slide link: add later -->
 </div>
@@ -213,6 +223,6 @@ images:
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
   <div style="display:flex; justify-content:space-between; align-items:baseline;">
     <strong>IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI)</strong>
-    <em style="white-space:nowrap; margin-left:1rem; font-size:0.9em;">May 2026 – Present</em>
+    <em style="white-space:nowrap; margin-left:1rem; font-size:0.9em;">In Progress</em>
   </div>
 </div>
