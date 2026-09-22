@@ -76,8 +76,8 @@ images:
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
   <div style="flex-shrink:0;">
-    <a href="/assets/img/experience/raaicon2026_certificate_giving.jpg" data-lightbox="raaicon-cert" data-title="RAAICON 2026">
-      <img src="/assets/img/experience/raaicon2026_certificate_giving.jpg" alt="RAAICON 2026" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    <a href="/assets/img/experience/raaicon2026_certificate.jpg" data-lightbox="raaicon-cert" data-title="RAAICON 2026 — Certificate">
+      <img src="/assets/img/experience/raaicon2026_certificate.jpg" alt="RAAICON 2026 Certificate" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
     </a>
   </div>
   <div style="flex:1;">
