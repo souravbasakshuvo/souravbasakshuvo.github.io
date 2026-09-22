@@ -16,14 +16,14 @@ images:
     <span style="font-style:italic; font-size:0.9em;">Jun 2025 – Current</span>
   </div>
   <div style="margin-bottom:6px;"><em>Bio-Neural Intelligence and Research Advancement Lab, Khulna, Bangladesh</em></div>
-  <div style="margin-bottom:8px;"><strong>Supervisor:</strong> Amit Dutta Roy &emsp;
+  <div style="margin-bottom:8px;"><strong>Supervisor:</strong> Amit Dutta Roy <span style="font-size:0.9em;">[B.Sc., M.Sc. BME (KUET); PhD Candidate, Biomedical Engineering (University of Minnesota Twin Cities)]</span> &emsp;
     <a href="https://scholar.google.com/citations?user=ZpUq_acAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> &ensp;
     <a href="https://www.linkedin.com/in/amitduttaroy/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> &ensp;
     <a href="https://www.researchgate.net/profile/Amit-Roy-38" target="_blank" title="ResearchGate"><i class="ai ai-researchgate"></i></a> &ensp;
     <a href="https://www.kuet.ac.bd/bme/amit" target="_blank" title="Portfolio"><i class="fas fa-globe"></i></a>
   </div>
   <ul>
-    <li>Designed NeuroSwin, a hybrid deep learning model (Swin Transformer-GRU), to classify Parkinson's Disease and identify its source regions in the brain from EEG signals.</li>
+    <li>Leading a 3-member research team, including 2 undergraduate researchers, to design and validate NeuroSwin, a hybrid Swin Transformer-GRU model for Parkinson's Disease classification and brain-region localization from EEG signals.</li>
   </ul>
 </div>
 
@@ -33,7 +33,7 @@ images:
     <span style="font-style:italic; font-size:0.9em;">Oct 2024 – Current</span>
   </div>
   <div style="margin-bottom:6px;"><em>Ulster University, Londonderry, Northern Ireland, UK</em></div>
-  <div style="margin-bottom:8px;"><strong>Supervisor:</strong> Dr. Nazmul Siddique &emsp;
+  <div style="margin-bottom:8px;"><strong>Supervisor:</strong> Dr. Nazmul Siddique <span style="font-size:0.9em;">[PhD (University of Sheffield)]</span> &emsp;
     <a href="https://scholar.google.com/citations?user=oV13Kl0AAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> &ensp;
     <a href="https://www.linkedin.com/in/nazmul-siddique-27315478/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> &ensp;
     <a href="https://www.researchgate.net/profile/Nazmul-Siddique" target="_blank" title="ResearchGate"><i class="ai ai-researchgate"></i></a> &ensp;
@@ -42,10 +42,12 @@ images:
   <div style="margin-bottom:8px;"><strong>Collaborator:</strong> <a href="https://pure.qub.ac.uk/en/persons/h-wang/" target="_blank" style="color:var(--global-theme-color);">Prof. Hui Wang</a> <span style="font-size:0.9em;">(Professor of Artificial Intelligence, Queen's University Belfast; formerly Head of AI Research Centre, Ulster University)</span>
   </div>
   <ul>
-    <li>Developed TransfusionNet, a hybrid architecture augmented with a specialized preprocessing pipeline and an early-layer feature fusion paradigm for cervical cancer detection. This work has been published in the Q1 journal <em>Results in Engineering</em> (Elsevier, Impact Factor: 9.4).</li>
+    <li>Co-developed TransfusionNet, a hybrid architecture with a specialized preprocessing pipeline and early-layer feature fusion for cervical cancer detection. Published in the Q1 journal <em>Results in Engineering</em> (Elsevier, Impact Factor: 9.4).</li>
     <li>Created a benchmark to evaluate the performance of large language models (LLMs) in identifying disease classes, comparing results against our proposed architecture MobileCoAtNet for stomach infection classification.</li>
     <li>Investigated the adaptability of foundational AI models for multi-cancer classification, implementing Model-Agnostic Meta-Learning (MAML) for domain adaptation to enhance generalizability.</li>
     <li>Actively researching the feasibility of large language models (LLMs) for disease diagnosis, reasoning, and treatment follow-up in medical applications.</li>
+    <li>Designed SALT, a spiking neural decoder that uses a state-space model to adaptively set firing thresholds, establishing the first causal accuracy-energy Pareto benchmark across five architecture families for closed-loop brain-computer interfaces; manuscript in preparation.</li>
+    <li>Extended SALT to CT-SALT, a cross-timescale architecture in which a slow population branch gates a fast spiking branch's firing threshold, improving decoding accuracy and training stability at no added energy cost; manuscript in preparation.</li>
   </ul>
 </div>
 
@@ -55,15 +57,16 @@ images:
     <span style="font-style:italic; font-size:0.9em;">Feb 2023 – Sep 2024</span>
   </div>
   <div style="margin-bottom:6px;"><em>Department of Biomedical Engineering, KUET, Khulna, Bangladesh</em></div>
-  <div style="margin-bottom:8px;"><strong>Supervisor:</strong> Dr. Mostafa Zaman Chowdhury &emsp;
+  <div style="margin-bottom:8px;"><strong>Supervisor:</strong> Prof. Mostafa Zaman Chowdhury <span style="font-size:0.9em;">[B.Sc. EEE (KUET); M.Sc., PhD Electronics Engineering (Kookmin University, South Korea)]</span> &emsp;
     <a href="https://scholar.google.com/citations?user=GRrKnIMAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a> &ensp;
     <a href="https://www.linkedin.com/in/mostafa-zaman-chowdhury-phd-177332b3/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a> &ensp;
     <a href="https://www.researchgate.net/profile/Mostafa-Chowdhury" target="_blank" title="ResearchGate"><i class="ai ai-researchgate"></i></a> &ensp;
     <a href="https://www.kuet.ac.bd/eee/mzaman" target="_blank" title="Portfolio"><i class="fas fa-globe"></i></a>
   </div>
   <ul>
-    <li>Designed a hybrid model for gallbladder cancer classification using parallel transfer learning, feature fusion, and LSTM, achieving 99.37% accuracy; part of this work was published at ICEEICT 2024</li>
-    <li>Gained experience in academic writing, literature review, and presenting research findings</li>
+    <li>Independently conceived, implemented, and authored a solo study on gallbladder cancer classification using ensemble learning, published at ICEEICT 2024.</li>
+    <li>Designed a hybrid model for gallbladder cancer classification using parallel transfer learning, feature fusion, and LSTM, achieving 99.37% accuracy, as the undergraduate thesis; an extended version is in preparation for <em>Expert Systems with Applications</em>.</li>
+    <li>Conducted the literature review supporting the feature-fusion approach, drafted portions of the thesis manuscript, handled data preprocessing, and presented the completed work at the final thesis defense.</li>
   </ul>
 </div>
 
