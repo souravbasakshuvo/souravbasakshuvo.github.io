@@ -177,7 +177,7 @@ cv:
           - M. M. H. Ankon
           - S. B. Shuvo
           - N. Siddique
-        publisher: "In preparation for Neurocomputing, Elsevier"
+        publisher: "Under review in Neurocomputing, Elsevier"
         releaseDate: 2026
 
       - title: "SALT: A State-Adaptive Leaky Integrate-and-Fire Threshold Mechanism for Pareto-Efficient Causal Neural Population Decoding"
@@ -185,6 +185,13 @@ cv:
           - S. B. Shuvo
           - N. Siddique
         publisher: "Under review in Neural Networks, Elsevier"
+        releaseDate: 2026
+
+      - title: "Cross-Timescale Threshold Gating for Causal Spiking Neural Population Decoding"
+        authors:
+          - S. B. Shuvo
+          - N. Siddique
+        publisher: "Manuscript in preparation"
         releaseDate: 2026
 
     Projects:
