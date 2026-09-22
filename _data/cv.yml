@@ -135,7 +135,7 @@ cv:
         authors:
           - M. N. Hasan
           - et al.
-        publisher: "arXiv:2512.13742 — Under review in Medical Image Analysis, Elsevier"
+        publisher: "arXiv:2512.13742 — Under review in Engineering Applications of Artificial Intelligence, Elsevier"
         releaseDate: 2025
         url: https://arxiv.org/abs/2512.13742
 
@@ -160,18 +160,29 @@ cv:
         publisher: "In preparation for Computers in Biology and Medicine, Elsevier"
         releaseDate: 2025
 
-      - title: "Advanced Image Analysis for Liver Tumor Detection in CT Images"
-        authors:
-          - M. A. Sayed
-          - et al.
-        publisher: "In preparation for Scientific Reports, Nature"
-        releaseDate: 2025
-
       - title: "Automated PET to Fused PET-CT Mapping Using PatchGAN for Lung Cancer Diagnosis"
         authors:
           - Md. A. Sayed
           - et al.
-        publisher: "Submitted to IEEE RAAICON 2026"
+        publisher: "Accepted and presented, IEEE RAAICON 2026"
+        releaseDate: 2026
+
+      - title: "DeViLM: Evaluating What Deep Learning Models See and Vision-Language Models Explain in Acute Lymphoblastic Leukemia Classification"
+        authors:
+          - M. N. Hasan
+          - W. M. Shafin
+          - M. M. H. Ankon
+          - S. B. Shuvo
+          - T. Joty
+          - N. Siddique
+        publisher: "In preparation for Neurocomputing, Elsevier"
+        releaseDate: 2026
+
+      - title: "SALT: A State-Adaptive Leaky Integrate-and-Fire Threshold Mechanism for Pareto-Efficient Causal Neural Population Decoding"
+        authors:
+          - S. B. Shuvo
+          - N. Siddique
+        publisher: "Under review in Neural Networks, Elsevier"
         releaseDate: 2026
 
     Projects:

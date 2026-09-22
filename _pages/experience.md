@@ -39,6 +39,8 @@ images:
     <a href="https://www.researchgate.net/profile/Nazmul-Siddique" target="_blank" title="ResearchGate"><i class="ai ai-researchgate"></i></a> &ensp;
     <a href="https://pure.ulster.ac.uk/en/persons/nazmul-siddique" target="_blank" title="Portfolio"><i class="fas fa-globe"></i></a>
   </div>
+  <div style="margin-bottom:8px;"><strong>Collaborator:</strong> <a href="https://pure.qub.ac.uk/en/persons/h-wang/" target="_blank" style="color:var(--global-theme-color);">Prof. Hui Wang</a> <span style="font-size:0.9em;">(Professor of Artificial Intelligence, Queen's University Belfast; formerly Head of AI Research Centre, Ulster University)</span>
+  </div>
   <ul>
     <li>Developed TransfusionNet, a hybrid architecture augmented with a specialized preprocessing pipeline and an early-layer feature fusion paradigm for cervical cancer detection. This work has been published in the Q1 journal <em>Results in Engineering</em> (Elsevier, Impact Factor: 9.4).</li>
     <li>Created a benchmark to evaluate the performance of large language models (LLMs) in identifying disease classes, comparing results against our proposed architecture MobileCoAtNet for stomach infection classification.</li>
@@ -67,12 +69,14 @@ images:
 
 ---
 
-## Presentations
+## Conference Presentations
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
   <p style="font-weight:bold; margin:0 0 4px 0;">Classification of Gallbladder Cancer Using Average Ensemble Learning</p>
   <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Oral Presentation · ICEEICT 2024</p>
   <p style="margin-bottom:4px;"><em>International Conference on Electrical, Electronic, and Information & Communication Technology</em></p>
+  <p style="margin-bottom:4px;">Dhaka, Bangladesh</p>
+  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
   <!-- Presentation Slide link: add later -->
 </div>
 
@@ -80,6 +84,8 @@ images:
   <p style="font-weight:bold; margin:0 0 4px 0;">Exploring Common Molecular Interactions across Multiple Cancers to Identify Potential Therapeutic Targets and Drug Candidates</p>
   <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Oral Presentation · EICT 2025</p>
   <p style="margin-bottom:4px;"><em>International Conference on Electrical Information and Communication Technology</em></p>
+  <p style="margin-bottom:4px;">Khulna, Bangladesh</p>
+  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
   <!-- Presentation Slide link: add later -->
 </div>
 
@@ -87,9 +93,19 @@ images:
   <p style="font-weight:bold; margin:0 0 4px 0;">Exploring Gene Network Interactions and Pathways in Three Cancers: Identifying Potential Therapeutic Targets and Drug Candidates</p>
   <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Poster Presentation · June 22, 2025</p>
   <p style="margin-bottom:4px;"><em>1st National Conference of Research, Industry and Collaboration in Biomedical Engineering</em></p>
-  <p style="margin-bottom:4px;">Department of Biomedical Engineering, Jashore University of Science & Technology</p>
+  <p style="margin-bottom:4px;">Department of Biomedical Engineering, Jashore University of Science &amp; Technology, Jashore, Bangladesh</p>
+  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
   <a href="https://drive.google.com/file/d/1LczamUcxucTM-x3kg3WqOl_8sLzgPDdI/view?usp=sharing" target="_blank" style="color:var(--global-theme-color);"><i class="fas fa-image"></i> Poster</a>
   <!-- Certification link: add later -->
+</div>
+
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
+  <p style="font-weight:bold; margin:0 0 4px 0;">Automated PET to Fused PET-CT Mapping Using PCGAN for Lung Cancer Diagnosis</p>
+  <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Oral Presentation · RAAICON 2026</p>
+  <p style="margin-bottom:4px;"><em>2026 5th IEEE International Conference in Robotics, Automation, Artificial-Intelligence and Internet-of-things (RAAICON)</em></p>
+  <p style="margin-bottom:4px;">Jashore University of Science and Technology (JUST), Jashore, Bangladesh</p>
+  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
+  <!-- Presentation Slide link: add later -->
 </div>
 
 ---

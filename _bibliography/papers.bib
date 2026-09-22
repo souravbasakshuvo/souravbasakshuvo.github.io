@@ -51,16 +51,17 @@
   month        = {September},
   address      = {Jashore University of Science and Technology (JUST), Jashore, Bangladesh},
   publisher    = {IEEE},
-  abbr         = {Under Rev.},
-  bibtex_show  = {false},
-  selected     = {false},
+  abbr         = {RAAICON},
+  bibtex_show  = {true},
+  selected     = {true},
   dimensions   = {true},
-  note         = {Submitted to 2026 5th IEEE International Conference in Robotics, Automation, Artificial-Intelligence and Internet-of-things (RAAICON)},
+  note         = {Accepted and presented at the 2026 5th IEEE International Conference in Robotics, Automation, Artificial-Intelligence and Internet-of-things (RAAICON)},
   preview      = {petct_pcgan.jpg},
+  abstract     = {Accurate lung cancer diagnosis relies on a combined assessment of the metabolic activity and anatomical structure jointly captured by PET and CT imaging. PET imaging alone, however, presents diagnostic limitations in settings where CT is unavailable. This work presents a deep learning pipeline for generating synthetic CT images from PET scans using a PCGAN, with the resulting CT subsequently fused with the original PET image. The dataset comprised 2,725 paired PET-CT slices collected from 50 lung cancer patients at a nuclear medicine center in Bangladesh. Thorax localization and field-of-view (FOV) correction were performed using YOLOv11, while PET images were enhanced with CLAHE to improve anatomical visibility prior to synthesis. The synthesized CT images were fused with their corresponding PET scans to generate color-enhanced, diagnostically useful PET-CT images. For the CT generation task, the proposed system achieved a PSNR of 13.31 dB, mean SSIM of 55.03\%, FID of 120.61, and MAE of 0.1115, while the detection model attained mAP50 scores of 99.50\% for CT and 98.50\% for PET, outperforming CycleGAN and Pix2Pix baselines under identical evaluation conditions. Collectively, these findings indicate the system's utility as a diagnostic aid for lung cancer, particularly in clinical settings lacking CT imaging capability.},
 }
 
 @article{hasan2025dl3m,
-  author       = {Hasan, Md. Najib and Ahmad, Imran and Shuvo, Sourav Basak and Ankon, Md. Mahadi Hasan and Das, Sunanda and Siddique†, Nazmul and Wang†, Hui},
+  author       = {Hasan, Md. Najib and Ahmad, Imran and Shuvo, Sourav Basak and Ankon, Md. Mahadi Hasan and Siddique†, Nazmul and Wang†, Hui},
   title        = {{DL<sup>3</sup>M}: A Vision-to-Language Framework for Expert-Level Medical Reasoning through Deep Learning and Large Language Models},
   journal      = {arXiv preprint},
   year         = {2025},
@@ -73,7 +74,7 @@
   html         = {https://arxiv.org/abs/2512.13742},
   pdf          = {https://arxiv.org/pdf/2512.13742v1},
   code         = {https://github.com/souravbasakshuvo/DL3M},
-  note         = {Under review in Medical Image Analysis, Elsevier},
+  note         = {Under review in Engineering Applications of Artificial Intelligence, Elsevier},
   preview      = {dl3m_framework.jpg},
   abstract     = {Medical image classifiers detect gastrointestinal diseases well, but they do not explain their decisions. Large language models can generate clinical text, yet they struggle with visual reasoning and often produce unstable or incorrect explanations. This leaves a gap between what a model sees and the type of reasoning a clinician expects. We introduce a framework that links image classification with structured clinical reasoning. A new hybrid model, MobileCoAtNet, is designed for endoscopic images and achieves high accuracy across eight stomach-related classes. Its outputs are then used to drive reasoning by several LLMs. To judge this reasoning, we build two expert-verified benchmarks covering causes, symptoms, treatment, lifestyle, and follow-up care. Thirty-two LLMs are evaluated against these gold standards. Strong classification improves the quality of their explanations, but none of the models reach human-level stability. Even the best LLMs change their reasoning when prompts vary. Our study shows that combining DL with LLMs can produce useful clinical narratives, but current LLMs remain unreliable for high-stakes medical decisions. The framework provides a clearer view of their limits and a path for building safer reasoning systems. The complete source code and datasets used in this study are available at https://github.com/souravbasakshuvo/DL3M.},
 }
@@ -108,17 +109,6 @@
   note         = {Manuscript in preparation},
 }
 
-@article{sayed2025liver,
-  author       = {Sayed, Md. Abu and Rahman, Md. Ashiqur and Shuvo, Sourav Basak and Hossain, Md. Jahid and Alam, Md. Shafin and Hasan, Kazi Nimat and Kadir†, Muhammad Abdul},
-  title        = {Advanced image analysis for liver tumor detection and visualization in {CT} images using automated segmentation},
-  abbr         = {In Prep.},
-  bibtex_show  = {false},
-  selected     = {false},
-  dimensions   = {true},
-  hidden       = {true},
-  note         = {Manuscript in preparation},
-}
-
 @article{hasan2025maml,
   author       = {Hasan, Md. Najib and Ankon, Md. Mahadi Hasan and Shuvo, Sourav Basak and Ahmad, Imran and Manik, Md. Motaleb Hossen and Siddique†, Nazmul},
   title        = {Zero-to-Multi-Shot Benchmarking of Model-Agnostic Meta-Learning ({MAML})-Based Domain Adaptation for Multi-Cancer Classification: Comparative Evaluation of {LLMs}, State-of-the-Art Deep Learning Models, and a Proposed Hybrid Approach},
@@ -128,13 +118,22 @@
   note         = {Ongoing Research},
 }
 
-@article{hasan2025overfitting,
+@article{hasan2025devilm,
   author       = {Hasan, Md. Najib and Shafin, Wahid Mahmood and Ankon, Md. Mahadi Hasan and Shuvo, Sourav Basak and Joty, Taslima Akter and Siddique†, Nazmul},
-  title        = {Unveiling Overfitting Patterns: Explainable {AI}-Driven Benchmarking of {LLMs}, Deep Learning Models, and a Hybrid Framework for Medical Image Classification},
-  abbr         = {Ongoing},
+  title        = {{DeViLM}: Evaluating What Deep Learning Models See and Vision-Language Models Explain in Acute Lymphoblastic Leukemia Classification},
+  abbr         = {In Prep.},
   bibtex_show  = {false},
   selected     = {false},
-  note         = {Ongoing Research},
+  note         = {Manuscript in preparation for Neurocomputing, Elsevier},
+}
+
+@article{shuvo2026salt,
+  author       = {Shuvo, Sourav Basak and Siddique†, Nazmul},
+  title        = {{SALT}: A State-Adaptive Leaky Integrate-and-Fire Threshold Mechanism for Pareto-Efficient Causal Neural Population Decoding},
+  abbr         = {Under Rev.},
+  bibtex_show  = {false},
+  selected     = {false},
+  note         = {Under review in Neural Networks, Elsevier},
 }
 
 @article{hasan2025transfusionnet,
