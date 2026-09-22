@@ -46,8 +46,8 @@ images:
     <li>Created a benchmark to evaluate the performance of large language models (LLMs) in identifying disease classes, comparing results against our proposed architecture MobileCoAtNet for stomach infection classification.</li>
     <li>Investigated the adaptability of foundational AI models for multi-cancer classification, implementing Model-Agnostic Meta-Learning (MAML) for domain adaptation to enhance generalizability.</li>
     <li>Actively researching the feasibility of large language models (LLMs) for disease diagnosis, reasoning, and treatment follow-up in medical applications.</li>
-    <li>Designed SALT, a spiking neural decoder that uses a state-space model to adaptively set firing thresholds, establishing the first causal accuracy-energy Pareto benchmark across five architecture families for closed-loop brain-computer interfaces; manuscript in preparation.</li>
-    <li>Extended SALT to CT-SALT, a cross-timescale architecture in which a slow population branch gates a fast spiking branch's firing threshold, improving decoding accuracy and training stability at no added energy cost; manuscript in preparation.</li>
+    <li>Designed SALT, a spiking neural decoder that uses a state-space model to adaptively set firing thresholds, establishing a causal accuracy-energy Pareto benchmark across six architecture families for closed-loop brain-computer interfaces; under review in <em>Neural Networks</em>.</li>
+    <li>Developed CT-SALT, a cross-timescale extension of SALT in which a slow population branch gates a fast spiking branch's firing threshold, improving decoding accuracy and training stability at no added energy cost.</li>
   </ul>
 </div>
 
@@ -65,22 +65,58 @@ images:
   </div>
   <ul>
     <li>Independently conceived, implemented, and authored a solo study on gallbladder cancer classification using ensemble learning, published at ICEEICT 2024.</li>
-    <li>Designed a hybrid model for gallbladder cancer classification using parallel transfer learning, feature fusion, and LSTM, achieving 99.37% accuracy, as the undergraduate thesis; an extended version is in preparation for <em>Expert Systems with Applications</em>.</li>
+    <li>Designed a hybrid model for gallbladder cancer classification using parallel transfer learning, feature fusion, and LSTM as the undergraduate thesis, of which the ICEEICT 2024 paper formed a portion; the full study is in preparation for <em>Expert Systems with Applications</em>.</li>
     <li>Conducted the literature review supporting the feature-fusion approach, drafted portions of the thesis manuscript, handled data preprocessing, and presented the completed work at the final thesis defense.</li>
   </ul>
 </div>
 
 ---
 
-## Conference Presentations
+## Conferences
 
-<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
-  <p style="font-weight:bold; margin:0 0 4px 0;">Classification of Gallbladder Cancer Using Average Ensemble Learning</p>
-  <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Oral Presentation · ICEEICT 2024</p>
-  <p style="margin-bottom:4px;"><em>International Conference on Electrical, Electronic, and Information & Communication Technology</em></p>
-  <p style="margin-bottom:4px;">Dhaka, Bangladesh</p>
-  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
-  <!-- Presentation Slide link: add later -->
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+  <div style="flex-shrink:0;">
+    <a href="/assets/img/experience/raaicon2026_certificate_giving.jpg" data-lightbox="raaicon-cert" data-title="RAAICON 2026">
+      <img src="/assets/img/experience/raaicon2026_certificate_giving.jpg" alt="RAAICON 2026" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    </a>
+  </div>
+  <div style="flex:1;">
+    <p style="font-weight:bold; margin:0 0 4px 0;">Automated PET to Fused PET-CT Mapping Using PCGAN for Lung Cancer Diagnosis</p>
+    <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Oral Presentation · RAAICON 2026</p>
+    <p style="margin-bottom:4px;"><em>2026 5th IEEE International Conference in Robotics, Automation, Artificial-Intelligence and Internet-of-things (RAAICON)</em></p>
+    <p style="margin-bottom:4px;">Jashore University of Science and Technology (JUST), Jashore, Bangladesh</p>
+    <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
+    <a href="/assets/pdf/experience/raaicon2026_certificate.pdf" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-file-pdf"></i> Certificate</a>
+    <!-- Presentation Slide link: add later -->
+  </div>
+</div>
+
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+  <div style="flex-shrink:0;">
+    <a href="/assets/img/experience/icath_lmic_2026_participation_certificate.jpg" data-lightbox="icath-cert" data-title="ICATH-LMIC 2026 — Certificate">
+      <img src="/assets/img/experience/icath_lmic_2026_participation_certificate.jpg" alt="ICATH-LMIC 2026 Certificate" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    </a>
+  </div>
+  <div style="flex:1;">
+    <p style="font-weight:bold; margin:0 0 4px 0;">ICATH-LMIC 2026</p>
+    <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">5–6 July 2026</p>
+    <p style="margin-bottom:4px;"><em>International Conference on Appropriate Technology for Healthcare in LMICs</em></p>
+    <p style="margin-bottom:4px;">Senate Building, University of Dhaka, Dhaka, Bangladesh</p>
+    <p style="margin-bottom:4px;">Jointly organized by DU, BUET, and BMU; hosted by the Department of Biomedical Physics and Technology (BMPT)</p>
+    <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Volunteer &amp; Participant</p>
+  </div>
+</div>
+
+<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:10px; margin-bottom:16px;">
+  <a href="/assets/img/experience/icath_lmic_2026_stage_pic.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026">
+    <img src="/assets/img/experience/icath_lmic_2026_stage_pic.jpg" alt="ICATH-LMIC 2026" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+  </a>
+  <a href="/assets/img/experience/icath_lmic_2026_group_pic.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026">
+    <img src="/assets/img/experience/icath_lmic_2026_group_pic.jpg" alt="ICATH-LMIC 2026" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+  </a>
+  <a href="/assets/img/experience/icath_lmic_2026_participation_certificate.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026 — Certificate">
+    <img src="/assets/img/experience/icath_lmic_2026_participation_certificate.jpg" alt="ICATH-LMIC 2026 Certificate" style="width:100%; height:160px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+  </a>
 </div>
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
@@ -103,10 +139,10 @@ images:
 </div>
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
-  <p style="font-weight:bold; margin:0 0 4px 0;">Automated PET to Fused PET-CT Mapping Using PCGAN for Lung Cancer Diagnosis</p>
-  <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Oral Presentation · RAAICON 2026</p>
-  <p style="margin-bottom:4px;"><em>2026 5th IEEE International Conference in Robotics, Automation, Artificial-Intelligence and Internet-of-things (RAAICON)</em></p>
-  <p style="margin-bottom:4px;">Jashore University of Science and Technology (JUST), Jashore, Bangladesh</p>
+  <p style="font-weight:bold; margin:0 0 4px 0;">Classification of Gallbladder Cancer Using Average Ensemble Learning</p>
+  <p style="font-size:0.9em; font-style:italic; margin-bottom:4px;">Oral Presentation · ICEEICT 2024</p>
+  <p style="margin-bottom:4px;"><em>International Conference on Electrical, Electronic, and Information & Communication Technology</em></p>
+  <p style="margin-bottom:4px;">Dhaka, Bangladesh</p>
   <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
   <!-- Presentation Slide link: add later -->
 </div>

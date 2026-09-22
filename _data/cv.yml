@@ -93,8 +93,8 @@ cv:
           - "Created a benchmark to evaluate large language models (LLMs) in identifying disease classes, comparing results against proposed architecture MobileCoAtNet for stomach infection classification."
           - "Investigated foundational AI models for multi-cancer classification, implementing Model-Agnostic Meta-Learning (MAML) for domain adaptation."
           - "Actively researching the feasibility of LLMs for disease diagnosis, reasoning, and treatment follow-up in medical applications."
-          - "Designed SALT, a spiking neural decoder using a state-space model to adaptively set firing thresholds, establishing the first causal accuracy-energy Pareto benchmark across five architecture families for closed-loop brain-computer interfaces; manuscript in preparation."
-          - "Extended SALT to CT-SALT, a cross-timescale architecture where a slow population branch gates a fast spiking branch's firing threshold, improving decoding accuracy and training stability at no added energy cost; manuscript in preparation."
+          - "Designed SALT, a spiking neural decoder using a state-space model to adaptively set firing thresholds, establishing a causal accuracy-energy Pareto benchmark across six architecture families for closed-loop brain-computer interfaces; under review in Neural Networks."
+          - "Developed CT-SALT, a cross-timescale extension of SALT where a slow population branch gates a fast spiking branch's firing threshold, improving decoding accuracy and training stability at no added energy cost."
 
       - company: Department of Biomedical Engineering, KUET
         position: Undergraduate Research Assistant
@@ -103,7 +103,7 @@ cv:
         end_date: 2024-09
         highlights:
           - "Independently conceived, implemented, and authored a solo study on gallbladder cancer classification using ensemble learning, published at ICEEICT 2024."
-          - "Designed a hybrid model for gallbladder cancer classification using parallel transfer learning, feature fusion, and LSTM, achieving 99.37% accuracy, as the undergraduate thesis; an extended version is in preparation for Expert Systems with Applications."
+          - "Designed a hybrid model for gallbladder cancer classification using parallel transfer learning, feature fusion, and LSTM as the undergraduate thesis, of which the ICEEICT 2024 paper formed a portion; the full study is in preparation for Expert Systems with Applications."
           - "Conducted the literature review supporting the feature-fusion approach, drafted portions of the thesis manuscript, handled data preprocessing, and presented the completed work at the final thesis defense."
 
     Publications:
@@ -138,7 +138,7 @@ cv:
         authors:
           - M. N. Hasan
           - et al.
-        publisher: "arXiv:2512.13742 — Under review in Information Fusion, Elsevier"
+        publisher: "arXiv:2512.13742 — Under review in Engineering Applications of Artificial Intelligence, Elsevier"
         releaseDate: 2025
         url: https://arxiv.org/abs/2512.13742
 
@@ -176,7 +176,6 @@ cv:
           - W. M. Shafin
           - M. M. H. Ankon
           - S. B. Shuvo
-          - T. Joty
           - N. Siddique
         publisher: "In preparation for Neurocomputing, Elsevier"
         releaseDate: 2026

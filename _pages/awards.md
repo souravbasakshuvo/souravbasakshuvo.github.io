@@ -134,8 +134,8 @@ images:
 <!-- BME Farewell Crest (2024) -->
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
   <div style="flex-shrink:0;">
-    <a href="/assets/img/education/sourav_bme_dept_crest.jpg" data-lightbox="bme-farewell-2024" data-title="Departmental Farewell Crest — Department of Biomedical Engineering, KUET, 2024">
-      <img src="/assets/img/education/sourav_bme_dept_crest.jpg" alt="BME Departmental Farewell Crest"
+    <a href="/assets/img/awards/sourav_bme_dept_crest.jpg" data-lightbox="bme-farewell-2024" data-title="Departmental Farewell Crest — Department of Biomedical Engineering, KUET, 2024">
+      <img src="/assets/img/awards/sourav_bme_dept_crest.jpg" alt="BME Departmental Farewell Crest"
         style="width:110px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
     </a>
   </div>

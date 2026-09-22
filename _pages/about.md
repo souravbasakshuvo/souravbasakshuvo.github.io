@@ -61,16 +61,21 @@ Outside the lab, I served as **President of the Advanced Bioengineering Club (AB
       <li data-target="#aboutCarousel" data-slide-to="2"></li>
       <li data-target="#aboutCarousel" data-slide-to="3"></li>
       <li data-target="#aboutCarousel" data-slide-to="4"></li>
+      <li data-target="#aboutCarousel" data-slide-to="5"></li>
+      <li data-target="#aboutCarousel" data-slide-to="6"></li>
+      <li data-target="#aboutCarousel" data-slide-to="7"></li>
+      <li data-target="#aboutCarousel" data-slide-to="8"></li>
+      <li data-target="#aboutCarousel" data-slide-to="9"></li>
     </div>
     <div class="carousel-inner rounded z-depth-1">
       <div class="carousel-item active">
-        <a href="{{ 'assets/img/about/about_1.JPG' | relative_url }}" data-lightbox="about-carousel" data-title="Photo 1">
-          <img src="{{ 'assets/img/about/about_1.JPG' | relative_url }}" class="d-block w-100" alt="Photo 1" style="max-height: 400px; object-fit: cover;">
+        <a href="{{ 'assets/img/about/about_1.jpg' | relative_url }}" data-lightbox="about-carousel" data-title="Photo 1">
+          <img src="{{ 'assets/img/about/about_1.jpg' | relative_url }}" class="d-block w-100" alt="Photo 1" style="max-height: 400px; object-fit: cover;">
         </a>
       </div>
       <div class="carousel-item">
-        <a href="{{ 'assets/img/about/about_2.JPG' | relative_url }}" data-lightbox="about-carousel" data-title="Photo 2">
-          <img src="{{ 'assets/img/about/about_2.JPG' | relative_url }}" class="d-block w-100" alt="Photo 2" style="max-height: 400px; object-fit: cover;">
+        <a href="{{ 'assets/img/about/about_2.jpg' | relative_url }}" data-lightbox="about-carousel" data-title="Photo 2">
+          <img src="{{ 'assets/img/about/about_2.jpg' | relative_url }}" class="d-block w-100" alt="Photo 2" style="max-height: 400px; object-fit: cover;">
         </a>
       </div>
       <div class="carousel-item">
@@ -84,8 +89,33 @@ Outside the lab, I served as **President of the Advanced Bioengineering Club (AB
         </a>
       </div>
       <div class="carousel-item">
-        <a href="{{ 'assets/img/about/about_5.JPG' | relative_url }}" data-lightbox="about-carousel" data-title="Photo 5">
-          <img src="{{ 'assets/img/about/about_5.JPG' | relative_url }}" class="d-block w-100" alt="Photo 5" style="max-height: 400px; object-fit: cover;">
+        <a href="{{ 'assets/img/about/about_5.jpg' | relative_url }}" data-lightbox="about-carousel" data-title="Photo 5">
+          <img src="{{ 'assets/img/about/about_5.jpg' | relative_url }}" class="d-block w-100" alt="Photo 5" style="max-height: 400px; object-fit: cover;">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="{{ 'assets/img/about/icath_lmic_2026_stage_pic.jpg' | relative_url }}" data-lightbox="about-carousel" data-title="ICATH-LMIC 2026">
+          <img src="{{ 'assets/img/about/icath_lmic_2026_stage_pic.jpg' | relative_url }}" class="d-block w-100" alt="ICATH-LMIC 2026" style="max-height: 400px; object-fit: cover;">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="{{ 'assets/img/about/icath_lmic_2026_group_pic.jpg' | relative_url }}" data-lightbox="about-carousel" data-title="ICATH-LMIC 2026">
+          <img src="{{ 'assets/img/about/icath_lmic_2026_group_pic.jpg' | relative_url }}" class="d-block w-100" alt="ICATH-LMIC 2026" style="max-height: 400px; object-fit: cover;">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="{{ 'assets/img/about/icath_lmic_2026_participation_certificate.jpg' | relative_url }}" data-lightbox="about-carousel" data-title="ICATH-LMIC 2026 Certificate">
+          <img src="{{ 'assets/img/about/icath_lmic_2026_participation_certificate.jpg' | relative_url }}" class="d-block w-100" alt="ICATH-LMIC 2026 Certificate" style="max-height: 400px; object-fit: cover;">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="{{ 'assets/img/about/raaicon2026_ts.jpeg' | relative_url }}" data-lightbox="about-carousel" data-title="RAAICON 2026">
+          <img src="{{ 'assets/img/about/raaicon2026_ts.jpeg' | relative_url }}" class="d-block w-100" alt="RAAICON 2026" style="max-height: 400px; object-fit: cover;">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="{{ 'assets/img/about/raaicon2026_certificate_giving.jpg' | relative_url }}" data-lightbox="about-carousel" data-title="RAAICON 2026">
+          <img src="{{ 'assets/img/about/raaicon2026_certificate_giving.jpg' | relative_url }}" class="d-block w-100" alt="RAAICON 2026" style="max-height: 400px; object-fit: cover;">
         </a>
       </div>
     </div>
