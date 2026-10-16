@@ -34,6 +34,29 @@ images:
   object-fit: cover;
   display: block;
 }
+.project-card-video {
+  position: relative;
+}
+.project-card-video .play-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  padding-left: 3px;
+  transition: background 0.2s;
+}
+.project-card-video:hover .play-badge {
+  background: var(--global-theme-color);
+}
 .project-card-body {
   padding: 16px 20px;
   flex: 1;
@@ -258,6 +281,9 @@ images:
   </div>
 
   <div class="project-card">
+    <a class="project-card-img" href="/assets/img/projects/iot_pilot_health_monitoring_poster.jpg" data-lightbox="iot-pilot" data-title="IoT Based Pilot Health Monitoring System – Project Poster">
+      <img src="/assets/img/projects/iot_pilot_health_monitoring_poster.jpg" alt="IoT Pilot Health Monitoring Poster">
+    </a>
     <div class="project-card-body">
       <div class="project-card-header">
         <div class="project-card-title">
@@ -318,6 +344,10 @@ images:
   </div>
 
   <div class="project-card">
+    <a class="project-card-img project-card-video" href="/projects/sanitary-napkin-vending-machine/" title="Watch demo video">
+      <img src="/assets/img/projects/sanitary_napkin_vending_machine_poster.jpg" alt="Sanitary Napkin Vending Machine demo video">
+      <span class="play-badge"><i class="fas fa-play"></i></span>
+    </a>
     <div class="project-card-body">
       <div class="project-card-header">
         <div class="project-card-title">
@@ -405,6 +435,10 @@ images:
   </div>
 
   <div class="project-card">
+    <a class="project-card-img project-card-video" href="/projects/line-follower-robot/" title="Watch demo video">
+      <img src="/assets/img/projects/line_follower_robot_poster.jpg" alt="Line Follower Robot demo video">
+      <span class="play-badge"><i class="fas fa-play"></i></span>
+    </a>
     <div class="project-card-body">
       <div class="project-card-header">
         <div class="project-card-title">

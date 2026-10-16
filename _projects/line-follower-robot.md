@@ -12,6 +12,13 @@ github: https://github.com/souravbasakshuvo/line-follower-robot
 
 An autonomous robot that follows a predefined line path using TCRT-5000 IR sensors and a PID (Proportional–Integral–Derivative) control algorithm. Developed in two hardware versions with increasing complexity, it was used in inter-university robotics competitions and engineering education projects at KUET.
 
+## Demo Video
+
+<video controls preload="metadata" playsinline poster="/assets/img/projects/line_follower_robot_poster.jpg" style="display:block; max-width:100%; max-height:560px; margin:0 auto 24px; border-radius:10px;">
+  <source src="/assets/video/line_follower_robot.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Features
 
 - Line following on black-on-white and white-on-black surfaces

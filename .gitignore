@@ -13,3 +13,5 @@ assets/rendercv/rendercv_output/*.typ
 Gemfile.lock
 node_modules/
 vendor
+# large source files kept locally
+_originals/

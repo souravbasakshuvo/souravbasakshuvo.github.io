@@ -129,41 +129,74 @@ images:
   </a>
 </div>
 
-<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
-  <div style="display:flex; justify-content:space-between; align-items:baseline;">
-    <strong style="font-size:1.05em;">7th International Conference on Electrical Information and Communication Technology (EICT 2025)</strong>
-    <span style="font-style:italic; font-size:0.9em; white-space:nowrap; margin-left:1rem;">18–20 Dec 2025</span>
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+  <div style="flex-shrink:0;">
+    <a href="/assets/img/experience/eict2025_certificate.jpg" data-lightbox="eict2025-cert" data-title="EICT 2025 — Certificate">
+      <img src="/assets/img/experience/eict2025_certificate.jpg" alt="EICT 2025 Certificate" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    </a>
   </div>
-  <p style="margin:6px 0 4px 0;">Khulna, Bangladesh</p>
-  <p style="margin-bottom:4px;"><strong>Presented Paper:</strong> Exploring Common Molecular Interactions across Multiple Cancers to Identify Potential Therapeutic Targets and Drug Candidates</p>
-  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Type:</strong> Oral Presentation</p>
-  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
-  <!-- Presentation Slide link: add later -->
+  <div style="flex:1;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline;">
+      <strong style="font-size:1.05em;">7th International Conference on Electrical Information and Communication Technology (EICT 2025)</strong>
+      <span style="font-style:italic; font-size:0.9em; white-space:nowrap; margin-left:1rem;">18–20 Dec 2025</span>
+    </div>
+    <p style="margin:6px 0 4px 0;">Khulna, Bangladesh</p>
+    <p style="margin-bottom:4px;"><strong>Presented Paper:</strong> Exploring Common Molecular Interactions across Multiple Cancers to Identify Potential Therapeutic Targets and Drug Candidates</p>
+    <p style="margin-bottom:4px; font-size:0.9em;"><strong>Type:</strong> Oral Presentation</p>
+    <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
+    <a href="/assets/img/experience/eict2025_certificate.jpg" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-image"></i> Certificate</a>
+    <!-- Presentation Slide link: add later -->
+  </div>
 </div>
 
-<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
-  <div style="display:flex; justify-content:space-between; align-items:baseline;">
-    <strong style="font-size:1.05em;">1st National Conference of Research, Industry and Collaboration in Biomedical Engineering</strong>
-    <span style="font-style:italic; font-size:0.9em; white-space:nowrap; margin-left:1rem;">22 Jun 2025</span>
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+  <div style="flex-shrink:0;">
+    <a href="/assets/img/experience/just2025_certificate.jpg" data-lightbox="just2025-cert" data-title="JUST 2025 — Certificate">
+      <img src="/assets/img/experience/just2025_certificate.jpg" alt="JUST 2025 Certificate" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    </a>
   </div>
-  <p style="margin:6px 0 4px 0;">Department of Biomedical Engineering, Jashore University of Science &amp; Technology, Jashore, Bangladesh</p>
-  <p style="margin-bottom:4px;"><strong>Presented Poster:</strong> Exploring Gene Network Interactions and Pathways in Three Cancers: Identifying Potential Therapeutic Targets and Drug Candidates</p>
-  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Type:</strong> Poster Presentation</p>
-  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
-  <a href="https://drive.google.com/file/d/1LczamUcxucTM-x3kg3WqOl_8sLzgPDdI/view?usp=sharing" target="_blank" style="color:var(--global-theme-color);"><i class="fas fa-image"></i> Poster</a>
-  <!-- Certification link: add later -->
+  <div style="flex:1;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline;">
+      <strong style="font-size:1.05em;">1st National Conference of Research, Industry and Collaboration in Biomedical Engineering</strong>
+      <span style="font-style:italic; font-size:0.9em; white-space:nowrap; margin-left:1rem;">22 Jun 2025</span>
+    </div>
+    <p style="margin:6px 0 4px 0;">Department of Biomedical Engineering, Jashore University of Science &amp; Technology, Jashore, Bangladesh</p>
+    <p style="margin-bottom:4px;"><strong>Presented Poster:</strong> Exploring Gene Network Interactions and Pathways in Three Cancers: Identifying Potential Therapeutic Targets and Drug Candidates</p>
+    <p style="margin-bottom:4px; font-size:0.9em;"><strong>Type:</strong> Poster Presentation</p>
+    <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
+    <a href="/assets/pdf/experience/just2025_poster.pdf" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-file-pdf"></i> Poster (PDF)</a>
+  </div>
 </div>
 
-<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
-  <div style="display:flex; justify-content:space-between; align-items:baseline;">
-    <strong style="font-size:1.05em;">6th International Conference on Electrical Engineering and Information & Communication Technology (ICEEICT 2024)</strong>
-    <span style="font-style:italic; font-size:0.9em; white-space:nowrap; margin-left:1rem;">2–4 May 2024</span>
+<div style="display:flex; justify-content:center; gap:14px; margin-bottom:16px; flex-wrap:wrap;">
+  <a href="/assets/img/experience/just2025_poster.jpg" data-lightbox="just2025-gallery" data-title="JUST 2025 — Poster">
+    <img src="/assets/img/experience/just2025_poster.jpg" alt="JUST 2025 Poster" style="height:340px; width:auto; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+  </a>
+</div>
+
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+  <div style="flex-shrink:0;">
+    <a href="/assets/img/experience/iceeict2024_certificate.jpg" data-lightbox="iceeict2024-cert" data-title="ICEEICT 2024 — Certificate">
+      <img src="/assets/img/experience/iceeict2024_certificate.jpg" alt="ICEEICT 2024 Certificate" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+    </a>
   </div>
-  <p style="margin:6px 0 4px 0;">Dhaka, Bangladesh</p>
-  <p style="margin-bottom:4px;"><strong>Presented Paper:</strong> Classification of Gallbladder Cancer Using Average Ensemble Learning</p>
-  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Type:</strong> Oral Presentation</p>
-  <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
-  <!-- Presentation Slide link: add later -->
+  <div style="flex:1;">
+    <div style="display:flex; justify-content:space-between; align-items:baseline;">
+      <strong style="font-size:1.05em;">6th International Conference on Electrical Engineering and Information &amp; Communication Technology (ICEEICT 2024)</strong>
+      <span style="font-style:italic; font-size:0.9em; white-space:nowrap; margin-left:1rem;">2–4 May 2024</span>
+    </div>
+    <p style="margin:6px 0 4px 0;">Dhaka, Bangladesh</p>
+    <p style="margin-bottom:4px;"><strong>Presented Paper:</strong> Classification of Gallbladder Cancer Using Average Ensemble Learning</p>
+    <p style="margin-bottom:4px; font-size:0.9em;"><strong>Type:</strong> Oral Presentation</p>
+    <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Presenter</p>
+    <!-- Presentation Slide link: add later -->
+  </div>
+</div>
+
+<div style="display:flex; justify-content:center; gap:14px; margin-bottom:16px; flex-wrap:wrap;">
+  <a href="/assets/img/experience/iceeict2024_presentation.jpg" data-lightbox="iceeict2024-gallery" data-title="ICEEICT 2024 — Presentation">
+    <img src="/assets/img/experience/iceeict2024_presentation.jpg" alt="ICEEICT 2024 Presentation" style="width:260px; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+  </a>
 </div>
 
 ---
@@ -235,3 +268,23 @@ images:
     <em style="white-space:nowrap; margin-left:1rem; font-size:0.9em;">In Progress</em>
   </div>
 </div>
+
+---
+
+## Hospital and Industry Visit
+
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
+  <em>Details will be added soon.</em>
+</div>
+
+<!--
+Template for each visit (copy this card):
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
+  <div style="display:flex; justify-content:space-between; align-items:baseline;">
+    <strong style="font-size:1.05em;">HOSPITAL / INDUSTRY NAME</strong>
+    <span style="font-style:italic; font-size:0.9em; white-space:nowrap; margin-left:1rem;">DATE</span>
+  </div>
+  <p style="margin:6px 0 4px 0;">Location, Bangladesh</p>
+  <p style="margin-bottom:4px;">Short description of what was observed or learned.</p>
+</div>
+-->
