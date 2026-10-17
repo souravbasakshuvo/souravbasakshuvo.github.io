@@ -94,12 +94,12 @@ images:
     <!-- Presentation Slide link: add later -->
   </div>
 </div>
-<div style="display:flex; justify-content:center; gap:14px; margin-top:16px; flex-wrap:wrap;">
-  <a href="/assets/img/experience/raaicon2026_ts.jpeg" data-lightbox="raaicon-gallery" data-title="RAAICON 2026">
-    <img src="/assets/img/experience/raaicon2026_ts.jpeg" alt="RAAICON 2026" style="width:260px; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+<div style="display:flex; justify-content:center; gap:10px; margin-top:12px;">
+  <a href="/assets/img/experience/raaicon2026_ts.jpeg" data-lightbox="raaicon-gallery" data-title="RAAICON 2026" style="width:calc((100% - 20px) / 3);">
+    <img src="/assets/img/experience/raaicon2026_ts.jpeg" alt="RAAICON 2026" style="width:100%; border-radius:8px; display:block;">
   </a>
-  <a href="/assets/img/experience/raaicon2026_certificate_giving.jpg" data-lightbox="raaicon-gallery" data-title="RAAICON 2026">
-    <img src="/assets/img/experience/raaicon2026_certificate_giving.jpg" alt="RAAICON 2026" style="width:260px; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+  <a href="/assets/img/experience/raaicon2026_certificate_giving.jpg" data-lightbox="raaicon-gallery" data-title="RAAICON 2026" style="width:calc((100% - 20px) / 3);">
+    <img src="/assets/img/experience/raaicon2026_certificate_giving.jpg" alt="RAAICON 2026" style="width:100%; border-radius:8px; display:block;">
   </a>
 </div>
 </div>
@@ -121,12 +121,12 @@ images:
     <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Volunteer &amp; Participant</p>
   </div>
 </div>
-<div style="display:flex; justify-content:center; gap:14px; margin-top:16px; flex-wrap:wrap;">
-  <a href="/assets/img/experience/icath_lmic_2026_stage_pic.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026">
-    <img src="/assets/img/experience/icath_lmic_2026_stage_pic.jpg" alt="ICATH-LMIC 2026" style="width:260px; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+<div style="display:flex; justify-content:center; gap:10px; margin-top:12px;">
+  <a href="/assets/img/experience/icath_lmic_2026_stage_pic.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026" style="width:calc((100% - 20px) / 3);">
+    <img src="/assets/img/experience/icath_lmic_2026_stage_pic.jpg" alt="ICATH-LMIC 2026" style="width:100%; border-radius:8px; display:block;">
   </a>
-  <a href="/assets/img/experience/icath_lmic_2026_group_pic.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026">
-    <img src="/assets/img/experience/icath_lmic_2026_group_pic.jpg" alt="ICATH-LMIC 2026" style="width:260px; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+  <a href="/assets/img/experience/icath_lmic_2026_group_pic.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026" style="width:calc((100% - 20px) / 3);">
+    <img src="/assets/img/experience/icath_lmic_2026_group_pic.jpg" alt="ICATH-LMIC 2026" style="width:100%; border-radius:8px; display:block;">
   </a>
 </div>
 </div>
@@ -170,9 +170,9 @@ images:
     <a href="/assets/pdf/experience/just2025_poster.pdf" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-file-pdf"></i> Poster (PDF)</a>
   </div>
 </div>
-<div style="display:flex; justify-content:center; gap:14px; margin-top:16px; flex-wrap:wrap;">
-  <a href="/assets/img/experience/just2025_poster.jpg" data-lightbox="just2025-gallery" data-title="JUST 2025 — Poster">
-    <img src="/assets/img/experience/just2025_poster.jpg" alt="JUST 2025 Poster" style="height:340px; width:auto; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+<div style="display:flex; justify-content:center; gap:10px; margin-top:12px;">
+  <a href="/assets/img/experience/just2025_poster.jpg" data-lightbox="just2025-gallery" data-title="JUST 2025 — Poster" style="width:calc((100% - 20px) / 3);">
+    <img src="/assets/img/experience/just2025_poster.jpg" alt="JUST 2025 Poster" style="width:100%; border-radius:8px; display:block;">
   </a>
 </div>
 </div>
@@ -196,9 +196,9 @@ images:
     <!-- Presentation Slide link: add later -->
   </div>
 </div>
-<div style="display:flex; justify-content:center; gap:14px; margin-top:16px; flex-wrap:wrap;">
-  <a href="/assets/img/experience/iceeict2024_presentation.jpg" data-lightbox="iceeict2024-gallery" data-title="ICEEICT 2024 — Presentation">
-    <img src="/assets/img/experience/iceeict2024_presentation.jpg" alt="ICEEICT 2024 Presentation" style="width:260px; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
+<div style="display:flex; justify-content:center; gap:10px; margin-top:12px;">
+  <a href="/assets/img/experience/iceeict2024_presentation.jpg" data-lightbox="iceeict2024-gallery" data-title="ICEEICT 2024 — Presentation" style="width:calc((100% - 20px) / 3);">
+    <img src="/assets/img/experience/iceeict2024_presentation.jpg" alt="ICEEICT 2024 Presentation" style="width:100%; border-radius:8px; display:block;">
   </a>
 </div>
 </div>
