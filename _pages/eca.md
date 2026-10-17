@@ -100,8 +100,8 @@ images:
   <div style="margin-bottom:8px;"><em>FabLab · Khulna University of Engineering & Technology</em></div>
   <p style="margin:0 0 12px 0;">RFID-enabled automated vending machine for menstrual hygiene products, built at FabLab KUET. Achieved <strong>2nd Runner-Up</strong> at the Intra-University Innovation Competition 2022.</p>
   <div style="display:flex; justify-content:center;">
-    <a href="/assets/img/about/about_2.JPG" data-lightbox="fablab-2022-eca" data-title="2nd Runner-Up — Intra-University Innovative Idea & Project Competition 2022" style="width:33.33%;">
-      <img src="/assets/img/about/about_2.JPG" alt="Award Ceremony — Intra-University Innovation Competition 2022" style="width:100%; border-radius:8px;">
+    <a href="/assets/img/about/about_2.jpg" data-lightbox="fablab-2022-eca" data-title="2nd Runner-Up — Intra-University Innovative Idea & Project Competition 2022" style="width:33.33%;">
+      <img src="/assets/img/about/about_2.jpg" alt="Award Ceremony — Intra-University Innovation Competition 2022" style="width:100%; border-radius:8px;">
     </a>
   </div>
 </div>

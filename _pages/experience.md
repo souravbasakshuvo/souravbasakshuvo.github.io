@@ -74,7 +74,8 @@ images:
 
 ## Conferences
 
-<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
+<div style="display:flex; gap:20px; align-items:flex-start;">
   <div style="flex-shrink:0;">
     <a href="/assets/img/experience/raaicon2026_certificate.jpg" data-lightbox="raaicon-cert" data-title="RAAICON 2026 — Certificate">
       <img src="/assets/img/experience/raaicon2026_certificate.jpg" alt="RAAICON 2026 Certificate" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
@@ -93,8 +94,7 @@ images:
     <!-- Presentation Slide link: add later -->
   </div>
 </div>
-
-<div style="display:flex; justify-content:center; gap:14px; margin-bottom:16px; flex-wrap:wrap;">
+<div style="display:flex; justify-content:center; gap:14px; margin-top:16px; flex-wrap:wrap;">
   <a href="/assets/img/experience/raaicon2026_ts.jpeg" data-lightbox="raaicon-gallery" data-title="RAAICON 2026">
     <img src="/assets/img/experience/raaicon2026_ts.jpeg" alt="RAAICON 2026" style="width:260px; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
   </a>
@@ -102,8 +102,10 @@ images:
     <img src="/assets/img/experience/raaicon2026_certificate_giving.jpg" alt="RAAICON 2026" style="width:260px; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
   </a>
 </div>
+</div>
 
-<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
+<div style="display:flex; gap:20px; align-items:flex-start;">
   <div style="flex-shrink:0;">
     <a href="/assets/img/experience/icath_lmic_2026_participation_certificate.jpg" data-lightbox="icath-cert" data-title="ICATH-LMIC 2026 — Certificate">
       <img src="/assets/img/experience/icath_lmic_2026_participation_certificate.jpg" alt="ICATH-LMIC 2026 Certificate" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
@@ -119,14 +121,14 @@ images:
     <p style="margin-bottom:4px; font-size:0.9em;"><strong>Role:</strong> Volunteer &amp; Participant</p>
   </div>
 </div>
-
-<div style="display:flex; justify-content:center; gap:14px; margin-bottom:16px; flex-wrap:wrap;">
+<div style="display:flex; justify-content:center; gap:14px; margin-top:16px; flex-wrap:wrap;">
   <a href="/assets/img/experience/icath_lmic_2026_stage_pic.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026">
     <img src="/assets/img/experience/icath_lmic_2026_stage_pic.jpg" alt="ICATH-LMIC 2026" style="width:260px; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
   </a>
   <a href="/assets/img/experience/icath_lmic_2026_group_pic.jpg" data-lightbox="icath-gallery" data-title="ICATH-LMIC 2026">
     <img src="/assets/img/experience/icath_lmic_2026_group_pic.jpg" alt="ICATH-LMIC 2026" style="width:260px; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
   </a>
+</div>
 </div>
 
 <div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
@@ -149,7 +151,8 @@ images:
   </div>
 </div>
 
-<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
+<div style="display:flex; gap:20px; align-items:flex-start;">
   <div style="flex-shrink:0;">
     <a href="/assets/img/experience/just2025_certificate.jpg" data-lightbox="just2025-cert" data-title="JUST 2025 — Certificate">
       <img src="/assets/img/experience/just2025_certificate.jpg" alt="JUST 2025 Certificate" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
@@ -167,14 +170,15 @@ images:
     <a href="/assets/pdf/experience/just2025_poster.pdf" target="_blank" style="color:var(--global-theme-color); font-size:0.9em;"><i class="fas fa-file-pdf"></i> Poster (PDF)</a>
   </div>
 </div>
-
-<div style="display:flex; justify-content:center; gap:14px; margin-bottom:16px; flex-wrap:wrap;">
+<div style="display:flex; justify-content:center; gap:14px; margin-top:16px; flex-wrap:wrap;">
   <a href="/assets/img/experience/just2025_poster.jpg" data-lightbox="just2025-gallery" data-title="JUST 2025 — Poster">
     <img src="/assets/img/experience/just2025_poster.jpg" alt="JUST 2025 Poster" style="height:340px; width:auto; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
   </a>
 </div>
+</div>
 
-<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px; display:flex; gap:20px; align-items:flex-start;">
+<div style="border:1px solid var(--global-divider-color); background:var(--global-card-bg-color); border-radius:10px; padding:16px 20px; margin-bottom:16px;">
+<div style="display:flex; gap:20px; align-items:flex-start;">
   <div style="flex-shrink:0;">
     <a href="/assets/img/experience/iceeict2024_certificate.jpg" data-lightbox="iceeict2024-cert" data-title="ICEEICT 2024 — Certificate">
       <img src="/assets/img/experience/iceeict2024_certificate.jpg" alt="ICEEICT 2024 Certificate" style="width:200px; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
@@ -192,11 +196,11 @@ images:
     <!-- Presentation Slide link: add later -->
   </div>
 </div>
-
-<div style="display:flex; justify-content:center; gap:14px; margin-bottom:16px; flex-wrap:wrap;">
+<div style="display:flex; justify-content:center; gap:14px; margin-top:16px; flex-wrap:wrap;">
   <a href="/assets/img/experience/iceeict2024_presentation.jpg" data-lightbox="iceeict2024-gallery" data-title="ICEEICT 2024 — Presentation">
     <img src="/assets/img/experience/iceeict2024_presentation.jpg" alt="ICEEICT 2024 Presentation" style="width:260px; height:220px; object-fit:cover; border-radius:6px; border:1px solid var(--global-divider-color); display:block;">
   </a>
+</div>
 </div>
 
 ---
